@@ -1,0 +1,38 @@
+{
+  "started_at_utc": "2026-10-27T04:13:01.599110+00:00",
+  "plan_sha256": "02dadfb3f6d2e27dcc0f3a9e8e7e7acb6f83b5602aa1ca46d1b53a2a141091dc",
+  "protocol_sha256": "ab35a27f1d5a14ef538acc10d916a85c1d7f1c66abd89fea8417c918d236820f",
+  "dependencies": {
+    "docs/ML_V10_TREND_MODEL_PLAN.md": "ab35a27f1d5a14ef538acc10d916a85c1d7f1c66abd89fea8417c918d236820f",
+    "signalwatch/ml_trends.py": "f5e9a3084278ff15e4b87abb590c8390d9d3647a01dc2da0c9ea2dce8391a392",
+    "tests/test_ml_trends.py": "82948b61e46dbc1b4b44d2ae84b792de04e9bb56aba01e379732b44d805204ed",
+    "scripts/study_trends.py": "e48779d6d93620b07a5eca3cba3b68796f3fca34880e478366953bdce95cb16b",
+    "signalwatch/dataset.py": "0f854d5772a555dd80b0874987e68f6d2d6494741046ad871382cd031738106a",
+    "signalwatch/evaluation.py": "dbf17c12a6b8a4e3201fa6753f4a3ff0568677322f2e7ea4bf00752c9f1e31e0",
+    "signalwatch/ml_supervised.py": "ff3e713af3a1ef4b739c088bf83c29399f69cd7835100979df8b22b204170a11",
+    "signalwatch/ml_supervised_weighted.py": "ab5a7d2a3c2179c2e8bccab724ad42d5a2f6c0da3dfce3914d16f7f22817ef49",
+    "signalwatch/ml_ablation.py": "2cb9e6446752e711a446ccf1a716e3d8f77ad9f07ba3dc2fcecc634f2038d41b",
+    "signalwatch/ml_hybrid.py": "1b1d706ee23cbf1a68e1b39ae11c0000df94ee376452c79f969c718a2f492823",
+    "signalwatch/ml_v2.py": "5d1afcf5c53c058776d9d7df46261207e50b0bac9ba45b5e0225e037e1da2de1",
+    "artifacts/v5/preservation_manifest.json": "51bc088c60a47c2c7bf3f58d2abd75d9e482009060c4ddb2bf2ee5bb437b6dd5",
+    "data/SKAB-DATA-README.md": "5696f68f1ceb4db1a7616f1a27e3675c6a9b63b123c8cbbc5390a0faff58b39b",
+    "artifacts/v5/development/plan.json": "0fc5da6ef7a9e2badb6f0d8fdc40f5c47861dca215ff4a12645b9d26a8c5dfdc",
+    "artifacts/v5/development/report.json": "8e2c39fc825c105111edd77592f5decf2dd4919d52647f8b719d087c71ce5749",
+    "artifacts/v5/development/classifier_oof_scores.npz": "cd7c2f2bd23f241141871c9a8644b54418f0bf906c80caa5221ed529b1af80ad",
+    "artifacts/v5/development/selected_oof_scores.npz": "4904899a8a7ca8ac43ea33dd3a556f393f6bab717add48686622b3efcfc081c5"
+  },
+  "active_hashes": {
+    "model.joblib": "16a932107f2c73f80b03637bdaf1956723734b2de4d58b4b9d96f30b3998d57d",
+    "metadata.json": "0625694566cf641dc9716ae3ce3436a8508b1d9345479be2f3ff7034a5c07f03",
+    "frozen_evaluation.json": "83bf1fd04a016d69d5df353a27d1ca24f94118cb833bc2b935d2ebe9533f6347",
+    "selection_manifest.json": "487554a016d300b97ae1f1a4db0df108c27f23200ff6416a566e918b43a8ef47",
+    "split_manifest.json": "870af2b6bb046fa6acba529d62163a5f44d893e09d6607f6eb1b6fb1ba77b941",
+    "release_manifest.json": "caf48cdcb37f6440dab175e351f2654bbcd74882a2dd5c5e771da79ceafbf6fb"
+  },
+  "environment": {
+    "python": "3.11.15",
+    "sklearn": "1.9.1",
+    "numpy": "2.4.6"
+  },
+  "authorization": "One15fitdevelopment study plus conditionally one selected finalB1/C4fit bank; no audit or teaser inference."
+}

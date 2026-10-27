@@ -1,0 +1,36 @@
+{
+  "started_at_utc": "2026-10-27T03:38:19.564737+00:00",
+  "plan_sha256": "d3074c7e0007f3db7b793512bb285d3e7246630687885c266ec882a4c9f60bfd",
+  "protocol_sha256": "b918538ba252b995ba5942a48b632d783eb32476d4baba23e31516ee6f1bafc5",
+  "environment": {
+    "python": "3.11.15",
+    "numpy": "2.4.6"
+  },
+  "active_hashes": {
+    "model.joblib": "16a932107f2c73f80b03637bdaf1956723734b2de4d58b4b9d96f30b3998d57d",
+    "metadata.json": "0625694566cf641dc9716ae3ce3436a8508b1d9345479be2f3ff7034a5c07f03",
+    "frozen_evaluation.json": "83bf1fd04a016d69d5df353a27d1ca24f94118cb833bc2b935d2ebe9533f6347",
+    "selection_manifest.json": "487554a016d300b97ae1f1a4db0df108c27f23200ff6416a566e918b43a8ef47",
+    "split_manifest.json": "870af2b6bb046fa6acba529d62163a5f44d893e09d6607f6eb1b6fb1ba77b941",
+    "release_manifest.json": "caf48cdcb37f6440dab175e351f2654bbcd74882a2dd5c5e771da79ceafbf6fb"
+  },
+  "dependencies": {
+    "docs/ML_V9_BRANCH_POLICY_PLAN.md": "b918538ba252b995ba5942a48b632d783eb32476d4baba23e31516ee6f1bafc5",
+    "signalwatch/ml_branch_policy.py": "555dd4aff95739c7db1df1e36d47d91e3d349f24a6910a7d7dcb9c527571807a",
+    "tests/test_ml_branch_policy.py": "642ca4550c56b22256f5f8921ece663422dba75480097e50cf98e0c59df68359",
+    "scripts/study_branch_policy.py": "83884b8cd5d4543ecbbbbfa4a81aa8e340210cef2b7adde2f328b2b01cb50417",
+    "signalwatch/alarm_policy.py": "968563e6abaf71102473b2dc74831a7cc13de080e502b564c6ae1454afb57efa",
+    "signalwatch/dataset.py": "0f854d5772a555dd80b0874987e68f6d2d6494741046ad871382cd031738106a",
+    "signalwatch/evaluation.py": "dbf17c12a6b8a4e3201fa6753f4a3ff0568677322f2e7ea4bf00752c9f1e31e0",
+    "artifacts/v5/preservation_manifest.json": "51bc088c60a47c2c7bf3f58d2abd75d9e482009060c4ddb2bf2ee5bb437b6dd5",
+    "outputs/v9-diagnosis/diagnostics.json": "1e1f23764e85d10ac5e0bdc654e4ca5473de6d2cff3239778b5bd5cecfd652f7",
+    "work/v9-diagnosis/diagnose.py": "8ccad6e48f6f48eae06548128bda517f3814b6539f4f5e949f7dfb3f58ac4e64",
+    "artifacts/v5/development/plan.json": "0fc5da6ef7a9e2badb6f0d8fdc40f5c47861dca215ff4a12645b9d26a8c5dfdc",
+    "artifacts/v5/development/report.json": "8e2c39fc825c105111edd77592f5decf2dd4919d52647f8b719d087c71ce5749",
+    "artifacts/v5/development/classifier_oof_scores.npz": "cd7c2f2bd23f241141871c9a8644b54418f0bf906c80caa5221ed529b1af80ad",
+    "artifacts/v5/development/residual_oof_channels.npz": "500d3253892e04aaa63385566ce0a6410c0ae55889052d3bda72eb99cb627679",
+    "artifacts/v5/development/selected_oof_scores.npz": "4904899a8a7ca8ac43ea33dd3a556f393f6bab717add48686622b3efcfc081c5"
+  },
+  "model_fits": 0,
+  "authorization": "One fixed development policy execution after preflight QA."
+}

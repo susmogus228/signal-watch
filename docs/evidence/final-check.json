@@ -1,0 +1,47 @@
+{
+  "source_files_verified": 35,
+  "raw_rows": 46806,
+  "raw_bytes": 4392581,
+  "gaps": 40,
+  "model_sha256": "1c8554a484148129b281e7aa6657d078658d778b3cff6edbf3f4f16594a36cc2",
+  "report_sha256": "0d6715e66214ea04a3027123647eddd530b05ac9532629a50b4b5569d0f30791",
+  "screenshots": [
+    {
+      "path": "docs/screenshots/audit-desktop.jpg",
+      "width": 1472,
+      "height": 1274,
+      "format": "JPEG",
+      "sha256": "22f5fba201e7385160bbab0d732be173eef0887f490b9e7b5f57b077bd62252c"
+    },
+    {
+      "path": "docs/screenshots/audit-mobile.jpg",
+      "width": 375,
+      "height": 812,
+      "format": "JPEG",
+      "sha256": "d108631435e970313212fe8311b76ceb98c8c076c735f3d5b909d248ba08aec2"
+    },
+    {
+      "path": "docs/screenshots/compare-desktop.jpg",
+      "width": 1472,
+      "height": 1047,
+      "format": "JPEG",
+      "sha256": "7c48a0e22be7a7c5d9b399f74b7825f8806b284c83ed12f436daf537aca8c3b4"
+    },
+    {
+      "path": "docs/screenshots/model-desktop.jpg",
+      "width": 1472,
+      "height": 1047,
+      "format": "JPEG",
+      "sha256": "fad0ac5a6859008391f010c1d7803175ca4163455d692eef343201949e513b8e"
+    },
+    {
+      "path": "docs/screenshots/replay-warmup-desktop.jpg",
+      "width": 1472,
+      "height": 1047,
+      "format": "JPEG",
+      "sha256": "a6df1eb55d4977f5e02c2f6ec65e84cf8fdf07a0fa3787a8ee362fae4202c0fc"
+    }
+  ],
+  "missing_document_links": [],
+  "owned_docs_english_scan": true
+}

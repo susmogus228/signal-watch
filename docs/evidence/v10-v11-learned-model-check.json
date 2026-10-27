@@ -1,0 +1,133 @@
+{
+  "recorded_at_utc": "2026-10-27T04:48:24.365090+00:00",
+  "scope": "Completed V10/V11 studies; separate V12 approved and in progress",
+  "studies": {
+    "trend-development": {
+      "report_sha256": "96ea9680f3a00f910b33564b9a0c03b8e0c8bd963aad4149180444566bfc7939",
+      "plan_sha256": "02dadfb3f6d2e27dcc0f3a9e8e7e7acb6f83b5602aa1ca46d1b53a2a141091dc",
+      "candidate_sha256": "7bb34371801abee2d8b997eaf508863f0ae00c2acee1c3fc411603cc87a76da8",
+      "actual_development_fits": 15,
+      "candidate_count": 204,
+      "feasible_count": 0,
+      "selected": null,
+      "final_fit": null,
+      "dependencies": {
+        "docs/ML_V10_TREND_MODEL_PLAN.md": true,
+        "signalwatch/ml_trends.py": true,
+        "tests/test_ml_trends.py": true,
+        "scripts/study_trends.py": true,
+        "signalwatch/dataset.py": true,
+        "signalwatch/evaluation.py": true,
+        "signalwatch/ml_supervised.py": true,
+        "signalwatch/ml_supervised_weighted.py": true,
+        "signalwatch/ml_ablation.py": true,
+        "signalwatch/ml_hybrid.py": true,
+        "signalwatch/ml_v2.py": true,
+        "artifacts/v5/preservation_manifest.json": true,
+        "data/SKAB-DATA-README.md": true,
+        "artifacts/v5/development/plan.json": true,
+        "artifacts/v5/development/report.json": true,
+        "artifacts/v5/development/classifier_oof_scores.npz": true,
+        "artifacts/v5/development/selected_oof_scores.npz": true
+      },
+      "all_dependencies_match": true,
+      "old_audit_scored": false,
+      "teaser_scored": false,
+      "independent_model_qa": "PASS for saved-array metrics, rejection and fit provenance; joint quality screen FAIL"
+    },
+    "trend-backbones-development": {
+      "report_sha256": "9d12e0f90f8cf4164e74b259e9130a437b1081c9209fc8f892e44d819cec244e",
+      "plan_sha256": "07af52b8b5485442f5b17c9a1b96af0f47dd38fafb5be2870f4b64ef40c838b0",
+      "candidate_sha256": "1124ec9677b1d99d3314c6d9c5dc9fdba670183de6794964929115577f93fc88",
+      "actual_development_fits": 6,
+      "candidate_count": 204,
+      "feasible_count": 0,
+      "selected": null,
+      "final_fit": null,
+      "dependencies": {
+        "docs/ML_V10_TREND_MODEL_PLAN.md": true,
+        "signalwatch/ml_trends.py": true,
+        "tests/test_ml_trends.py": true,
+        "scripts/study_trends.py": true,
+        "signalwatch/dataset.py": true,
+        "signalwatch/evaluation.py": true,
+        "signalwatch/ml_supervised.py": true,
+        "signalwatch/ml_supervised_weighted.py": true,
+        "signalwatch/ml_ablation.py": true,
+        "signalwatch/ml_hybrid.py": true,
+        "signalwatch/ml_v2.py": true,
+        "artifacts/v5/preservation_manifest.json": true,
+        "data/SKAB-DATA-README.md": true,
+        "artifacts/v5/development/plan.json": true,
+        "artifacts/v5/development/report.json": true,
+        "artifacts/v5/development/classifier_oof_scores.npz": true,
+        "artifacts/v5/development/selected_oof_scores.npz": true,
+        "docs/ML_V11_TREND_BACKBONE_PLAN.md": true,
+        "signalwatch/ml_trend_backbones.py": true,
+        "tests/test_ml_trend_backbones.py": true,
+        "scripts/study_trend_backbones.py": true,
+        "artifacts/trend-development/plan.json": true,
+        "artifacts/trend-development/report.json": true,
+        "artifacts/trend-development/B_oof_scores.npz": true,
+        "artifacts/trend-development/C_oof_scores.npz": true,
+        "artifacts/trend-development/candidate_audits.json": true,
+        "artifacts/trend-development/execution_started.json": true,
+        "artifacts/trend-development/inner_mining_oof_scores.npz": true,
+        "artifacts/trend-development/selection_before_final_fit.json": true
+      },
+      "all_dependencies_match": true,
+      "old_audit_scored": false,
+      "teaser_scored": false,
+      "independent_model_qa": "PASS for saved-array metrics, rejection and fit provenance; joint quality screen FAIL"
+    }
+  },
+  "actual_development_fits": 21,
+  "candidate_points": 408,
+  "final_fit_calls": 0,
+  "active_v5": {
+    "model.joblib": {
+      "sha256": "16a932107f2c73f80b03637bdaf1956723734b2de4d58b4b9d96f30b3998d57d",
+      "matches_preserved_v5": true
+    },
+    "metadata.json": {
+      "sha256": "0625694566cf641dc9716ae3ce3436a8508b1d9345479be2f3ff7034a5c07f03",
+      "matches_preserved_v5": true
+    },
+    "frozen_evaluation.json": {
+      "sha256": "83bf1fd04a016d69d5df353a27d1ca24f94118cb833bc2b935d2ebe9533f6347",
+      "matches_preserved_v5": true
+    },
+    "selection_manifest.json": {
+      "sha256": "487554a016d300b97ae1f1a4db0df108c27f23200ff6416a566e918b43a8ef47",
+      "matches_preserved_v5": true
+    },
+    "split_manifest.json": {
+      "sha256": "870af2b6bb046fa6acba529d62163a5f44d893e09d6607f6eb1b6fb1ba77b941",
+      "matches_preserved_v5": true
+    },
+    "release_manifest.json": {
+      "sha256": "caf48cdcb37f6440dab175e351f2654bbcd74882a2dd5c5e771da79ceafbf6fb",
+      "matches_preserved_v5": true
+    }
+  },
+  "data_manifest_sha256": "4394050c7436f3d0db16266fc81776ae060e7da83070f13e180fea60b9e07479",
+  "backend_suite": {
+    "stage": "After V10/V11, before V12 source extensions",
+    "passed": 160,
+    "warnings": 7,
+    "seconds": 54.26,
+    "command": ".venv/Scripts/python.exe -m pytest --basetemp=work/pytest-v10-v11-final-20261027"
+  },
+  "conditional_helper_extension_tests": {
+    "stage": "V12 198-column dispatch/identity extension",
+    "passed": 17,
+    "seconds": 0.3,
+    "actual_final_model_inference": false
+  },
+  "limitations": [
+    "Joint model-quality goal unresolved.",
+    "Repeated development selection is not fresh validation.",
+    "No new browser/frontend/deployment checks; those implementations unchanged.",
+    "V12 results and its final full suite are not included in this closed-study evidence."
+  ]
+}

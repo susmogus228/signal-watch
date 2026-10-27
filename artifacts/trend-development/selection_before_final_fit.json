@@ -1,0 +1,11 @@
+{
+  "selected": null,
+  "plan_sha256": "02dadfb3f6d2e27dcc0f3a9e8e7e7acb6f83b5602aa1ca46d1b53a2a141091dc",
+  "candidate_audits_sha256": "7bb34371801abee2d8b997eaf508863f0ae00c2acee1c3fc411603cc87a76da8",
+  "oof_hashes": {
+    "B": "10836cb9d8f79cea1d5e1bad04c64d821e543b7175e9e4a91c2e0b8fcb457b30",
+    "C": "048c2074f549b1c2bf5da9bb843573968838f88f21c8baa929fe71098c9400d8"
+  },
+  "frozen_at_utc": "2026-10-27T04:17:54.796116+00:00",
+  "fits_before_final": 15
+}

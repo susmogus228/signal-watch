@@ -1,0 +1,17 @@
+# V6 alarm confirmation: implementation rationale
+
+The existing V5 classifier and normal-only next-observation predictor remain the learned components. This experiment adds one causal decision policy over their frozen fused score. It does not retrain a model to predict alarm persistence.
+
+The policy follows the pending-to-firing distinction documented by [Prometheus](https://prometheus.io/docs/prometheus/latest/configuration/alerting_rules/). A positive observation starts a pending episode. Confirmation requires consecutive observed finite scores above the raw threshold spanning the declared elapsed duration. Observations cannot establish the analog signal between samples. A timestamp gap, nonfinite score or nonpositive decision resets the episode. Confirmation emits at the current observation, without backfilling earlier rows or periodically rearming an active alarm.
+
+The five durations are fixed before scanning: 0, 1, 2, 5 and 10 seconds. Zero is an exact identity control. Pending decision scores are capped at the threshold and retain finite exposure. Actual raw model scores remain available separately. As explained in the [scikit-learn decision-threshold guide](https://scikit-learn.org/stable/modules/classification_threshold.html), model scores and the resulting action rule are separate objects. AP on capped decision scores must therefore be distinguished from raw-model AP.
+
+The unchanged onset evaluator uses actual emitted episode starts. A pending episode can start during normal operation and confirm inside an annotated event, producing a valid new detection. It can also start during an anomaly and confirm after that annotation, producing a false onset. Raw origin never overrides emitted-onset status. Confirmed alert time is a subset of raw alert time; false episode counts need not decrease monotonically as confirmation increases.
+
+Selection reuses only preserved, hash-verified development OOF traces. Feasibility retains every raw-detected annotation ID, preserves observed normal exposure exactly, limits normal alert time to 5%, limits false onsets to two per normal hour, and permits at most ten additional seconds of median delay. Equal detection counts cannot compensate for losing a previously detected event. Candidate order and burden/delay tie-breaks are declared in the frozen protocol. Reused OOF is development selection evidence, not independent validation.
+
+After a feasible strict burden improvement is selected, both fixed V5 ML branches are genuinely refitted on their original development and normal anchors. Final in-sample outputs do not choose the policy. A deterministic comparison against the archived template checks reproduction only. The old retrospective evaluation remains inaccessible to this study implementation. A separate release gate decides whether one frozen candidate warrants activation.
+
+Budget exploration selects only among the five saved candidate audits after SHA-256 verification. It changes the false-onset budget while retaining the original event-ID, exposure, alert-time and delay guards; it neither fits a model nor reads retrospective recordings. The active model and confirmation duration remain unchanged by exploration.
+
+No upstream code is copied. The approved root protocol records the primary sequential-calibration research and the limits of calibration transfer. This implementation claims no sequential false-alarm guarantee on unseen operating regimes.

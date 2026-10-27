@@ -1,0 +1,378 @@
+{
+  "recorded_at_utc": "2026-10-27T06:14:37.294706+00:00",
+  "scope": "Pause further research training and package completed SignalWatch results for GitHub-native documentation",
+  "status": "local_documentation_and_exports_complete_publication_not_performed",
+  "training_status": "paused",
+  "active_model": "V5",
+  "latest_research": "V13",
+  "R23_local_documentation_complete": true,
+  "R17_R20_quality_goals_achieved": false,
+  "new_training_fits": 0,
+  "new_model_inference": false,
+  "new_threshold_sweep": false,
+  "training_api_invoked": false,
+  "activation": false,
+  "git_push_or_deploy": false,
+  "new_application_or_global_dependencies": false,
+  "protected_pre_task_files": {
+    "count": 172,
+    "all_match": true,
+    "sha256": {
+      "artifacts/frozen_evaluation.json": "83bf1fd04a016d69d5df353a27d1ca24f94118cb833bc2b935d2ebe9533f6347",
+      "artifacts/frozen_evaluation_legacy_overlap.json": "4f8ba3e8a9fc8031e9d9d78cede65b03e9730efa084f863b5febfbc8ee420699",
+      "artifacts/metadata.json": "0625694566cf641dc9716ae3ce3436a8508b1d9345479be2f3ff7034a5c07f03",
+      "artifacts/model.joblib": "16a932107f2c73f80b03637bdaf1956723734b2de4d58b4b9d96f30b3998d57d",
+      "artifacts/release_manifest.json": "caf48cdcb37f6440dab175e351f2654bbcd74882a2dd5c5e771da79ceafbf6fb",
+      "artifacts/selection_manifest.json": "487554a016d300b97ae1f1a4db0df108c27f23200ff6416a566e918b43a8ef47",
+      "artifacts/split_manifest.json": "870af2b6bb046fa6acba529d62163a5f44d893e09d6607f6eb1b6fb1ba77b941",
+      "artifacts/ablation-development/arm_A_oof_scores.npz": "cd7c2f2bd23f241141871c9a8644b54418f0bf906c80caa5221ed529b1af80ad",
+      "artifacts/ablation-development/arm_B_oof_scores.npz": "ebf6126c11572f2f3f7135248f7586cc291d175f75e90047628d2ee0e6a562a4",
+      "artifacts/ablation-development/arm_C_oof_scores.npz": "8001cafb60600febc92373e3afd5ea756c56ed6c0359a1728ef48dadb25524ef",
+      "artifacts/ablation-development/arm_D_oof_scores.npz": "bacfac7ba7a3233df5a121f5d8856d7ef985d061efcaea85946db2ffb1f41d25",
+      "artifacts/ablation-development/arm_E_oof_scores.npz": "7bb1e0d17e5af6a7938e201f1cbfb84afb826530e84e0c21b4689a5bd3e758eb",
+      "artifacts/ablation-development/calibrated_member_oof_scores.npz": "5d2ec68ad4f9dc35502aad488c7436504d73ba3c300872800eb0aa9fd97b26fc",
+      "artifacts/ablation-development/candidate_audits.json": "edb3c13b48065a9f6c30c067eb274d1de22a13711489b5caa28ed1c8009410c5",
+      "artifacts/ablation-development/plan.json": "e0a401b170779ec36b5e5005f833d5a7f7c0018d7c947fa70251affcc8870f81",
+      "artifacts/ablation-development/prefit_manifest.json": "2add83a7ac8acfb1f85b19e7775752783e5215594505d8306f8c8474d37c88bf",
+      "artifacts/ablation-development/raw_member_oof_scores.npz": "5f47840543804dd38d0a3aa98b99d16412ccd4c4088ef85bc77b4d6aa6917405",
+      "artifacts/ablation-development/report.json": "675d51d09b127699381cf16ba9fc8f1befb63bdc099091942cf3c3076ba2efab",
+      "artifacts/branch-policy-development/candidate_audits.json": "74fb8f4c7854063e7e4c529f42c8596d098e0f7b6994737308f869dc605294fc",
+      "artifacts/branch-policy-development/classifier_ratio_oof_scores.npz": "8a244e9783d95ed8d4ce07567c089b59ff8c8e9c23511d659849479efc4eba03",
+      "artifacts/branch-policy-development/decision_oof_scores.npz": "5233f985f356d63a5ae7edb1986d52c31fcefd3ba007637dca1735cba6af32ba",
+      "artifacts/branch-policy-development/execution_started.json": "29855e26dfbaf446cd7dd52e0f81780f490af76b35d8816b3a84ca1b1133172c",
+      "artifacts/branch-policy-development/plan.json": "d3074c7e0007f3db7b793512bb285d3e7246630687885c266ec882a4c9f60bfd",
+      "artifacts/branch-policy-development/policy_state.npz": "682c52a09f8605a7d598c397861e7822a8104533a16616a00b63d7e3767ced76",
+      "artifacts/branch-policy-development/raw_oof_scores.npz": "4904899a8a7ca8ac43ea33dd3a556f393f6bab717add48686622b3efcfc081c5",
+      "artifacts/branch-policy-development/report.json": "d2386ddb8f77308e3138f8174bfba297509e172fa738c3286c6b64718ed1e0df",
+      "artifacts/branch-policy-development/residual_ratio_oof_scores.npz": "c62674aa0222b3ad1b4ac33c15c02575466b80f4ea3429890ef72657b55d6fd8",
+      "artifacts/calibrated/retrospective_audit.json": "cb73ed96d7e33aac38bac03ca63326b20919764267d56e786341dfd1c9274336",
+      "artifacts/calibrated-development/candidate_audits.json": "a5f86dbdc380c211f244efb029c530b37c9c6ac25192fea9d863616b08a82942",
+      "artifacts/calibrated-development/classifier_oof_scores.npz": "6d2c42d82fc05692ad8214c57a06a7435ba275a83a7a37eca7d8dbdb6231523c",
+      "artifacts/calibrated-development/plan.json": "b370919764343e62e9e9cc176792bf796e5aea908e5ce5ba4b733521fcd2bc6d",
+      "artifacts/calibrated-development/report.json": "499241827eab82ba5794ce4f1abe6192671e8717d9df17ca73eb8aa4ddf44de6",
+      "artifacts/calibrated-development/residual_oof_channels.npz": "500d3253892e04aaa63385566ce0a6410c0ae55889052d3bda72eb99cb627679",
+      "artifacts/calibrated-development/selected_bundle.joblib": "84358e909939d517690a2c11ed5f3b0cfdcd88f6ed7d2d1f8b69f8b5ce8b6dd6",
+      "artifacts/calibrated-development/selected_oof_scores.npz": "c5feb6313c8e209d1fe6be6246997e756fefafa0ddcc4cdf82bd6b684086cd14",
+      "artifacts/calibrated-development/selection_before_refit.json": "3e9895d4d4e620af2e25a9c898a255007a8c203acea77681153e644266e0c9cb",
+      "artifacts/confirmed-development/candidate_audits.json": "186eebea16829759594d5e1fab7b561d26b62d734c96177c8bd5d7ee7a663b92",
+      "artifacts/confirmed-development/plan.json": "c778c9d53f1b7fe481fcc599e2ef375255135e3a366f297a1e44f0b8b2649f4f",
+      "artifacts/confirmed-development/plan_preflight_1.json": "36cd0ea4de3e85964350fbfabaabb88376bb89e912930dde945c095cfb12ea9b",
+      "artifacts/confirmed-development/raw_oof_scores.npz": "4904899a8a7ca8ac43ea33dd3a556f393f6bab717add48686622b3efcfc081c5",
+      "artifacts/confirmed-development/report.json": "6f98871f82960f71fabccbf931942be1c8fcf699c1fc81141c5f0b69a53174c3",
+      "artifacts/confirmed-development/selected_oof_scores.npz": "4904899a8a7ca8ac43ea33dd3a556f393f6bab717add48686622b3efcfc081c5",
+      "artifacts/confirmed-development/selected_policy_state.npz": "02546977fe3f367066582bbfdc863084c8845e26f6709b7de79e3697c8439bca",
+      "artifacts/confirmed-development/selection_before_refit.json": "1a56c4da67f43f2796e439425ea438c27dbca5595c28b8af324bc23c3f6fb897",
+      "artifacts/hybrid/audited_bundle.joblib": "05e4679c7f66df7eff8dfa348eb2146972f5424c92713a25117d65444caa5085",
+      "artifacts/hybrid/audited_development_report.json": "a41a182cda1fd06c964c0ea4054a9f7fd041ba67cc48ffdddf82a8af9a47beb0",
+      "artifacts/hybrid/retrospective_audit.json": "0ff0b1999bb75a54d5cd6de6eb8cff32b896a05f7ebe23146d521284b0c6c16c",
+      "artifacts/hybrid-development/candidate_audits.json": "3cab2ed1e5060f977d8ad6ad12a5e025c9fed774fc4f9b6d907e7bb02c1fcacb",
+      "artifacts/hybrid-development/classifier_oof_scores.npz": "cd7c2f2bd23f241141871c9a8644b54418f0bf906c80caa5221ed529b1af80ad",
+      "artifacts/hybrid-development/plan.json": "0fc5da6ef7a9e2badb6f0d8fdc40f5c47861dca215ff4a12645b9d26a8c5dfdc",
+      "artifacts/hybrid-development/report.json": "8e2c39fc825c105111edd77592f5decf2dd4919d52647f8b719d087c71ce5749",
+      "artifacts/hybrid-development/residual_oof_channels.npz": "500d3253892e04aaa63385566ce0a6410c0ae55889052d3bda72eb99cb627679",
+      "artifacts/hybrid-development/selected_bundle.joblib": "15f74ee1b89bc8da24c9e3ed65ae122efb40790e57f39cddbb0fda92dbd71a55",
+      "artifacts/hybrid-development/selected_oof_scores.npz": "4904899a8a7ca8ac43ea33dd3a556f393f6bab717add48686622b3efcfc081c5",
+      "artifacts/hybrid-development/selection_before_refit.json": "ff1fe88c29e86c890165ab8f781974260a3f5f9a713248c1cef61b6bb5ea0655",
+      "artifacts/pressure-scaled-development/candidate_audits.json": "5b44c46b76f0aa3f993402c753c642044f6031768f8e2ebb973b1dee9cc9bb6c",
+      "artifacts/pressure-scaled-development/execution_started.json": "2fbb6287b4f4b845bdef36c517d6b5b8d53fb88a4e21832bc7648ea8fde02b6b",
+      "artifacts/pressure-scaled-development/K1_fit_evidence.json": "11c00d99a286fbbc42bbc60a87abdc2a80688265d2f23177ac33690d82c22f72",
+      "artifacts/pressure-scaled-development/K1_oof_scores.npz": "10836cb9d8f79cea1d5e1bad04c64d821e543b7175e9e4a91c2e0b8fcb457b30",
+      "artifacts/pressure-scaled-development/K2_fit_evidence.json": "a985a64801aba6f7be2671bbd32b13eb146b901512db793c7868b1b2a387acc5",
+      "artifacts/pressure-scaled-development/K2_oof_scores.npz": "eca77b499b119e7a8ecc3d0efbc7f4e86e8b6ac8d81e3d7a0461235fde33d01c",
+      "artifacts/pressure-scaled-development/K4_fit_evidence.json": "742d9b694b4a19e912d5e38a1d0e3c45942add2c91d52b069043b99a1e2eb485",
+      "artifacts/pressure-scaled-development/K4_oof_scores.npz": "5b21e722b63a4435313d6b42d2fc960d4f26ab05b695aa7802a795fb1f2f25d1",
+      "artifacts/pressure-scaled-development/plan.json": "1ddc87534d98a776942af767d0e8db9222988dd26796292d825a16808a25267c",
+      "artifacts/pressure-scaled-development/report.json": "6fe202065d97dc5eb9c332749e757ca7fc993b840547ed7c2ee6bfe79e5b5b2d",
+      "artifacts/pressure-scaled-development/selection_before_final_fit.json": "b8979f93932a80f745f4283344ad072856cd4dc87689fdcc999990f6987d6f56",
+      "artifacts/regime-development/candidate_audits.json": "e33f2e72508c7f4ea5ea6c3a6bb271d7fd090878918ce70a6d66968df18e4e25",
+      "artifacts/regime-development/execution_started.json": "c9378e577312f3bf9a5d0c1fd46062b31c1150d011b4cf867d29b1fe7a3b85a4",
+      "artifacts/regime-development/K1_fit_evidence.json": "ef5061a8cd8056ba651adb887b77b448d22039ad83bc8dfb5905a0174583f825",
+      "artifacts/regime-development/K1_oof_scores.npz": "10836cb9d8f79cea1d5e1bad04c64d821e543b7175e9e4a91c2e0b8fcb457b30",
+      "artifacts/regime-development/K2_fit_evidence.json": "733253eaa6bcec6f11931574831cf00cfc7e81e92de8ba22091cee5cd65450d9",
+      "artifacts/regime-development/K2_oof_scores.npz": "b795e05eebfaabc15eea8aab4efb206f7c8d0b9fba41041cd762fab9e2ff1a14",
+      "artifacts/regime-development/K4_fit_evidence.json": "20bbb235df8304448385bf5108f237798f9b745a6f4b52fec764f80c14da7710",
+      "artifacts/regime-development/K4_oof_scores.npz": "fcd69f0fefc93ec09f5a772adef238bc0f0da6c3c3a8f0234a388930bb1e51a2",
+      "artifacts/regime-development/plan.json": "0f81f004fe8acc4308b3398ff12c07d9844cf7a9d67e0d9aeea61e6356b58a3e",
+      "artifacts/regime-development/report.json": "b3ee083b9d47a864838bf8f21603bd266fc473210624f02f53371e6878fcb327",
+      "artifacts/regime-development/selection_before_final_fit.json": "246df50a5312e77463e92ba20632668a5d6832787954bbeefe6e0915cb67732f",
+      "artifacts/supervised/retrospective_audit.json": "006fe0070c8c22a3dba9a402b8e0cec64173af63d0ae8051e91a465a23bdc87b",
+      "artifacts/supervised-development/candidate_audits.json": "39edd1afd6ed4be57f6f84e6167affb1ffa6ff028a1d0eedc17aea6be5776a91",
+      "artifacts/supervised-development/plan.json": "b6fcc596cbd1ce7203de58a8b36846addc6f236a28b88bf5bf8de6a4caeddf40",
+      "artifacts/supervised-development/report.json": "c3430ca63036417e61957df49412599d0f688af17e5bc9002364bcdedbd0c4c8",
+      "artifacts/supervised-development/selected_bundle.joblib": "25cf4f547ceb883b9efab30de24397580562a3f5edbbf4df9c3a00d5202711dc",
+      "artifacts/supervised-development/selected_oof_scores.npz": "9e795fedafd669d7c00be809214c2ab2e07082efbe0f06b4bd08402fb1863d4e",
+      "artifacts/supervised-development/selection_before_refit.json": "3be5a4e40638e79c2213be10fe06ee785f3d938ea940c6fb8faca52690aad8e9",
+      "artifacts/supervised-weighted/retrospective_audit.json": "90462e2c8b5795d71b1b6e49e2f651ce2f4fef71b32b1a1db3fbd111e48ac1be",
+      "artifacts/supervised-weighted-development/candidate_audits.json": "40072398706f0426e8153b32ca5d5efda89587f21ce3903c990aff70cbb7f9c1",
+      "artifacts/supervised-weighted-development/plan.json": "598b2a7eace3ddd8e8d9d5bcf2164865b39d0686c743862d30fe12174c0aef5f",
+      "artifacts/supervised-weighted-development/report.json": "c89ba7446fa09ff4416278535a8f4f46b3d5523a4f7caaa3a00bf694f02091db",
+      "artifacts/supervised-weighted-development/selected_bundle.joblib": "2c90ac0d48452412710204b5255e094fd918246985b929f58b3d4560bb73b374",
+      "artifacts/supervised-weighted-development/selected_oof_scores.npz": "cd7c2f2bd23f241141871c9a8644b54418f0bf906c80caa5221ed529b1af80ad",
+      "artifacts/supervised-weighted-development/selection_before_refit.json": "3745cf10af1e50a44d2ed3d2cfe7ac95b048bc09159e84b83ecec31affbd28ba",
+      "artifacts/trend-backbones-development/candidate_audits.json": "1124ec9677b1d99d3314c6d9c5dc9fdba670183de6794964929115577f93fc88",
+      "artifacts/trend-backbones-development/execution_started.json": "bd3860f739ab83ea7d2a8d7bd402ec2a936dd418b9f2c9b407f125303ee0df9b",
+      "artifacts/trend-backbones-development/ExtraTrees256_oof_scores.npz": "d7b997c4c975b845a896b16e660713a7f2543423e32078dad9961b3490686fac",
+      "artifacts/trend-backbones-development/HGB31_oof_scores.npz": "f8bdfcfd5b2e3576166cab0afdd899a2a5c07bf19e184e09dd73e1abc887d380",
+      "artifacts/trend-backbones-development/plan.json": "07af52b8b5485442f5b17c9a1b96af0f47dd38fafb5be2870f4b64ef40c838b0",
+      "artifacts/trend-backbones-development/report.json": "9d12e0f90f8cf4164e74b259e9130a437b1081c9209fc8f892e44d819cec244e",
+      "artifacts/trend-backbones-development/selection_before_final_fit.json": "1bad5141dff2ff555dbd3b85bf86b654203bcf0c025642bb3bd9f4493286d3dd",
+      "artifacts/trend-development/B_oof_scores.npz": "10836cb9d8f79cea1d5e1bad04c64d821e543b7175e9e4a91c2e0b8fcb457b30",
+      "artifacts/trend-development/candidate_audits.json": "7bb34371801abee2d8b997eaf508863f0ae00c2acee1c3fc411603cc87a76da8",
+      "artifacts/trend-development/C_oof_scores.npz": "048c2074f549b1c2bf5da9bb843573968838f88f21c8baa929fe71098c9400d8",
+      "artifacts/trend-development/execution_started.json": "ed1f1ca64f861a3a575890c80376374f386dd3ff650a582322673e6e42c281da",
+      "artifacts/trend-development/inner_mining_oof_scores.npz": "63411983971f8e3e020a5cb647c134a58fd31b291ee0bf41fc9a88ea18553aba",
+      "artifacts/trend-development/plan.json": "02dadfb3f6d2e27dcc0f3a9e8e7e7acb6f83b5602aa1ca46d1b53a2a141091dc",
+      "artifacts/trend-development/report.json": "96ea9680f3a00f910b33564b9a0c03b8e0c8bd963aad4149180444566bfc7939",
+      "artifacts/trend-development/selection_before_final_fit.json": "aa677b89b0b59eb490accee78f76eb3ee3dc1fb95c42bfef72a7aad8c71cdd48",
+      "artifacts/v1/frozen_evaluation.json": "0d6715e66214ea04a3027123647eddd530b05ac9532629a50b4b5569d0f30791",
+      "artifacts/v1/frozen_evaluation_legacy_overlap.json": "4f8ba3e8a9fc8031e9d9d78cede65b03e9730efa084f863b5febfbc8ee420699",
+      "artifacts/v1/metadata.json": "e618804cfea9d6202735a5dc4c270b5c21950133db9101c3c25c1cd785d9b745",
+      "artifacts/v1/model.joblib": "1c8554a484148129b281e7aa6657d078658d778b3cff6edbf3f4f16594a36cc2",
+      "artifacts/v1/preservation_manifest.json": "0dd755040776af62d09fac3be1fb18fb3efc9b0beed870472859ea8009fc42a9",
+      "artifacts/v1/selection_manifest.json": "7e5f66ae2cc62b469d9c07a5849919004f7861c4af5f6234fd779b1e017c8399",
+      "artifacts/v1/split_manifest.json": "870af2b6bb046fa6acba529d62163a5f44d893e09d6607f6eb1b6fb1ba77b941",
+      "artifacts/v1/source/DATA_CARD.md": "a5285d3cf00ed54eac61e7a315d431764c5a5754401376f28cb74a8b9d4f33f4",
+      "artifacts/v1/source/evaluation.py": "0eb035ac817f7e1ab07cd6ab14aecb039300645bbf45e6507f58c22d201a4b36",
+      "artifacts/v1/source/ml.py": "90f92e9d6767ef698f9e4fe514a57d5eccd7f5732ef17584ebf7792b1d86b361",
+      "artifacts/v1/source/ML_EVALUATION.md": "c2fd35fa375392afdb3cd8babb7fd5527b1738104f06c9e3dd800a4599d35451",
+      "artifacts/v1/source/MODEL_CARD.md": "d6ae8651dfbc07b2ca330dfdb877ba52a878283a005ea72da4e65bc76d919775",
+      "artifacts/v2/retrospective_audit.json": "0c9e3cacd0071b7d424f6b7d7625b9791aea21bfa03009110ca9e9ad9deb40bf",
+      "artifacts/v2-development/candidate_audits.json": "f292d5ab1d734adeeeed91c21dcbd3483062069d0de94008245c9e840f12f88f",
+      "artifacts/v2-development/plan.json": "4e8df4eef631e2f03fb50b2e014e8f622c00892df18b8b16f871e97f5aaabafe",
+      "artifacts/v2-development/report.json": "f57f932810878dde4c01a93211e4dd62d25e10b25248baf2d1c4e14c5dd94e2d",
+      "artifacts/v2-development/selected_bundle.joblib": "ed2ba66dcf6f9fe7b3215b1de03eb2cd370dc6f2dc05ce134ae38614adff268b",
+      "artifacts/v2-development/selected_oof_scores.npz": "7a0eab75ceec54bb49565d246a23aa6458bfab92a8f9e630bfd05abd18d8daed",
+      "artifacts/v2-development/selection_before_refit.json": "54b2e1aefa125407dd5f8c6eae9ee1c39da2d3795d521c4b0c8e40836acf16d2",
+      "artifacts/v4/frozen_evaluation.json": "dce093bbc0a55e6315679cc161ab23a2a7c5801b47ce326306d6fca0cc9dfc07",
+      "artifacts/v4/metadata.json": "a18eb31c8d86905ad8a621234a0516b92b56098c2c29ae5bf414f4df3f19c497",
+      "artifacts/v4/model.joblib": "eb198d7e3c82c2d7600eda83d6df101ed2160e6a7e5994b4d5d3d1f6bce1048b",
+      "artifacts/v4/preservation_manifest.json": "d23db63f2d0395bb965def42f0370fb3e4a9e47f3acdce1ac484aca83e43b11b",
+      "artifacts/v4/release_manifest.json": "5b9261bebb960f5c7e66f329bc6ba076a1e568443aa206c5c72ab2084efe2694",
+      "artifacts/v4/selection_manifest.json": "8166009ebb28f46439ced04d1c7ebca34ff52e8b7b4312d40b12d4914460afbe",
+      "artifacts/v4/split_manifest.json": "870af2b6bb046fa6acba529d62163a5f44d893e09d6607f6eb1b6fb1ba77b941",
+      "artifacts/v4/development/candidate_audits.json": "40072398706f0426e8153b32ca5d5efda89587f21ce3903c990aff70cbb7f9c1",
+      "artifacts/v4/development/plan.json": "598b2a7eace3ddd8e8d9d5bcf2164865b39d0686c743862d30fe12174c0aef5f",
+      "artifacts/v4/development/report.json": "c89ba7446fa09ff4416278535a8f4f46b3d5523a4f7caaa3a00bf694f02091db",
+      "artifacts/v4/development/selected_bundle.joblib": "2c90ac0d48452412710204b5255e094fd918246985b929f58b3d4560bb73b374",
+      "artifacts/v4/development/selected_oof_scores.npz": "cd7c2f2bd23f241141871c9a8644b54418f0bf906c80caa5221ed529b1af80ad",
+      "artifacts/v4/development/selection_before_refit.json": "3745cf10af1e50a44d2ed3d2cfe7ac95b048bc09159e84b83ecec31affbd28ba",
+      "artifacts/v4/source/evaluation.py": "453005a0c7622b4cd7103acb5b3ca4ec5d90f834d2abcade6d230cdf315ba4c2",
+      "artifacts/v4/source/ml.py": "a8c76ee157d0a2ea2b37d1ffbc4a939945597d56291cf0907804e010bc4f9587",
+      "artifacts/v4/source/ml_supervised.py": "ff3e713af3a1ef4b739c088bf83c29399f69cd7835100979df8b22b204170a11",
+      "artifacts/v4/source/ml_supervised_weighted.py": "ab5a7d2a3c2179c2e8bccab724ad42d5a2f6c0da3dfce3914d16f7f22817ef49",
+      "artifacts/v4/source/ml_v2.py": "5d1afcf5c53c058776d9d7df46261207e50b0bac9ba45b5e0225e037e1da2de1",
+      "artifacts/v4/source/release.py": "695f2a593ec27ae657526635705257b3d61cd965aff6432db3c2d23ee6c88401",
+      "artifacts/v5/frozen_evaluation.json": "83bf1fd04a016d69d5df353a27d1ca24f94118cb833bc2b935d2ebe9533f6347",
+      "artifacts/v5/metadata.json": "0625694566cf641dc9716ae3ce3436a8508b1d9345479be2f3ff7034a5c07f03",
+      "artifacts/v5/model.joblib": "16a932107f2c73f80b03637bdaf1956723734b2de4d58b4b9d96f30b3998d57d",
+      "artifacts/v5/preservation_manifest.json": "51bc088c60a47c2c7bf3f58d2abd75d9e482009060c4ddb2bf2ee5bb437b6dd5",
+      "artifacts/v5/release_manifest.json": "caf48cdcb37f6440dab175e351f2654bbcd74882a2dd5c5e771da79ceafbf6fb",
+      "artifacts/v5/selection_manifest.json": "487554a016d300b97ae1f1a4db0df108c27f23200ff6416a566e918b43a8ef47",
+      "artifacts/v5/split_manifest.json": "870af2b6bb046fa6acba529d62163a5f44d893e09d6607f6eb1b6fb1ba77b941",
+      "artifacts/v5/audit/audited_bundle.joblib": "05e4679c7f66df7eff8dfa348eb2146972f5424c92713a25117d65444caa5085",
+      "artifacts/v5/audit/audited_development_report.json": "a41a182cda1fd06c964c0ea4054a9f7fd041ba67cc48ffdddf82a8af9a47beb0",
+      "artifacts/v5/audit/retrospective_audit.json": "0ff0b1999bb75a54d5cd6de6eb8cff32b896a05f7ebe23146d521284b0c6c16c",
+      "artifacts/v5/development/candidate_audits.json": "3cab2ed1e5060f977d8ad6ad12a5e025c9fed774fc4f9b6d907e7bb02c1fcacb",
+      "artifacts/v5/development/classifier_oof_scores.npz": "cd7c2f2bd23f241141871c9a8644b54418f0bf906c80caa5221ed529b1af80ad",
+      "artifacts/v5/development/plan.json": "0fc5da6ef7a9e2badb6f0d8fdc40f5c47861dca215ff4a12645b9d26a8c5dfdc",
+      "artifacts/v5/development/report.json": "8e2c39fc825c105111edd77592f5decf2dd4919d52647f8b719d087c71ce5749",
+      "artifacts/v5/development/residual_oof_channels.npz": "500d3253892e04aaa63385566ce0a6410c0ae55889052d3bda72eb99cb627679",
+      "artifacts/v5/development/selected_bundle.joblib": "15f74ee1b89bc8da24c9e3ed65ae122efb40790e57f39cddbb0fda92dbd71a55",
+      "artifacts/v5/development/selected_oof_scores.npz": "4904899a8a7ca8ac43ea33dd3a556f393f6bab717add48686622b3efcfc081c5",
+      "artifacts/v5/development/selection_before_refit.json": "ff1fe88c29e86c890165ab8f781974260a3f5f9a713248c1cef61b6bb5ea0655",
+      "artifacts/v5/source/dataset.py": "0f854d5772a555dd80b0874987e68f6d2d6494741046ad871382cd031738106a",
+      "artifacts/v5/source/development.py": "e865ca5e361c94e54eec7eaa6ad73bd71bbed048eb4154c4711539a285fe44b3",
+      "artifacts/v5/source/evaluation.py": "dbf17c12a6b8a4e3201fa6753f4a3ff0568677322f2e7ea4bf00752c9f1e31e0",
+      "artifacts/v5/source/ml.py": "f3c725f2f9431f53cbc3d22a1bc3e484d5d8a43aa8f3419b858b5822c533bfde",
+      "artifacts/v5/source/ml_hybrid.py": "1b1d706ee23cbf1a68e1b39ae11c0000df94ee376452c79f969c718a2f492823",
+      "artifacts/v5/source/ml_supervised.py": "ff3e713af3a1ef4b739c088bf83c29399f69cd7835100979df8b22b204170a11",
+      "artifacts/v5/source/ml_supervised_weighted.py": "ab5a7d2a3c2179c2e8bccab724ad42d5a2f6c0da3dfce3914d16f7f22817ef49",
+      "artifacts/v5/source/ml_v2.py": "5d1afcf5c53c058776d9d7df46261207e50b0bac9ba45b5e0225e037e1da2de1",
+      "artifacts/v5/source/release.py": "a8126823d599e7245ec1dd850588dda79c62c1229f84dee368049995d1e39759",
+      "data/manifest.json": "4394050c7436f3d0db16266fc81776ae060e7da83070f13e180fea60b9e07479"
+    }
+  },
+  "frozen_v13_dependencies": {
+    "count": 75,
+    "all_match": true
+  },
+  "source_export_manifest": "docs/research/manifest.json",
+  "source_export_manifest_sha256": "25b9476a02440a70d3dd1146a08e74d0de3a217d808740d2a56251b46646b0ca",
+  "source_json_files": 10,
+  "data_image_exports": 10,
+  "figures": {
+    "PNG": 3,
+    "SVG": 3,
+    "CSV": 3,
+    "JSON": 1,
+    "source_and_output_hashes_match": true,
+    "SVG_XML_valid_no_script_animation_or_foreignObject": true
+  },
+  "exporter_verification": {
+    "command": ".venv/Scripts/python.exe scripts/build_research_summary.py --check",
+    "result": "PASS",
+    "no_plotting_model_dependency_imported": true,
+    "exact_ten_outputs_enforced": true,
+    "negative_omitted_SVG_in_copied_manifest": "PASS: rejected Missing or unexpected manifest output; actual manifest unchanged",
+    "generator_imports": [
+      "__future__",
+      "pathlib",
+      "matplotlib.ticker",
+      "argparse",
+      "csv",
+      "hashlib",
+      "io",
+      "json",
+      "matplotlib",
+      "matplotlib.pyplot",
+      "matplotlib"
+    ]
+  },
+  "independent_qa": {
+    "profile": "Model QA Specialist",
+    "metric_document_figure_review": "PASS after three low findings corrected",
+    "metric_fields_reconciled": 140,
+    "result_rows": 14,
+    "frontier_cutoffs": 6,
+    "gradual_delays": 12,
+    "findings_resolved": [
+      "Enforce exact ten manifest outputs",
+      "State single physical testbed for all represented benchmark recordings",
+      "Correct optional retraining description to selected V5 hybrid study"
+    ],
+    "final_evidence_JSON_review": "Root validation; not covered by the independent delta review",
+    "boundary": "Internal factual review, not external peer review or model-quality approval"
+  },
+  "browser_preview": {
+    "renderer": "Local marked-based HTML preview; Mermaid source remains unrendered",
+    "checks": {
+      "resultsDesktop": {
+        "images": [
+          {
+            "loaded": true,
+            "src": "research/figures/audit-tradeoff.png"
+          },
+          {
+            "loaded": true,
+            "src": "research/figures/pressure-tradeoff.png"
+          },
+          {
+            "loaded": true,
+            "src": "research/figures/pressure-conditioning.png"
+          }
+        ],
+        "scrollWidth": 1265,
+        "tables": [
+          {
+            "scroll": 916,
+            "width": 916
+          },
+          {
+            "scroll": 916,
+            "width": 916
+          },
+          {
+            "scroll": 916,
+            "width": 916
+          },
+          {
+            "scroll": 916,
+            "width": 916
+          }
+        ],
+        "width": 1280
+      },
+      "results390": {
+        "images": [
+          {
+            "loaded": true,
+            "src": "research/figures/audit-tradeoff.png"
+          },
+          {
+            "loaded": true,
+            "src": "research/figures/pressure-tradeoff.png"
+          },
+          {
+            "loaded": true,
+            "src": "research/figures/pressure-conditioning.png"
+          }
+        ],
+        "scrollWidth": 375,
+        "width": 390
+      },
+      "results304": {
+        "scrollWidth": 289,
+        "width": 304
+      },
+      "readme304": {
+        "images": [
+          {
+            "loaded": true,
+            "src": "docs/research/figures/audit-tradeoff.png"
+          },
+          {
+            "loaded": true,
+            "src": "docs/screenshots/audit-v5-desktop.jpg"
+          }
+        ],
+        "scrollWidth": 289,
+        "width": 304
+      }
+    },
+    "document_overflow": false,
+    "all_images_loaded": true,
+    "navigation_checked": [
+      "README to results",
+      "Results return to README run-locally anchor"
+    ],
+    "GitHub_live_render_tested": false,
+    "physical_device_tested": false,
+    "temporary_viewport_override_reset": true,
+    "deliverable_preview": "http://127.0.0.1:8773/work/github-research-packaging-20261027/README.html#what-we-measured",
+    "screenshot": "work/github-research-packaging-20261027/research-preview.png"
+  },
+  "format_checks": {
+    "owned_English_files": [
+      "README.md",
+      "docs/RESULTS.md",
+      "docs/research/README.md",
+      "docs/RESEARCH_LOG.md",
+      "docs/MODEL_CARD.md",
+      "docs/REQUIREMENTS.md",
+      "docs/RESOURCES.md",
+      "docs/VERIFICATION.md",
+      "scripts/build_research_summary.py"
+    ],
+    "local_markdown_links_checked": 127,
+    "missing_links": [],
+    "fenced_blocks_balanced": true
+  },
+  "owned_file_sha256": {
+    "README.md": "bcaa4c7f4f7d6b1aadaea078cfa727a08ab98d67576a33df59e53b7267328d15",
+    "docs/RESULTS.md": "e7ff1ca44646c89f415ea2c62856a230512339fcf09498fc42daf0a63606bc69",
+    "docs/research/README.md": "f4c7bf99b9e8258e0641410f6339778017c9510e83e35bf971c39ea1ece5ae7b",
+    "docs/RESEARCH_LOG.md": "055873574643065b51e5acdf978b9d66698321da010703a56c21fc1903d44251",
+    "docs/MODEL_CARD.md": "a3f97f4a06d99789d09eb83c47e189dbdfd8c70d2469587a39d92ad663596de7",
+    "docs/REQUIREMENTS.md": "86e8a16e1fab78120de83406df1dc14c95930bdb6b90cb60941b2ca7218b8474",
+    "docs/RESOURCES.md": "d0692306e0669e87e06542266e97bdbdfc0ab1ea90fa2762f96e3c1731b6e10d",
+    "docs/VERIFICATION.md": "4052dddac96d1182624325925a74a72a11fa87a27e3f7b3a124747cb33335b77",
+    "scripts/build_research_summary.py": "354139a0d3f42d1dc8829ad79fb76074bbf77e1de94e42da131627de71af1a39"
+  },
+  "backend_suite": {
+    "rerun_for_this_task": false,
+    "historical_V13_result": {
+      "passed": 192,
+      "warnings": 7,
+      "seconds": 54.63
+    },
+    "interpretation": "Earlier source verification, not a new documentation-task test run"
+  },
+  "limitations": [
+    "No live GitHub publication/render check or Mermaid render check",
+    "No fresh independent dataset or field-equipment validation",
+    "No external clean-install or physical-device proof",
+    "Existing manual training feature remains available; this task did not invoke it",
+    "R17/R20 remain open; a paused research snapshot is not a production-reliability claim"
+  ],
+  "final_root_validation": "PASS: current owned-file hashes and all newly linked deliverables exist; JSON parses; independent metric/document findings resolved."
+}

@@ -1,0 +1,376 @@
+{
+  "study": "controlled-ablation-v8",
+  "schema_version": 1,
+  "source_snapshot": "b2c0d46c2971dcbfe71e26087b6d231998bb91c2",
+  "protocol_path": "docs/ML_V8_ABLATION_PLAN.md",
+  "protocol_sha256": "fd16042b8011e85d619bf1681cbf09185a9c68536fdeddcfbf6e31cc78210fd9",
+  "dependencies": {
+    "docs/ML_V8_ABLATION_PLAN.md": "fd16042b8011e85d619bf1681cbf09185a9c68536fdeddcfbf6e31cc78210fd9",
+    "signalwatch/ml_ablation.py": "2cb9e6446752e711a446ccf1a716e3d8f77ad9f07ba3dc2fcecc634f2038d41b",
+    "tests/test_ml_ablation.py": "0b3a71ac63d1c784a231931ac21c79861fd176aea33aeb2f271b39b1ae6ca176",
+    "scripts/study_ablation.py": "5a4745f80135fd75e0f3037b900cbfa55a0f2e26ef9cd7089431941fe0d5c6fe",
+    "artifacts/v5/preservation_manifest.json": "51bc088c60a47c2c7bf3f58d2abd75d9e482009060c4ddb2bf2ee5bb437b6dd5",
+    "artifacts/v5/development/plan.json": "0fc5da6ef7a9e2badb6f0d8fdc40f5c47861dca215ff4a12645b9d26a8c5dfdc",
+    "artifacts/v5/development/report.json": "8e2c39fc825c105111edd77592f5decf2dd4919d52647f8b719d087c71ce5749",
+    "artifacts/v5/development/classifier_oof_scores.npz": "cd7c2f2bd23f241141871c9a8644b54418f0bf906c80caa5221ed529b1af80ad",
+    "artifacts/v5/development/residual_oof_channels.npz": "500d3253892e04aaa63385566ce0a6410c0ae55889052d3bda72eb99cb627679",
+    "artifacts/v5/development/selected_oof_scores.npz": "4904899a8a7ca8ac43ea33dd3a556f393f6bab717add48686622b3efcfc081c5",
+    "artifacts/calibrated-development/plan.json": "b370919764343e62e9e9cc176792bf796e5aea908e5ce5ba4b733521fcd2bc6d",
+    "artifacts/calibrated-development/report.json": "499241827eab82ba5794ce4f1abe6192671e8717d9df17ca73eb8aa4ddf44de6",
+    "artifacts/calibrated-development/classifier_oof_scores.npz": "6d2c42d82fc05692ad8214c57a06a7435ba275a83a7a37eca7d8dbdb6231523c",
+    "artifacts/v1/preservation_manifest.json": "0dd755040776af62d09fac3be1fb18fb3efc9b0beed870472859ea8009fc42a9",
+    "artifacts/v1/model.joblib": "1c8554a484148129b281e7aa6657d078658d778b3cff6edbf3f4f16594a36cc2",
+    "artifacts/v1/metadata.json": "e618804cfea9d6202735a5dc4c270b5c21950133db9101c3c25c1cd785d9b745",
+    "artifacts/v1/split_manifest.json": "870af2b6bb046fa6acba529d62163a5f44d893e09d6607f6eb1b6fb1ba77b941",
+    "signalwatch/ml_calibrated.py": "f0fa3fa40c4d05174279efc18e9d5b38bae1f1f871147f5316cae4ff32b03e00",
+    "signalwatch/ml_hybrid.py": "1b1d706ee23cbf1a68e1b39ae11c0000df94ee376452c79f969c718a2f492823",
+    "signalwatch/ml_v2.py": "5d1afcf5c53c058776d9d7df46261207e50b0bac9ba45b5e0225e037e1da2de1",
+    "signalwatch/ml_supervised.py": "ff3e713af3a1ef4b739c088bf83c29399f69cd7835100979df8b22b204170a11",
+    "signalwatch/ml_supervised_weighted.py": "ab5a7d2a3c2179c2e8bccab724ad42d5a2f6c0da3dfce3914d16f7f22817ef49",
+    "signalwatch/dataset.py": "0f854d5772a555dd80b0874987e68f6d2d6494741046ad871382cd031738106a",
+    "signalwatch/evaluation.py": "dbf17c12a6b8a4e3201fa6753f4a3ff0568677322f2e7ea4bf00752c9f1e31e0"
+  },
+  "development_ids": [
+    "other-3",
+    "other-6",
+    "other-9",
+    "other-12",
+    "valve1-0",
+    "valve1-3",
+    "valve1-6",
+    "valve1-9",
+    "valve1-12",
+    "valve1-15",
+    "valve2-0",
+    "valve2-3"
+  ],
+  "source_hashes": {
+    "anomaly-free": "7641a8742957100ef424dd97adfb3eeab27d4d180645fe2b3c49b7f7146ae9a6",
+    "other-3": "f3c19a89f74f62a475c246b9263f161f7a734dd88304de803939cebaa55c7ebd",
+    "other-6": "eb8f05622a62c855040ea358b87be35fb1a4a3720ba0610569bab384db4b6e04",
+    "other-9": "11c4514b0bc706acff637fea6707ad9258ac878fe9dff3d0b11d2b618d94d8ea",
+    "other-12": "b0882efbcf2669223ae78bee61c9f10074a9b2375f0e86b8957ae5ce4aad1e72",
+    "valve1-0": "16af3f71313a23dd33d9b7b8065d836d05c3f9257588881cc7fbe07c076d9dc8",
+    "valve1-3": "cb6afea108eddfd8447307e405f86bbb764b8d8e9130d7849a46e1303e19b8b2",
+    "valve1-6": "97469c0e0c9c0e0ee5d30794f1f36c6785df5816a112a8b16c59637e8c894685",
+    "valve1-9": "2aa1ae1b2ff505caecda24802b877dc686924bbbeeb7e7db4faa261efb5ed5bd",
+    "valve1-12": "90adfa9bc86d4556e6a4ce734436fd5685af79c189cd9828f8df75a7f468ce07",
+    "valve1-15": "75cc86ab25d7091eee024739fa06d048753480d5d7d1507077231cab4f1b7a7e",
+    "valve2-0": "a6670e7a68c7c6ba62c649bd9d350633e80db624578e9529f2b736ced5e32bde",
+    "valve2-3": "86927555d5c523e587d41500bd5dee4e2468289ec1b988ac17755aeae697d7f8"
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "heldout_ids": [
+        "other-3",
+        "other-12",
+        "valve1-6",
+        "valve1-15"
+      ],
+      "train_ids": [
+        "other-6",
+        "other-9",
+        "valve1-0",
+        "valve1-3",
+        "valve1-9",
+        "valve1-12",
+        "valve2-0",
+        "valve2-3"
+      ]
+    },
+    {
+      "fold": 1,
+      "heldout_ids": [
+        "other-6",
+        "valve1-0",
+        "valve1-9",
+        "valve2-0"
+      ],
+      "train_ids": [
+        "other-3",
+        "other-9",
+        "other-12",
+        "valve1-3",
+        "valve1-6",
+        "valve1-12",
+        "valve1-15",
+        "valve2-3"
+      ]
+    },
+    {
+      "fold": 2,
+      "heldout_ids": [
+        "other-9",
+        "valve1-3",
+        "valve1-12",
+        "valve2-3"
+      ],
+      "train_ids": [
+        "other-3",
+        "other-6",
+        "other-12",
+        "valve1-0",
+        "valve1-6",
+        "valve1-9",
+        "valve1-15",
+        "valve2-0"
+      ]
+    }
+  ],
+  "nested_folds": [
+    {
+      "fold": 0,
+      "outer_train_ids": [
+        "other-6",
+        "other-9",
+        "valve1-0",
+        "valve1-3",
+        "valve1-9",
+        "valve1-12",
+        "valve2-0",
+        "valve2-3"
+      ],
+      "outer_heldout_ids": [
+        "other-3",
+        "other-12",
+        "valve1-6",
+        "valve1-15"
+      ],
+      "inner_splits": [
+        {
+          "member": 0,
+          "fit_ids": [
+            "other-9",
+            "valve1-0",
+            "valve1-3",
+            "valve1-9",
+            "valve2-3"
+          ],
+          "calibration_ids": [
+            "other-6",
+            "valve1-12",
+            "valve2-0"
+          ]
+        },
+        {
+          "member": 1,
+          "fit_ids": [
+            "other-6",
+            "valve1-0",
+            "valve1-12",
+            "valve1-9",
+            "valve2-0"
+          ],
+          "calibration_ids": [
+            "other-9",
+            "valve1-3",
+            "valve2-3"
+          ]
+        },
+        {
+          "member": 2,
+          "fit_ids": [
+            "other-6",
+            "other-9",
+            "valve1-12",
+            "valve1-3",
+            "valve2-0",
+            "valve2-3"
+          ],
+          "calibration_ids": [
+            "valve1-0",
+            "valve1-9"
+          ]
+        }
+      ]
+    },
+    {
+      "fold": 1,
+      "outer_train_ids": [
+        "other-3",
+        "other-9",
+        "other-12",
+        "valve1-3",
+        "valve1-6",
+        "valve1-12",
+        "valve1-15",
+        "valve2-3"
+      ],
+      "outer_heldout_ids": [
+        "other-6",
+        "valve1-0",
+        "valve1-9",
+        "valve2-0"
+      ],
+      "inner_splits": [
+        {
+          "member": 0,
+          "fit_ids": [
+            "other-3",
+            "other-9",
+            "valve1-15",
+            "valve1-3",
+            "valve2-3"
+          ],
+          "calibration_ids": [
+            "other-12",
+            "valve1-12",
+            "valve1-6"
+          ]
+        },
+        {
+          "member": 1,
+          "fit_ids": [
+            "other-12",
+            "other-9",
+            "valve1-12",
+            "valve1-3",
+            "valve1-6"
+          ],
+          "calibration_ids": [
+            "other-3",
+            "valve1-15",
+            "valve2-3"
+          ]
+        },
+        {
+          "member": 2,
+          "fit_ids": [
+            "other-12",
+            "other-3",
+            "valve1-12",
+            "valve1-15",
+            "valve1-6",
+            "valve2-3"
+          ],
+          "calibration_ids": [
+            "other-9",
+            "valve1-3"
+          ]
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "outer_train_ids": [
+        "other-3",
+        "other-6",
+        "other-12",
+        "valve1-0",
+        "valve1-6",
+        "valve1-9",
+        "valve1-15",
+        "valve2-0"
+      ],
+      "outer_heldout_ids": [
+        "other-9",
+        "valve1-3",
+        "valve1-12",
+        "valve2-3"
+      ],
+      "inner_splits": [
+        {
+          "member": 0,
+          "fit_ids": [
+            "other-3",
+            "other-6",
+            "valve1-15",
+            "valve1-6",
+            "valve2-0"
+          ],
+          "calibration_ids": [
+            "other-12",
+            "valve1-0",
+            "valve1-9"
+          ]
+        },
+        {
+          "member": 1,
+          "fit_ids": [
+            "other-12",
+            "other-6",
+            "valve1-0",
+            "valve1-6",
+            "valve1-9"
+          ],
+          "calibration_ids": [
+            "other-3",
+            "valve1-15",
+            "valve2-0"
+          ]
+        },
+        {
+          "member": 2,
+          "fit_ids": [
+            "other-12",
+            "other-3",
+            "valve1-0",
+            "valve1-15",
+            "valve1-9",
+            "valve2-0"
+          ],
+          "calibration_ids": [
+            "other-6",
+            "valve1-6"
+          ]
+        }
+      ]
+    }
+  ],
+  "arms": {
+    "A": "Saved V5 outer-full8-fit OOF, not final all-development in-sample predictions.",
+    "B": "Raw probability of fixed inner member0.",
+    "C": "Same member0 with its frozen sigmoid.",
+    "D": "Mean3 raw member probabilities.",
+    "E": "Mean3 sigmoid probabilities, reproduce saved V7 classifier OOF."
+  },
+  "training": "Exactly9nested HGB/calibrator fits via unchanged V7 helper; outer-held excluded from fitting/preprocessing/calibration; no final/deployment fit.",
+  "losses": "Classifier-only unweighted Brier/logloss/AP, pooled+equal-record macro+perrecord; explicit labels[0,1]; sklearn float64 epsilon clipping. Proper losses do not isolate calibration.",
+  "sigmoid": "Record a,b orientation, raw/calibrated saturation<=1e-12 or>=1-1e-12, unique scores/ties and perrecordAP.",
+  "E_reproduction_atol": 1e-12,
+  "E_reproduction_rtol": 0.0,
+  "fixed_cutoff": 0.8580258155093349,
+  "normal_quantiles": [
+    0.95,
+    0.975,
+    0.99,
+    0.995,
+    0.999,
+    1.0
+  ],
+  "additional_cutoff": "nextafter(max normal,+inf)",
+  "cutoff_filter": "Deduplicate finite positive values; retain all quantile labels for paired comparisons.",
+  "residual_aggregation": "max",
+  "residual_threshold": 16.174573325357347,
+  "maximum_scan_points": 35,
+  "fixed_diagnostic_points": 5,
+  "screen": {
+    "min_events": 26,
+    "max_false_per_normal_hour": 2.0,
+    "max_normal_alert_fraction": 0.05,
+    "strictly_less_false_than_saved_V5": true,
+    "normal_alert_seconds_no_more_than_saved_V5": true
+  },
+  "rank": "Maximumevents,fewerfalse,lowernormalalertseconds,lowerworstfamilyrate,median/mean delay,armA-E,thresholdorder.",
+  "selection_outputs": [
+    "best_all",
+    "best_control_A",
+    "best_new"
+  ],
+  "new_arms": [
+    "B",
+    "C",
+    "D",
+    "E"
+  ],
+  "paired_comparisons": [
+    "B/C",
+    "D/E"
+  ],
+  "old_test_access": false,
+  "deployment_fit": false,
+  "activation": false,
+  "inference_guard": "Use only exact12developmentIDs, parsed actualsha256 matched frozen hashes, exactfold/sourcearray eligibility. No catalog/test loader, no audit files or final-model files read.",
+  "interpretation": "Controlled development research only; separately tuned cutoffs confound action comparisons; repeated development cannot establish generalization."
+}

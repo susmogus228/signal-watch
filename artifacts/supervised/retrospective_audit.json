@@ -1,0 +1,3951 @@
+{
+  "schema_version": 2,
+  "study_version": 3,
+  "scope": "retrospective_audit_supervised",
+  "recording_count": 23,
+  "methods": {
+    "learned": {
+      "total_events": 28,
+      "detected_events": 23,
+      "missed_events": 5,
+      "false_episodes": 40,
+      "observed_normal_seconds": 18208.0,
+      "total_normal_seconds": 18285.0,
+      "observed_seconds": 26968.0,
+      "alert_seconds": 4884.0,
+      "false_alert_seconds": 270.0,
+      "true_positive_samples": 4396,
+      "false_positive_samples": 235,
+      "scored_samples": 25677,
+      "false_episodes_per_hour": 7.9086115992970125,
+      "mean_delay_seconds": 36.78260869565217,
+      "median_delay_seconds": 35.0,
+      "alert_fraction": 0.18110353010975971,
+      "normal_alert_fraction": 0.014828646748681899,
+      "point_precision": 0.9492550205139278,
+      "average_precision": 0.7968645389694925,
+      "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+      "event_recall": 0.8214285714285714
+    },
+    "robust": {
+      "total_events": 28,
+      "detected_events": 4,
+      "missed_events": 24,
+      "false_episodes": 3,
+      "observed_normal_seconds": 17311.0,
+      "total_normal_seconds": 18285.0,
+      "observed_seconds": 25906.0,
+      "alert_seconds": 25.0,
+      "false_alert_seconds": 7.0,
+      "true_positive_samples": 19,
+      "false_positive_samples": 7,
+      "scored_samples": 24687,
+      "false_episodes_per_hour": 0.623880769452949,
+      "mean_delay_seconds": 62.75,
+      "median_delay_seconds": 2.0,
+      "alert_fraction": 0.0009650274067783525,
+      "normal_alert_fraction": 0.0004043671653861706,
+      "point_precision": 0.7307692307692307,
+      "average_precision": 0.3718695750919331,
+      "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+      "event_recall": 0.14285714285714285
+    },
+    "persistence": {
+      "total_events": 28,
+      "detected_events": 8,
+      "missed_events": 20,
+      "false_episodes": 86,
+      "observed_normal_seconds": 17311.0,
+      "total_normal_seconds": 18285.0,
+      "observed_seconds": 25906.0,
+      "alert_seconds": 313.0,
+      "false_alert_seconds": 114.0,
+      "true_positive_samples": 193,
+      "false_positive_samples": 110,
+      "scored_samples": 24687,
+      "false_episodes_per_hour": 17.884582057651205,
+      "mean_delay_seconds": 57.0,
+      "median_delay_seconds": 9.5,
+      "alert_fraction": 0.012082143132864973,
+      "normal_alert_fraction": 0.00658540812200335,
+      "point_precision": 0.636963696369637,
+      "average_precision": 0.39052368772487484,
+      "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+      "event_recall": 0.2857142857142857
+    }
+  },
+  "per_recording": [
+    {
+      "id": "other-1",
+      "group": "other",
+      "rows": 745,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 582.0,
+          "total_normal_seconds": 584.0,
+          "observed_seconds": 778.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 743,
+          "average_precision": 0.8795536839861866
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 553.0,
+          "total_normal_seconds": 584.0,
+          "observed_seconds": 749.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 715,
+          "average_precision": 0.2714970538814526
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 553.0,
+          "total_normal_seconds": 584.0,
+          "observed_seconds": 749.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 715,
+          "average_precision": 0.21456025957960626
+        }
+      },
+      "events": [
+        {
+          "id": "other-1-event-0",
+          "title": "Annotated interval 1",
+          "status": "missed",
+          "start_index": 557,
+          "end_index": 744,
+          "start_seconds": 584.0,
+          "end_seconds": 780.0,
+          "first_alert_seconds": null,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "other-2",
+      "group": "other",
+      "rows": 780,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 411.0,
+          "total_normal_seconds": 413.0,
+          "observed_seconds": 812.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 54.0,
+          "median_delay_seconds": 54.0,
+          "delay_seconds": [
+            54.0
+          ],
+          "alert_seconds": 6.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 6,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.015706806282722512,
+          "alert_fraction": 0.007389162561576354,
+          "scored_samples": 776,
+          "average_precision": 0.9862472412151349
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 382.0,
+          "total_normal_seconds": 413.0,
+          "observed_seconds": 753.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 720,
+          "average_precision": 0.48202964502740675
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 382.0,
+          "total_normal_seconds": 413.0,
+          "observed_seconds": 753.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 720,
+          "average_precision": 0.43676583250701506
+        }
+      },
+      "events": [
+        {
+          "id": "other-2-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 104,
+          "end_index": 487,
+          "start_seconds": 354.0,
+          "end_seconds": 756.0,
+          "first_alert_seconds": 408.0,
+          "delay_seconds": 54.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "other-4",
+      "group": "other",
+      "rows": 1191,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 838.0,
+          "total_normal_seconds": 840.0,
+          "observed_seconds": 1254.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 52.0,
+          "median_delay_seconds": 52.0,
+          "delay_seconds": [
+            52.0
+          ],
+          "alert_seconds": 10.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 9,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.02278481012658228,
+          "alert_fraction": 0.007974481658692184,
+          "scored_samples": 1189,
+          "average_precision": 0.9313501263651429
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 809.0,
+          "total_normal_seconds": 840.0,
+          "observed_seconds": 1225.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1161,
+          "average_precision": 0.3228436253591979
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 809.0,
+          "total_normal_seconds": 840.0,
+          "observed_seconds": 1225.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1161,
+          "average_precision": 0.29631656196003653
+        }
+      },
+      "events": [
+        {
+          "id": "other-4-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 796,
+          "end_index": 1190,
+          "start_seconds": 840.0,
+          "end_seconds": 1256.0,
+          "first_alert_seconds": 892.0,
+          "delay_seconds": 52.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Voltage",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "other-5",
+      "group": "other",
+      "rows": 1155,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1206.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 16.0,
+          "median_delay_seconds": 16.0,
+          "delay_seconds": [
+            16.0
+          ],
+          "alert_seconds": 357.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 342,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.8341463414634146,
+          "alert_fraction": 0.2960199004975124,
+          "scored_samples": 1153,
+          "average_precision": 0.9994689225521715
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 747.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1176.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 0.0,
+          "median_delay_seconds": 0.0,
+          "delay_seconds": [
+            0.0
+          ],
+          "alert_seconds": 13.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 12,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.02926829268292683,
+          "alert_fraction": 0.011054421768707483,
+          "scored_samples": 1125,
+          "average_precision": 0.39211802270116314
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 7,
+          "observed_normal_seconds": 747.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1176.0,
+          "false_episodes_per_hour": 33.734939759036145,
+          "mean_delay_seconds": 0.0,
+          "median_delay_seconds": 0.0,
+          "delay_seconds": [
+            0.0
+          ],
+          "alert_seconds": 110.0,
+          "false_alert_seconds": 10.0,
+          "normal_alert_fraction": 0.013386880856760375,
+          "true_positive_samples": 98,
+          "false_positive_samples": 10,
+          "point_precision": 0.9074074074074074,
+          "point_recall": 0.23902439024390243,
+          "alert_fraction": 0.0935374149659864,
+          "scored_samples": 1125,
+          "average_precision": 0.7192268724821117
+        }
+      },
+      "events": [
+        {
+          "id": "other-5-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 572,
+          "end_index": 981,
+          "start_seconds": 600.0,
+          "end_seconds": 1028.0,
+          "first_alert_seconds": 616.0,
+          "delay_seconds": 16.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Accelerometer1RMS",
+            "Accelerometer2RMS",
+            "Voltage"
+          ],
+          "baseline_overlap": {
+            "robust": true,
+            "persistence": true
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "other-7",
+      "group": "other",
+      "rows": 1090,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 776.0,
+          "total_normal_seconds": 778.0,
+          "observed_seconds": 1139.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 4.0,
+          "median_delay_seconds": 4.0,
+          "delay_seconds": [
+            4.0
+          ],
+          "alert_seconds": 280.0,
+          "false_alert_seconds": 1.0,
+          "normal_alert_fraction": 0.001288659793814433,
+          "true_positive_samples": 266,
+          "false_positive_samples": 1,
+          "point_precision": 0.9962546816479401,
+          "point_recall": 0.7665706051873199,
+          "alert_fraction": 0.24582967515364354,
+          "scored_samples": 1088,
+          "average_precision": 0.9963114139617567
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 747.0,
+          "total_normal_seconds": 778.0,
+          "observed_seconds": 1110.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1060,
+          "average_precision": 0.43841406629718427
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 7,
+          "observed_normal_seconds": 747.0,
+          "total_normal_seconds": 778.0,
+          "observed_seconds": 1110.0,
+          "false_episodes_per_hour": 33.734939759036145,
+          "mean_delay_seconds": 1.0,
+          "median_delay_seconds": 1.0,
+          "delay_seconds": [
+            1.0
+          ],
+          "alert_seconds": 70.0,
+          "false_alert_seconds": 10.0,
+          "normal_alert_fraction": 0.013386880856760375,
+          "true_positive_samples": 56,
+          "false_positive_samples": 10,
+          "point_precision": 0.8484848484848485,
+          "point_recall": 0.16138328530259366,
+          "alert_fraction": 0.06306306306306306,
+          "scored_samples": 1060,
+          "average_precision": 0.5656347738520426
+        }
+      },
+      "events": [
+        {
+          "id": "other-7-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 572,
+          "end_index": 918,
+          "start_seconds": 600.0,
+          "end_seconds": 962.0,
+          "first_alert_seconds": 604.0,
+          "delay_seconds": 4.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Accelerometer1RMS",
+            "Accelerometer2RMS",
+            "Voltage"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": true
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "other-8",
+      "group": "other",
+      "rows": 1147,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 778.0,
+          "total_normal_seconds": 780.0,
+          "observed_seconds": 1200.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1145,
+          "average_precision": 0.2815999951974752
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 748.0,
+          "total_normal_seconds": 780.0,
+          "observed_seconds": 1170.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 1.0,
+          "median_delay_seconds": 1.0,
+          "delay_seconds": [
+            1.0
+          ],
+          "alert_seconds": 3.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 3,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.007444168734491315,
+          "alert_fraction": 0.002564102564102564,
+          "scored_samples": 1117,
+          "average_precision": 0.3946680507887759
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 2,
+          "observed_normal_seconds": 748.0,
+          "total_normal_seconds": 780.0,
+          "observed_seconds": 1170.0,
+          "false_episodes_per_hour": 9.62566844919786,
+          "mean_delay_seconds": 1.0,
+          "median_delay_seconds": 1.0,
+          "delay_seconds": [
+            1.0
+          ],
+          "alert_seconds": 12.0,
+          "false_alert_seconds": 4.0,
+          "normal_alert_fraction": 0.0053475935828877,
+          "true_positive_samples": 8,
+          "false_positive_samples": 4,
+          "point_precision": 0.6666666666666666,
+          "point_recall": 0.019851116625310174,
+          "alert_fraction": 0.010256410256410256,
+          "scored_samples": 1117,
+          "average_precision": 0.3744358470095461
+        }
+      },
+      "events": [
+        {
+          "id": "other-8-event-0",
+          "title": "Annotated interval 1",
+          "status": "missed",
+          "start_index": 572,
+          "end_index": 974,
+          "start_seconds": 601.0,
+          "end_seconds": 1022.0,
+          "first_alert_seconds": null,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": true,
+            "persistence": true
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "other-10",
+      "group": "other",
+      "rows": 1327,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1396.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1325,
+          "average_precision": 0.3164266522383432
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 748.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1367.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1297,
+          "average_precision": 0.46940887870378484
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 11,
+          "observed_normal_seconds": 748.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1367.0,
+          "false_episodes_per_hour": 52.94117647058823,
+          "mean_delay_seconds": 309.0,
+          "median_delay_seconds": 309.0,
+          "delay_seconds": [
+            309.0
+          ],
+          "alert_seconds": 15.0,
+          "false_alert_seconds": 12.0,
+          "normal_alert_fraction": 0.016042780748663103,
+          "true_positive_samples": 3,
+          "false_positive_samples": 11,
+          "point_precision": 0.21428571428571427,
+          "point_recall": 0.005119453924914676,
+          "alert_fraction": 0.010972933430870519,
+          "scored_samples": 1297,
+          "average_precision": 0.3974427606701949
+        }
+      },
+      "events": [
+        {
+          "id": "other-10-event-0",
+          "title": "Annotated interval 1",
+          "status": "missed",
+          "start_index": 570,
+          "end_index": 1155,
+          "start_seconds": 600.0,
+          "end_seconds": 1218.0,
+          "first_alert_seconds": null,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Voltage",
+            "Thermocouple"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": true
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "other-11",
+      "group": "other",
+      "rows": 1190,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1252.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1188,
+          "average_precision": 0.3431018381616384
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 1,
+          "observed_normal_seconds": 748.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1223.0,
+          "false_episodes_per_hour": 4.81283422459893,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 1.0,
+          "false_alert_seconds": 1.0,
+          "normal_alert_fraction": 0.001336898395721925,
+          "true_positive_samples": 0,
+          "false_positive_samples": 1,
+          "point_precision": 0.0,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0008176614881439084,
+          "scored_samples": 1160,
+          "average_precision": 0.3957039543907961
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 11,
+          "observed_normal_seconds": 748.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1223.0,
+          "false_episodes_per_hour": 52.94117647058823,
+          "mean_delay_seconds": 70.0,
+          "median_delay_seconds": 70.0,
+          "delay_seconds": [
+            70.0
+          ],
+          "alert_seconds": 18.0,
+          "false_alert_seconds": 12.0,
+          "normal_alert_fraction": 0.016042780748663103,
+          "true_positive_samples": 5,
+          "false_positive_samples": 11,
+          "point_precision": 0.3125,
+          "point_recall": 0.011086474501108648,
+          "alert_fraction": 0.014717906786590351,
+          "scored_samples": 1160,
+          "average_precision": 0.3753011903082224
+        }
+      },
+      "events": [
+        {
+          "id": "other-11-event-0",
+          "title": "Annotated interval 1",
+          "status": "missed",
+          "start_index": 570,
+          "end_index": 1020,
+          "start_seconds": 600.0,
+          "end_seconds": 1074.0,
+          "first_alert_seconds": null,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Thermocouple"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": true
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "other-13",
+      "group": "other",
+      "rows": 923,
+      "metrics": {
+        "learned": {
+          "total_events": 5,
+          "detected_events": 5,
+          "missed_events": 0,
+          "false_episodes": 15,
+          "observed_normal_seconds": 682.0,
+          "total_normal_seconds": 713.0,
+          "observed_seconds": 948.0,
+          "false_episodes_per_hour": 79.17888563049853,
+          "mean_delay_seconds": 52.4,
+          "median_delay_seconds": 4.0,
+          "delay_seconds": [
+            4.0,
+            4.0,
+            247.0,
+            3.0,
+            4.0
+          ],
+          "alert_seconds": 176.0,
+          "false_alert_seconds": 165.0,
+          "normal_alert_fraction": 0.24193548387096775,
+          "true_positive_samples": 15,
+          "false_positive_samples": 136,
+          "point_precision": 0.09933774834437085,
+          "point_recall": 0.058365758754863814,
+          "alert_fraction": 0.18565400843881857,
+          "scored_samples": 885,
+          "average_precision": 0.20475165797082723
+        },
+        "robust": {
+          "total_events": 5,
+          "detected_events": 2,
+          "missed_events": 3,
+          "false_episodes": 0,
+          "observed_normal_seconds": 461.0,
+          "total_normal_seconds": 713.0,
+          "observed_seconds": 682.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 125.0,
+          "median_delay_seconds": 125.0,
+          "delay_seconds": [
+            3.0,
+            247.0
+          ],
+          "alert_seconds": 2.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 4,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.018957345971563982,
+          "alert_fraction": 0.002932551319648094,
+          "scored_samples": 651,
+          "average_precision": 0.33737190911428117
+        },
+        "persistence": {
+          "total_events": 5,
+          "detected_events": 2,
+          "missed_events": 3,
+          "false_episodes": 17,
+          "observed_normal_seconds": 461.0,
+          "total_normal_seconds": 713.0,
+          "observed_seconds": 682.0,
+          "false_episodes_per_hour": 132.75488069414317,
+          "mean_delay_seconds": 29.0,
+          "median_delay_seconds": 29.0,
+          "delay_seconds": [
+            2.0,
+            56.0
+          ],
+          "alert_seconds": 36.0,
+          "false_alert_seconds": 24.0,
+          "normal_alert_fraction": 0.052060737527114966,
+          "true_positive_samples": 14,
+          "false_positive_samples": 22,
+          "point_precision": 0.3888888888888889,
+          "point_recall": 0.06635071090047394,
+          "alert_fraction": 0.05278592375366569,
+          "scored_samples": 651,
+          "average_precision": 0.34378521746258245
+        }
+      },
+      "events": [
+        {
+          "id": "other-13-alert-0",
+          "title": "Alert episode 1",
+          "status": "false_alert",
+          "start_index": 3,
+          "end_index": 17,
+          "start_seconds": 3.0,
+          "end_seconds": 22.0,
+          "first_alert_seconds": 3.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-alert-1",
+          "title": "Alert episode 2",
+          "status": "false_alert",
+          "start_index": 20,
+          "end_index": 26,
+          "start_seconds": 28.0,
+          "end_seconds": 36.0,
+          "first_alert_seconds": 28.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Volume Flow RateRMS"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-alert-2",
+          "title": "Alert episode 3",
+          "status": "false_alert",
+          "start_index": 29,
+          "end_index": 29,
+          "start_seconds": 42.0,
+          "end_seconds": 42.0,
+          "first_alert_seconds": 42.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Current",
+            "Volume Flow RateRMS"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-alert-3",
+          "title": "Alert episode 4",
+          "status": "false_alert",
+          "start_index": 32,
+          "end_index": 52,
+          "start_seconds": 48.0,
+          "end_seconds": 74.0,
+          "first_alert_seconds": 48.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Voltage",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-alert-4",
+          "title": "Alert episode 5",
+          "status": "false_alert",
+          "start_index": 55,
+          "end_index": 61,
+          "start_seconds": 81.0,
+          "end_seconds": 89.0,
+          "first_alert_seconds": 81.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Current",
+            "Volume Flow RateRMS"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-alert-5",
+          "title": "Alert episode 6",
+          "status": "false_alert",
+          "start_index": 64,
+          "end_index": 68,
+          "start_seconds": 95.0,
+          "end_seconds": 102.0,
+          "first_alert_seconds": 95.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-alert-6",
+          "title": "Alert episode 7",
+          "status": "false_alert",
+          "start_index": 71,
+          "end_index": 74,
+          "start_seconds": 108.0,
+          "end_seconds": 114.0,
+          "first_alert_seconds": 108.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-alert-7",
+          "title": "Alert episode 8",
+          "status": "false_alert",
+          "start_index": 76,
+          "end_index": 92,
+          "start_seconds": 116.0,
+          "end_seconds": 139.0,
+          "first_alert_seconds": 116.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-alert-8",
+          "title": "Alert episode 9",
+          "status": "false_alert",
+          "start_index": 94,
+          "end_index": 95,
+          "start_seconds": 141.0,
+          "end_seconds": 142.0,
+          "first_alert_seconds": 141.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-alert-9",
+          "title": "Alert episode 10",
+          "status": "false_alert",
+          "start_index": 98,
+          "end_index": 106,
+          "start_seconds": 149.0,
+          "end_seconds": 158.0,
+          "first_alert_seconds": 149.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Voltage",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-alert-10",
+          "title": "Alert episode 11",
+          "status": "false_alert",
+          "start_index": 109,
+          "end_index": 110,
+          "start_seconds": 164.0,
+          "end_seconds": 165.0,
+          "first_alert_seconds": 164.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Current",
+            "Volume Flow RateRMS"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-alert-11",
+          "title": "Alert episode 12",
+          "status": "false_alert",
+          "start_index": 113,
+          "end_index": 147,
+          "start_seconds": 172.0,
+          "end_seconds": 219.0,
+          "first_alert_seconds": 172.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Current",
+            "Pressure"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": true
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-alert-12",
+          "title": "Alert episode 13",
+          "status": "false_alert",
+          "start_index": 150,
+          "end_index": 156,
+          "start_seconds": 225.0,
+          "end_seconds": 231.0,
+          "first_alert_seconds": 225.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-alert-13",
+          "title": "Alert episode 14",
+          "status": "false_alert",
+          "start_index": 159,
+          "end_index": 161,
+          "start_seconds": 237.0,
+          "end_seconds": 239.0,
+          "first_alert_seconds": 237.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Current",
+            "Pressure"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-alert-14",
+          "title": "Alert episode 15",
+          "status": "false_alert",
+          "start_index": 164,
+          "end_index": 164,
+          "start_seconds": 245.0,
+          "end_seconds": 245.0,
+          "first_alert_seconds": 245.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Current",
+            "Volume Flow RateRMS"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 495,
+          "end_index": 500,
+          "start_seconds": 597.0,
+          "end_seconds": 602.0,
+          "first_alert_seconds": 601.0,
+          "delay_seconds": 4.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Volume Flow RateRMS"
+          ],
+          "baseline_overlap": {
+            "robust": true,
+            "persistence": true
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-event-1",
+          "title": "Annotated interval 2",
+          "status": "detected",
+          "start_index": 501,
+          "end_index": 514,
+          "start_seconds": 606.0,
+          "end_seconds": 620.0,
+          "first_alert_seconds": 610.0,
+          "delay_seconds": 4.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Current",
+            "Pressure"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-event-2",
+          "title": "Annotated interval 3",
+          "status": "detected",
+          "start_index": 515,
+          "end_index": 749,
+          "start_seconds": 653.0,
+          "end_seconds": 900.0,
+          "first_alert_seconds": 900.0,
+          "delay_seconds": 247.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Volume Flow RateRMS",
+            "Pressure"
+          ],
+          "baseline_overlap": {
+            "robust": true,
+            "persistence": true
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-event-3",
+          "title": "Annotated interval 4",
+          "status": "detected",
+          "start_index": 750,
+          "end_index": 753,
+          "start_seconds": 919.0,
+          "end_seconds": 922.0,
+          "first_alert_seconds": 922.0,
+          "delay_seconds": 3.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Volume Flow RateRMS"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "other-13-event-4",
+          "title": "Annotated interval 5",
+          "status": "detected",
+          "start_index": 754,
+          "end_index": 759,
+          "start_seconds": 943.0,
+          "end_seconds": 948.0,
+          "first_alert_seconds": 947.0,
+          "delay_seconds": 4.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "other-14",
+      "group": "other",
+      "rows": 905,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 631.0,
+          "total_normal_seconds": 633.0,
+          "observed_seconds": 949.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 903,
+          "average_precision": 0.28109489914735286
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 1,
+          "observed_normal_seconds": 602.0,
+          "total_normal_seconds": 633.0,
+          "observed_seconds": 920.0,
+          "false_episodes_per_hour": 5.980066445182724,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 3.0,
+          "false_alert_seconds": 3.0,
+          "normal_alert_fraction": 0.0049833887043189366,
+          "true_positive_samples": 0,
+          "false_positive_samples": 4,
+          "point_precision": 0.0,
+          "point_recall": 0.0,
+          "alert_fraction": 0.003260869565217391,
+          "scored_samples": 875,
+          "average_precision": 0.38088862057043804
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 24,
+          "observed_normal_seconds": 602.0,
+          "total_normal_seconds": 633.0,
+          "observed_seconds": 920.0,
+          "false_episodes_per_hour": 143.52159468438538,
+          "mean_delay_seconds": 17.0,
+          "median_delay_seconds": 17.0,
+          "delay_seconds": [
+            17.0
+          ],
+          "alert_seconds": 43.0,
+          "false_alert_seconds": 33.0,
+          "normal_alert_fraction": 0.054817275747508304,
+          "true_positive_samples": 9,
+          "false_positive_samples": 33,
+          "point_precision": 0.21428571428571427,
+          "point_recall": 0.029801324503311258,
+          "alert_fraction": 0.04673913043478261,
+          "scored_samples": 875,
+          "average_precision": 0.3092574445871542
+        }
+      },
+      "events": [
+        {
+          "id": "other-14-event-0",
+          "title": "Annotated interval 1",
+          "status": "missed",
+          "start_index": 571,
+          "end_index": 872,
+          "start_seconds": 600.0,
+          "end_seconds": 917.0,
+          "first_alert_seconds": null,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Thermocouple",
+            "Pressure",
+            "Voltage"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": true
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "valve1-1",
+      "group": "valve1",
+      "rows": 1145,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 11,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1198.0,
+          "false_episodes_per_hour": 50.965250965250966,
+          "mean_delay_seconds": 39.0,
+          "median_delay_seconds": 39.0,
+          "delay_seconds": [
+            39.0
+          ],
+          "alert_seconds": 412.0,
+          "false_alert_seconds": 59.0,
+          "normal_alert_fraction": 0.07593307593307594,
+          "true_positive_samples": 337,
+          "false_positive_samples": 55,
+          "point_precision": 0.8596938775510204,
+          "point_recall": 0.8383084577114428,
+          "alert_fraction": 0.34390651085141904,
+          "scored_samples": 1143,
+          "average_precision": 0.9288038794838062
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 747.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1168.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1115,
+          "average_precision": 0.3719600814219792
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 1,
+          "observed_normal_seconds": 747.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1168.0,
+          "false_episodes_per_hour": 4.819277108433735,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 2.0,
+          "false_alert_seconds": 2.0,
+          "normal_alert_fraction": 0.002677376171352075,
+          "true_positive_samples": 0,
+          "false_positive_samples": 2,
+          "point_precision": 0.0,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0017123287671232876,
+          "scored_samples": 1115,
+          "average_precision": 0.5814808581762694
+        }
+      },
+      "events": [
+        {
+          "id": "valve1-1-alert-0",
+          "title": "Alert episode 1",
+          "status": "false_alert",
+          "start_index": 477,
+          "end_index": 477,
+          "start_seconds": 500.0,
+          "end_seconds": 500.0,
+          "first_alert_seconds": 500.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Voltage",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-1-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 572,
+          "end_index": 973,
+          "start_seconds": 600.0,
+          "end_seconds": 1020.0,
+          "first_alert_seconds": 639.0,
+          "delay_seconds": 39.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-1-alert-6",
+          "title": "Alert episode 7",
+          "status": "false_alert",
+          "start_index": 997,
+          "end_index": 997,
+          "start_seconds": 1045.0,
+          "end_seconds": 1045.0,
+          "first_alert_seconds": 1045.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Current",
+            "Temperature"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-1-alert-7",
+          "title": "Alert episode 8",
+          "status": "false_alert",
+          "start_index": 1015,
+          "end_index": 1015,
+          "start_seconds": 1064.0,
+          "end_seconds": 1064.0,
+          "first_alert_seconds": 1064.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Temperature",
+            "Thermocouple"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-1-alert-8",
+          "title": "Alert episode 9",
+          "status": "false_alert",
+          "start_index": 1019,
+          "end_index": 1019,
+          "start_seconds": 1069.0,
+          "end_seconds": 1069.0,
+          "first_alert_seconds": 1069.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Temperature",
+            "Voltage",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-1-alert-9",
+          "title": "Alert episode 10",
+          "status": "false_alert",
+          "start_index": 1063,
+          "end_index": 1063,
+          "start_seconds": 1115.0,
+          "end_seconds": 1115.0,
+          "first_alert_seconds": 1115.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Temperature",
+            "Voltage",
+            "Thermocouple"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-1-alert-10",
+          "title": "Alert episode 11",
+          "status": "false_alert",
+          "start_index": 1065,
+          "end_index": 1066,
+          "start_seconds": 1117.0,
+          "end_seconds": 1118.0,
+          "first_alert_seconds": 1117.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Temperature"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-1-alert-11",
+          "title": "Alert episode 12",
+          "status": "false_alert",
+          "start_index": 1068,
+          "end_index": 1082,
+          "start_seconds": 1120.0,
+          "end_seconds": 1135.0,
+          "first_alert_seconds": 1120.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Voltage",
+            "Temperature"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": true
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-1-alert-12",
+          "title": "Alert episode 13",
+          "status": "false_alert",
+          "start_index": 1088,
+          "end_index": 1088,
+          "start_seconds": 1141.0,
+          "end_seconds": 1141.0,
+          "first_alert_seconds": 1141.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Temperature",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-1-alert-13",
+          "title": "Alert episode 14",
+          "status": "false_alert",
+          "start_index": 1091,
+          "end_index": 1092,
+          "start_seconds": 1144.0,
+          "end_seconds": 1145.0,
+          "first_alert_seconds": 1144.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Temperature"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-1-alert-14",
+          "title": "Alert episode 15",
+          "status": "false_alert",
+          "start_index": 1100,
+          "end_index": 1100,
+          "start_seconds": 1154.0,
+          "end_seconds": 1154.0,
+          "first_alert_seconds": 1154.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Current",
+            "Temperature"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-1-alert-15",
+          "title": "Alert episode 16",
+          "status": "false_alert",
+          "start_index": 1116,
+          "end_index": 1144,
+          "start_seconds": 1170.0,
+          "end_seconds": 1200.0,
+          "first_alert_seconds": 1170.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Temperature"
+          ],
+          "ongoing": true,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "valve1-2",
+      "group": "valve1",
+      "rows": 1075,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 14,
+          "observed_normal_seconds": 767.0,
+          "total_normal_seconds": 769.0,
+          "observed_seconds": 1119.0,
+          "false_episodes_per_hour": 65.71056062581486,
+          "mean_delay_seconds": 2.0,
+          "median_delay_seconds": 2.0,
+          "delay_seconds": [
+            2.0
+          ],
+          "alert_seconds": 323.0,
+          "false_alert_seconds": 40.0,
+          "normal_alert_fraction": 0.05215123859191656,
+          "true_positive_samples": 269,
+          "false_positive_samples": 38,
+          "point_precision": 0.8762214983713354,
+          "point_recall": 0.8029850746268656,
+          "alert_fraction": 0.28865058087578194,
+          "scored_samples": 1071,
+          "average_precision": 0.8896549522325445
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 738.0,
+          "total_normal_seconds": 769.0,
+          "observed_seconds": 1060.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1015,
+          "average_precision": 0.3030797446507544
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 738.0,
+          "total_normal_seconds": 769.0,
+          "observed_seconds": 1060.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1015,
+          "average_precision": 0.2886959946491522
+        }
+      },
+      "events": [
+        {
+          "id": "valve1-2-alert-0",
+          "title": "Alert episode 1",
+          "status": "false_alert",
+          "start_index": 8,
+          "end_index": 11,
+          "start_seconds": 8.0,
+          "end_seconds": 11.0,
+          "first_alert_seconds": 8.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-2-alert-1",
+          "title": "Alert episode 2",
+          "status": "false_alert",
+          "start_index": 13,
+          "end_index": 17,
+          "start_seconds": 13.0,
+          "end_seconds": 18.0,
+          "first_alert_seconds": 13.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Voltage",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-2-alert-2",
+          "title": "Alert episode 3",
+          "status": "false_alert",
+          "start_index": 20,
+          "end_index": 20,
+          "start_seconds": 21.0,
+          "end_seconds": 21.0,
+          "first_alert_seconds": 21.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-2-alert-3",
+          "title": "Alert episode 4",
+          "status": "false_alert",
+          "start_index": 22,
+          "end_index": 23,
+          "start_seconds": 23.0,
+          "end_seconds": 24.0,
+          "first_alert_seconds": 23.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Voltage",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-2-alert-4",
+          "title": "Alert episode 5",
+          "status": "false_alert",
+          "start_index": 26,
+          "end_index": 36,
+          "start_seconds": 27.0,
+          "end_seconds": 37.0,
+          "first_alert_seconds": 27.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-2-alert-5",
+          "title": "Alert episode 6",
+          "status": "false_alert",
+          "start_index": 38,
+          "end_index": 38,
+          "start_seconds": 39.0,
+          "end_seconds": 39.0,
+          "first_alert_seconds": 39.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Voltage",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-2-alert-6",
+          "title": "Alert episode 7",
+          "status": "false_alert",
+          "start_index": 40,
+          "end_index": 41,
+          "start_seconds": 42.0,
+          "end_seconds": 43.0,
+          "first_alert_seconds": 42.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Current",
+            "Voltage"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-2-alert-7",
+          "title": "Alert episode 8",
+          "status": "false_alert",
+          "start_index": 43,
+          "end_index": 45,
+          "start_seconds": 45.0,
+          "end_seconds": 47.0,
+          "first_alert_seconds": 45.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-2-alert-8",
+          "title": "Alert episode 9",
+          "status": "false_alert",
+          "start_index": 59,
+          "end_index": 59,
+          "start_seconds": 61.0,
+          "end_seconds": 61.0,
+          "first_alert_seconds": 61.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Current",
+            "Voltage"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-2-alert-9",
+          "title": "Alert episode 10",
+          "status": "false_alert",
+          "start_index": 80,
+          "end_index": 80,
+          "start_seconds": 83.0,
+          "end_seconds": 83.0,
+          "first_alert_seconds": 83.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Current",
+            "Voltage"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-2-alert-10",
+          "title": "Alert episode 11",
+          "status": "false_alert",
+          "start_index": 115,
+          "end_index": 115,
+          "start_seconds": 120.0,
+          "end_seconds": 120.0,
+          "first_alert_seconds": 120.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Voltage",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-2-alert-11",
+          "title": "Alert episode 12",
+          "status": "false_alert",
+          "start_index": 139,
+          "end_index": 139,
+          "start_seconds": 145.0,
+          "end_seconds": 145.0,
+          "first_alert_seconds": 145.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-2-alert-12",
+          "title": "Alert episode 13",
+          "status": "false_alert",
+          "start_index": 153,
+          "end_index": 153,
+          "start_seconds": 160.0,
+          "end_seconds": 160.0,
+          "first_alert_seconds": 160.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-2-alert-13",
+          "title": "Alert episode 14",
+          "status": "false_alert",
+          "start_index": 156,
+          "end_index": 159,
+          "start_seconds": 163.0,
+          "end_seconds": 166.0,
+          "first_alert_seconds": 163.0,
+          "delay_seconds": null,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "ongoing": false,
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-2-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 566,
+          "end_index": 902,
+          "start_seconds": 666.0,
+          "end_seconds": 1019.0,
+          "first_alert_seconds": 668.0,
+          "delay_seconds": 2.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "valve1-4",
+      "group": "valve1",
+      "rows": 1095,
+      "metrics": {
+        "learned": {
+          "total_events": 2,
+          "detected_events": 2,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1141.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 9.5,
+          "median_delay_seconds": 9.5,
+          "delay_seconds": [
+            12.0,
+            7.0
+          ],
+          "alert_seconds": 335.0,
+          "false_alert_seconds": 3.0,
+          "normal_alert_fraction": 0.003861003861003861,
+          "true_positive_samples": 316,
+          "false_positive_samples": 3,
+          "point_precision": 0.9905956112852664,
+          "point_recall": 0.9106628242074928,
+          "alert_fraction": 0.2936021034180543,
+          "scored_samples": 1091,
+          "average_precision": 0.9931405634104946
+        },
+        "robust": {
+          "total_events": 2,
+          "detected_events": 0,
+          "missed_events": 2,
+          "false_episodes": 0,
+          "observed_normal_seconds": 748.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1082.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1035,
+          "average_precision": 0.3214614463167259
+        },
+        "persistence": {
+          "total_events": 2,
+          "detected_events": 0,
+          "missed_events": 2,
+          "false_episodes": 0,
+          "observed_normal_seconds": 748.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1082.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1035,
+          "average_precision": 0.3543135482061325
+        }
+      },
+      "events": [
+        {
+          "id": "valve1-4-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 573,
+          "end_index": 637,
+          "start_seconds": 600.0,
+          "end_seconds": 667.0,
+          "first_alert_seconds": 612.0,
+          "delay_seconds": 12.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve1-4-event-1",
+          "title": "Annotated interval 2",
+          "status": "detected",
+          "start_index": 638,
+          "end_index": 921,
+          "start_seconds": 721.0,
+          "end_seconds": 1018.0,
+          "first_alert_seconds": 728.0,
+          "delay_seconds": 7.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Voltage",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "valve1-5",
+      "group": "valve1",
+      "rows": 1154,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1197.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 48.0,
+          "median_delay_seconds": 48.0,
+          "delay_seconds": [
+            48.0
+          ],
+          "alert_seconds": 342.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 328,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.8138957816377171,
+          "alert_fraction": 0.2857142857142857,
+          "scored_samples": 1152,
+          "average_precision": 0.9354382785352193
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 748.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1168.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1124,
+          "average_precision": 0.3773070010992861
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 748.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1168.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1124,
+          "average_precision": 0.4123059510362156
+        }
+      },
+      "events": [
+        {
+          "id": "valve1-5-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 577,
+          "end_index": 979,
+          "start_seconds": 600.0,
+          "end_seconds": 1019.0,
+          "first_alert_seconds": 648.0,
+          "delay_seconds": 48.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "valve1-7",
+      "group": "valve1",
+      "rows": 1094,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 710.0,
+          "total_normal_seconds": 714.0,
+          "observed_seconds": 1131.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 55.0,
+          "median_delay_seconds": 55.0,
+          "delay_seconds": [
+            55.0
+          ],
+          "alert_seconds": 315.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 303,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.7481481481481481,
+          "alert_fraction": 0.27851458885941643,
+          "scored_samples": 1090,
+          "average_precision": 0.9406692151810475
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 652.0,
+          "total_normal_seconds": 714.0,
+          "observed_seconds": 1073.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1034,
+          "average_precision": 0.41365471881778537
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 652.0,
+          "total_normal_seconds": 714.0,
+          "observed_seconds": 1073.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1034,
+          "average_precision": 0.3678572017516739
+        }
+      },
+      "events": [
+        {
+          "id": "valve1-7-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 578,
+          "end_index": 982,
+          "start_seconds": 600.0,
+          "end_seconds": 1020.0,
+          "first_alert_seconds": 655.0,
+          "delay_seconds": 55.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "valve1-8",
+      "group": "valve1",
+      "rows": 1144,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 776.0,
+          "total_normal_seconds": 778.0,
+          "observed_seconds": 1196.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 5.0,
+          "median_delay_seconds": 5.0,
+          "delay_seconds": [
+            5.0
+          ],
+          "alert_seconds": 417.0,
+          "false_alert_seconds": 2.0,
+          "normal_alert_fraction": 0.002577319587628866,
+          "true_positive_samples": 395,
+          "false_positive_samples": 2,
+          "point_precision": 0.9949622166246851,
+          "point_recall": 0.9875,
+          "alert_fraction": 0.3486622073578595,
+          "scored_samples": 1142,
+          "average_precision": 0.9853939802205582
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 746.0,
+          "total_normal_seconds": 778.0,
+          "observed_seconds": 1166.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1114,
+          "average_precision": 0.3877813245249432
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 746.0,
+          "total_normal_seconds": 778.0,
+          "observed_seconds": 1166.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1114,
+          "average_precision": 0.43693755406855345
+        }
+      },
+      "events": [
+        {
+          "id": "valve1-8-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 572,
+          "end_index": 971,
+          "start_seconds": 599.0,
+          "end_seconds": 1018.0,
+          "first_alert_seconds": 604.0,
+          "delay_seconds": 5.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "valve1-10",
+      "group": "valve1",
+      "rows": 1146,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1197.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 61.0,
+          "median_delay_seconds": 61.0,
+          "delay_seconds": [
+            61.0
+          ],
+          "alert_seconds": 324.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 310,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.773067331670823,
+          "alert_fraction": 0.2706766917293233,
+          "scored_samples": 1144,
+          "average_precision": 0.9285996320757864
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 747.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1167.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1116,
+          "average_precision": 0.3628989334993082
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 747.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1167.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1116,
+          "average_precision": 0.33360443159950004
+        }
+      },
+      "events": [
+        {
+          "id": "valve1-10-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 573,
+          "end_index": 973,
+          "start_seconds": 600.0,
+          "end_seconds": 1019.0,
+          "first_alert_seconds": 661.0,
+          "delay_seconds": 61.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Voltage",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "valve1-11",
+      "group": "valve1",
+      "rows": 1141,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 776.0,
+          "total_normal_seconds": 778.0,
+          "observed_seconds": 1198.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 58.0,
+          "median_delay_seconds": 58.0,
+          "delay_seconds": [
+            58.0
+          ],
+          "alert_seconds": 308.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 292,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.731829573934837,
+          "alert_fraction": 0.2570951585976628,
+          "scored_samples": 1139,
+          "average_precision": 0.8854424725701405
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 747.0,
+          "total_normal_seconds": 778.0,
+          "observed_seconds": 1169.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1111,
+          "average_precision": 0.37917461990646906
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 747.0,
+          "total_normal_seconds": 778.0,
+          "observed_seconds": 1169.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1111,
+          "average_precision": 0.3630897878118212
+        }
+      },
+      "events": [
+        {
+          "id": "valve1-11-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 572,
+          "end_index": 970,
+          "start_seconds": 600.0,
+          "end_seconds": 1020.0,
+          "first_alert_seconds": 658.0,
+          "delay_seconds": 58.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "valve1-13",
+      "group": "valve1",
+      "rows": 1140,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1197.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 35.0,
+          "median_delay_seconds": 35.0,
+          "delay_seconds": [
+            35.0
+          ],
+          "alert_seconds": 347.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 330,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.8270676691729323,
+          "alert_fraction": 0.28989139515455303,
+          "scored_samples": 1138,
+          "average_precision": 0.9423432783516662
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 748.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1168.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1110,
+          "average_precision": 0.35504353597508426
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 748.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1168.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1110,
+          "average_precision": 0.3509288438633683
+        }
+      },
+      "events": [
+        {
+          "id": "valve1-13-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 570,
+          "end_index": 968,
+          "start_seconds": 600.0,
+          "end_seconds": 1019.0,
+          "first_alert_seconds": 635.0,
+          "delay_seconds": 35.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "valve1-14",
+      "group": "valve1",
+      "rows": 1139,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1197.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 50.0,
+          "median_delay_seconds": 50.0,
+          "delay_seconds": [
+            50.0
+          ],
+          "alert_seconds": 334.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 317,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.7944862155388471,
+          "alert_fraction": 0.27903091060985796,
+          "scored_samples": 1137,
+          "average_precision": 0.9465063171264594
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 747.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1167.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1109,
+          "average_precision": 0.3507564276412447
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 747.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1167.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1109,
+          "average_precision": 0.3568365998163246
+        }
+      },
+      "events": [
+        {
+          "id": "valve1-14-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 569,
+          "end_index": 967,
+          "start_seconds": 600.0,
+          "end_seconds": 1019.0,
+          "first_alert_seconds": 650.0,
+          "delay_seconds": 50.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Voltage",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "valve2-1",
+      "group": "valve2",
+      "rows": 1063,
+      "metrics": {
+        "learned": {
+          "total_events": 2,
+          "detected_events": 2,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1132.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 21.0,
+          "median_delay_seconds": 21.0,
+          "delay_seconds": [
+            40.0,
+            2.0
+          ],
+          "alert_seconds": 272.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 254,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.7673716012084593,
+          "alert_fraction": 0.24028268551236748,
+          "scored_samples": 1059,
+          "average_precision": 0.9591400679262576
+        },
+        "robust": {
+          "total_events": 2,
+          "detected_events": 0,
+          "missed_events": 2,
+          "false_episodes": 0,
+          "observed_normal_seconds": 747.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1072.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1003,
+          "average_precision": 0.3485212536170551
+        },
+        "persistence": {
+          "total_events": 2,
+          "detected_events": 0,
+          "missed_events": 2,
+          "false_episodes": 0,
+          "observed_normal_seconds": 747.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1072.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1003,
+          "average_precision": 0.2791141554389969
+        }
+      },
+      "events": [
+        {
+          "id": "valve2-1-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 560,
+          "end_index": 837,
+          "start_seconds": 600.0,
+          "end_seconds": 898.0,
+          "first_alert_seconds": 640.0,
+          "delay_seconds": 40.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Voltage",
+            "Pressure",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        },
+        {
+          "id": "valve2-1-event-1",
+          "title": "Annotated interval 2",
+          "status": "detected",
+          "start_index": 838,
+          "end_index": 892,
+          "start_seconds": 962.0,
+          "end_seconds": 1019.0,
+          "first_alert_seconds": 964.0,
+          "delay_seconds": 2.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Voltage",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "valve2-2",
+      "group": "valve2",
+      "rows": 1129,
+      "metrics": {
+        "learned": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1197.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 44.0,
+          "median_delay_seconds": 44.0,
+          "delay_seconds": [
+            44.0
+          ],
+          "alert_seconds": 326.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 307,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.7772151898734178,
+          "alert_fraction": 0.2723475355054302,
+          "scored_samples": 1127,
+          "average_precision": 0.9759807894188283
+        },
+        "robust": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 746.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1166.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1099,
+          "average_precision": 0.3245477377174105
+        },
+        "persistence": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 746.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1166.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1099,
+          "average_precision": 0.43362944311072393
+        }
+      },
+      "events": [
+        {
+          "id": "valve2-2-event-0",
+          "title": "Annotated interval 1",
+          "status": "detected",
+          "start_index": 565,
+          "end_index": 959,
+          "start_seconds": 600.0,
+          "end_seconds": 1019.0,
+          "first_alert_seconds": 644.0,
+          "delay_seconds": 44.0,
+          "method": "learned",
+          "contributing_sensors": [
+            "Pressure",
+            "Voltage",
+            "Current"
+          ],
+          "baseline_overlap": {
+            "robust": false,
+            "persistence": false
+          },
+          "evidence": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause.",
+          "contributions_kind": "reference_deviation_not_model_attribution",
+          "contributions_note": "Observed deviation from the initial two-sample reference; not model attribution or a physical cause."
+        }
+      ]
+    },
+    {
+      "id": "normal_audit",
+      "group": "anomaly-free",
+      "rows": 1851,
+      "metrics": {
+        "learned": {
+          "total_events": 0,
+          "detected_events": 0,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 1934.0,
+          "total_normal_seconds": 1936.0,
+          "observed_seconds": 1934.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": null,
+          "alert_fraction": 0.0,
+          "scored_samples": 1849,
+          "average_precision": null
+        },
+        "robust": {
+          "total_events": 0,
+          "detected_events": 0,
+          "missed_events": 0,
+          "false_episodes": 1,
+          "observed_normal_seconds": 1905.0,
+          "total_normal_seconds": 1936.0,
+          "observed_seconds": 1905.0,
+          "false_episodes_per_hour": 1.889763779527559,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 3.0,
+          "false_alert_seconds": 3.0,
+          "normal_alert_fraction": 0.0015748031496062992,
+          "true_positive_samples": 0,
+          "false_positive_samples": 2,
+          "point_precision": 0.0,
+          "point_recall": null,
+          "alert_fraction": 0.0015748031496062992,
+          "scored_samples": 1821,
+          "average_precision": null
+        },
+        "persistence": {
+          "total_events": 0,
+          "detected_events": 0,
+          "missed_events": 0,
+          "false_episodes": 6,
+          "observed_normal_seconds": 1905.0,
+          "total_normal_seconds": 1936.0,
+          "observed_seconds": 1905.0,
+          "false_episodes_per_hour": 11.338582677165354,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 7.0,
+          "false_alert_seconds": 7.0,
+          "normal_alert_fraction": 0.003674540682414698,
+          "true_positive_samples": 0,
+          "false_positive_samples": 7,
+          "point_precision": 0.0,
+          "point_recall": null,
+          "alert_fraction": 0.003674540682414698,
+          "scored_samples": 1821,
+          "average_precision": null
+        }
+      },
+      "events": []
+    }
+  ],
+  "group_slices": {
+    "other": {
+      "learned": {
+        "total_events": 14,
+        "detected_events": 9,
+        "missed_events": 5,
+        "false_episodes": 15,
+        "observed_normal_seconds": 7029.0,
+        "total_normal_seconds": 7078.0,
+        "observed_seconds": 10934.0,
+        "alert_seconds": 829.0,
+        "false_alert_seconds": 166.0,
+        "true_positive_samples": 638,
+        "false_positive_samples": 137,
+        "scored_samples": 10395,
+        "false_episodes_per_hour": 7.682458386683739,
+        "mean_delay_seconds": 43.111111111111114,
+        "median_delay_seconds": 4.0,
+        "alert_fraction": 0.07581854764953357,
+        "normal_alert_fraction": 0.02361644615165742,
+        "point_precision": 0.8232258064516129,
+        "average_precision": 0.621990643079603,
+        "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+        "event_recall": 0.6428571428571429
+      },
+      "robust": {
+        "total_events": 14,
+        "detected_events": 4,
+        "missed_events": 10,
+        "false_episodes": 2,
+        "observed_normal_seconds": 6545.0,
+        "total_normal_seconds": 7078.0,
+        "observed_seconds": 10375.0,
+        "alert_seconds": 22.0,
+        "false_alert_seconds": 4.0,
+        "true_positive_samples": 19,
+        "false_positive_samples": 5,
+        "scored_samples": 9881,
+        "false_episodes_per_hour": 1.1000763941940412,
+        "mean_delay_seconds": 62.75,
+        "median_delay_seconds": 2.0,
+        "alert_fraction": 0.0021204819277108435,
+        "normal_alert_fraction": 0.0006111535523300229,
+        "point_precision": 0.7916666666666666,
+        "average_precision": 0.38849438268344805,
+        "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+        "event_recall": 0.2857142857142857
+      },
+      "persistence": {
+        "total_events": 14,
+        "detected_events": 8,
+        "missed_events": 6,
+        "false_episodes": 79,
+        "observed_normal_seconds": 6545.0,
+        "total_normal_seconds": 7078.0,
+        "observed_seconds": 10375.0,
+        "alert_seconds": 304.0,
+        "false_alert_seconds": 105.0,
+        "true_positive_samples": 193,
+        "false_positive_samples": 101,
+        "scored_samples": 9881,
+        "false_episodes_per_hour": 43.45301757066463,
+        "mean_delay_seconds": 57.0,
+        "median_delay_seconds": 9.5,
+        "alert_fraction": 0.02930120481927711,
+        "normal_alert_fraction": 0.016042780748663103,
+        "point_precision": 0.6564625850340136,
+        "average_precision": 0.40327267604185124,
+        "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+        "event_recall": 0.5714285714285714
+      }
+    },
+    "valve1": {
+      "learned": {
+        "total_events": 11,
+        "detected_events": 11,
+        "missed_events": 0,
+        "false_episodes": 25,
+        "observed_normal_seconds": 7691.0,
+        "total_normal_seconds": 7713.0,
+        "observed_seconds": 11771.0,
+        "alert_seconds": 3457.0,
+        "false_alert_seconds": 104.0,
+        "true_positive_samples": 3197,
+        "false_positive_samples": 98,
+        "scored_samples": 11247,
+        "false_episodes_per_hour": 11.701989338187492,
+        "mean_delay_seconds": 33.81818181818182,
+        "median_delay_seconds": 39.0,
+        "alert_fraction": 0.2936878769858126,
+        "normal_alert_fraction": 0.013522298790794435,
+        "point_precision": 0.970257966616085,
+        "average_precision": 0.9375992569187723,
+        "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+        "event_recall": 1.0
+      },
+      "robust": {
+        "total_events": 11,
+        "detected_events": 0,
+        "missed_events": 11,
+        "false_episodes": 0,
+        "observed_normal_seconds": 7368.0,
+        "total_normal_seconds": 7713.0,
+        "observed_seconds": 11388.0,
+        "alert_seconds": 0.0,
+        "false_alert_seconds": 0.0,
+        "true_positive_samples": 0,
+        "false_positive_samples": 0,
+        "scored_samples": 10883,
+        "false_episodes_per_hour": 0.0,
+        "mean_delay_seconds": null,
+        "median_delay_seconds": null,
+        "alert_fraction": 0.0,
+        "normal_alert_fraction": 0.0,
+        "point_precision": null,
+        "average_precision": 0.3623117833853581,
+        "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+        "event_recall": 0.0
+      },
+      "persistence": {
+        "total_events": 11,
+        "detected_events": 0,
+        "missed_events": 11,
+        "false_episodes": 1,
+        "observed_normal_seconds": 7368.0,
+        "total_normal_seconds": 7713.0,
+        "observed_seconds": 11388.0,
+        "alert_seconds": 2.0,
+        "false_alert_seconds": 2.0,
+        "true_positive_samples": 0,
+        "false_positive_samples": 2,
+        "scored_samples": 10883,
+        "false_episodes_per_hour": 0.48859934853420195,
+        "mean_delay_seconds": null,
+        "median_delay_seconds": null,
+        "alert_fraction": 0.00017562346329469617,
+        "normal_alert_fraction": 0.0002714440825190011,
+        "point_precision": 0.0,
+        "average_precision": 0.3846050770979011,
+        "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+        "event_recall": 0.0
+      }
+    },
+    "valve2": {
+      "learned": {
+        "total_events": 3,
+        "detected_events": 3,
+        "missed_events": 0,
+        "false_episodes": 0,
+        "observed_normal_seconds": 1554.0,
+        "total_normal_seconds": 1558.0,
+        "observed_seconds": 2329.0,
+        "alert_seconds": 598.0,
+        "false_alert_seconds": 0.0,
+        "true_positive_samples": 561,
+        "false_positive_samples": 0,
+        "scored_samples": 2186,
+        "false_episodes_per_hour": 0.0,
+        "mean_delay_seconds": 28.666666666666668,
+        "median_delay_seconds": 40.0,
+        "alert_fraction": 0.2567625590382138,
+        "normal_alert_fraction": 0.0,
+        "point_precision": 1.0,
+        "average_precision": 0.967560428672543,
+        "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+        "event_recall": 1.0
+      },
+      "robust": {
+        "total_events": 3,
+        "detected_events": 0,
+        "missed_events": 3,
+        "false_episodes": 0,
+        "observed_normal_seconds": 1493.0,
+        "total_normal_seconds": 1558.0,
+        "observed_seconds": 2238.0,
+        "alert_seconds": 0.0,
+        "false_alert_seconds": 0.0,
+        "true_positive_samples": 0,
+        "false_positive_samples": 0,
+        "scored_samples": 2102,
+        "false_episodes_per_hour": 0.0,
+        "mean_delay_seconds": null,
+        "median_delay_seconds": null,
+        "alert_fraction": 0.0,
+        "normal_alert_fraction": 0.0,
+        "point_precision": null,
+        "average_precision": 0.3365344956672328,
+        "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+        "event_recall": 0.0
+      },
+      "persistence": {
+        "total_events": 3,
+        "detected_events": 0,
+        "missed_events": 3,
+        "false_episodes": 0,
+        "observed_normal_seconds": 1493.0,
+        "total_normal_seconds": 1558.0,
+        "observed_seconds": 2238.0,
+        "alert_seconds": 0.0,
+        "false_alert_seconds": 0.0,
+        "true_positive_samples": 0,
+        "false_positive_samples": 0,
+        "scored_samples": 2102,
+        "false_episodes_per_hour": 0.0,
+        "mean_delay_seconds": null,
+        "median_delay_seconds": null,
+        "alert_fraction": 0.0,
+        "normal_alert_fraction": 0.0,
+        "point_precision": null,
+        "average_precision": 0.3563717992748604,
+        "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+        "event_recall": 0.0
+      }
+    },
+    "anomaly-free": {
+      "learned": {
+        "total_events": 0,
+        "detected_events": 0,
+        "missed_events": 0,
+        "false_episodes": 0,
+        "observed_normal_seconds": 1934.0,
+        "total_normal_seconds": 1936.0,
+        "observed_seconds": 1934.0,
+        "alert_seconds": 0.0,
+        "false_alert_seconds": 0.0,
+        "true_positive_samples": 0,
+        "false_positive_samples": 0,
+        "scored_samples": 1849,
+        "false_episodes_per_hour": 0.0,
+        "mean_delay_seconds": null,
+        "median_delay_seconds": null,
+        "alert_fraction": 0.0,
+        "normal_alert_fraction": 0.0,
+        "point_precision": null,
+        "average_precision": null,
+        "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+        "event_recall": null
+      },
+      "robust": {
+        "total_events": 0,
+        "detected_events": 0,
+        "missed_events": 0,
+        "false_episodes": 1,
+        "observed_normal_seconds": 1905.0,
+        "total_normal_seconds": 1936.0,
+        "observed_seconds": 1905.0,
+        "alert_seconds": 3.0,
+        "false_alert_seconds": 3.0,
+        "true_positive_samples": 0,
+        "false_positive_samples": 2,
+        "scored_samples": 1821,
+        "false_episodes_per_hour": 1.889763779527559,
+        "mean_delay_seconds": null,
+        "median_delay_seconds": null,
+        "alert_fraction": 0.0015748031496062992,
+        "normal_alert_fraction": 0.0015748031496062992,
+        "point_precision": 0.0,
+        "average_precision": null,
+        "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+        "event_recall": null
+      },
+      "persistence": {
+        "total_events": 0,
+        "detected_events": 0,
+        "missed_events": 0,
+        "false_episodes": 6,
+        "observed_normal_seconds": 1905.0,
+        "total_normal_seconds": 1936.0,
+        "observed_seconds": 1905.0,
+        "alert_seconds": 7.0,
+        "false_alert_seconds": 7.0,
+        "true_positive_samples": 0,
+        "false_positive_samples": 7,
+        "scored_samples": 1821,
+        "false_episodes_per_hour": 11.338582677165354,
+        "mean_delay_seconds": null,
+        "median_delay_seconds": null,
+        "alert_fraction": 0.003674540682414698,
+        "normal_alert_fraction": 0.003674540682414698,
+        "point_precision": 0.0,
+        "average_precision": null,
+        "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+        "event_recall": null
+      }
+    }
+  },
+  "availability": {
+    "annotated_segments": 28,
+    "segments_with_any_v2_score": 28,
+    "segments_with_any_legacy30_score": 25,
+    "common_legacy30_scored_normal_seconds": 17311.0,
+    "common_legacy30_normal_alert_fraction": 0.005487840101669458,
+    "common_legacy30_point_precision": 0.9796518200316527,
+    "note": "Availability is separate from event correctness. Common eligibility is used only for point/time metrics, never to create artificial event onsets."
+  },
+  "evaluation_protocol": "onset_v2",
+  "development_plan_sha256": "b6fcc596cbd1ce7203de58a8b36846addc6f236a28b88bf5bf8de6a4caeddf40",
+  "selected_development_model_sha256": "25cf4f547ceb883b9efab30de24397580562a3f5edbbf4df9c3a00d5202711dc",
+  "selection_frozen_before_this_audit": {
+    "index": 2,
+    "threshold_index": 95,
+    "threshold": 0.9881753627638498,
+    "feasible": true,
+    "metrics": {
+      "total_events": 29,
+      "detected_events": 24,
+      "missed_events": 5,
+      "false_episodes": 5,
+      "observed_normal_seconds": 9179.0,
+      "total_normal_seconds": 9203.0,
+      "observed_seconds": 14126.0,
+      "alert_seconds": 2705.0,
+      "false_alert_seconds": 45.0,
+      "true_positive_samples": 2511,
+      "false_positive_samples": 44,
+      "scored_samples": 13425,
+      "false_episodes_per_hour": 1.9609979300577405,
+      "mean_delay_seconds": 17.0,
+      "median_delay_seconds": 5.0,
+      "alert_fraction": 0.1914908679031573,
+      "normal_alert_fraction": 0.004902494825144352,
+      "point_precision": 0.9827788649706458,
+      "average_precision": 0.9391474553106219,
+      "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+      "event_recall": 0.8275862068965517
+    },
+    "candidate": {
+      "algorithm": "HistGradientBoostingClassifier",
+      "max_iter": 150,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 20,
+      "learning_rate": 0.05,
+      "l2_regularization": 1.0,
+      "early_stopping": false
+    }
+  },
+  "target": {
+    "minimum_hits": 25,
+    "observed_hits": 23,
+    "total_events": 28,
+    "recall_target_met": false,
+    "false_rate_limit_met": false,
+    "normal_alert_limit_met": true
+  },
+  "note": "Existing test outcomes were already examined in v1. This is retrospective, not an untouched generalization test. No parameters were selected on this audit."
+}

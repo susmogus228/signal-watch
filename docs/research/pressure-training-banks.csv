@@ -1,0 +1,4 @@
+fold,old_scale,new_scale,old_bank_max_abs_z,new_bank_max_abs_z,guard_bound,source,json_pointer
+0,0.32792699999999997,0.32792699999999997,5.000012197836714,5.000012197836714,128.0,artifacts/pressure-scaled-development/K4_fit_evidence.json,/folds/0/pressure_scaling
+1,1e-06,0.25716489305517487,1311711.0,5.100661231074692,128.0,artifacts/pressure-scaled-development/K4_fit_evidence.json,/folds/1/pressure_scaling
+2,1e-06,0.2610529761145108,1639639.0000000002,6.280866912165648,128.0,artifacts/pressure-scaled-development/K4_fit_evidence.json,/folds/2/pressure_scaling

@@ -1,0 +1,162 @@
+{
+  "study": "confirmed-v6",
+  "schema_version": 1,
+  "source_snapshot": "b2c0d46c2971dcbfe71e26087b6d231998bb91c2",
+  "dependencies": {
+    "artifacts/v5/preservation_manifest.json": "51bc088c60a47c2c7bf3f58d2abd75d9e482009060c4ddb2bf2ee5bb437b6dd5",
+    "artifacts/v5/model.joblib": "16a932107f2c73f80b03637bdaf1956723734b2de4d58b4b9d96f30b3998d57d",
+    "artifacts/v5/metadata.json": "0625694566cf641dc9716ae3ce3436a8508b1d9345479be2f3ff7034a5c07f03",
+    "artifacts/v5/development/plan.json": "0fc5da6ef7a9e2badb6f0d8fdc40f5c47861dca215ff4a12645b9d26a8c5dfdc",
+    "artifacts/v5/development/report.json": "8e2c39fc825c105111edd77592f5decf2dd4919d52647f8b719d087c71ce5749",
+    "artifacts/v5/development/selected_oof_scores.npz": "4904899a8a7ca8ac43ea33dd3a556f393f6bab717add48686622b3efcfc081c5",
+    "artifacts/v5/development/selected_bundle.joblib": "15f74ee1b89bc8da24c9e3ed65ae122efb40790e57f39cddbb0fda92dbd71a55",
+    "artifacts/v1/preservation_manifest.json": "0dd755040776af62d09fac3be1fb18fb3efc9b0beed870472859ea8009fc42a9",
+    "artifacts/v1/model.joblib": "1c8554a484148129b281e7aa6657d078658d778b3cff6edbf3f4f16594a36cc2",
+    "artifacts/v1/metadata.json": "e618804cfea9d6202735a5dc4c270b5c21950133db9101c3c25c1cd785d9b745",
+    "artifacts/v1/split_manifest.json": "870af2b6bb046fa6acba529d62163a5f44d893e09d6607f6eb1b6fb1ba77b941",
+    "signalwatch/alarm_policy.py": "968563e6abaf71102473b2dc74831a7cc13de080e502b564c6ae1454afb57efa",
+    "signalwatch/ml_confirmed.py": "a497fee2a4b6f558925e1255d8597b93e94205cb5c329eaeb25734598cfee3ef",
+    "signalwatch/ml_hybrid.py": "1b1d706ee23cbf1a68e1b39ae11c0000df94ee376452c79f969c718a2f492823",
+    "signalwatch/ml_v2.py": "5d1afcf5c53c058776d9d7df46261207e50b0bac9ba45b5e0225e037e1da2de1",
+    "signalwatch/ml_supervised.py": "ff3e713af3a1ef4b739c088bf83c29399f69cd7835100979df8b22b204170a11",
+    "signalwatch/ml_supervised_weighted.py": "ab5a7d2a3c2179c2e8bccab724ad42d5a2f6c0da3dfce3914d16f7f22817ef49",
+    "signalwatch/dataset.py": "0f854d5772a555dd80b0874987e68f6d2d6494741046ad871382cd031738106a",
+    "signalwatch/evaluation.py": "dbf17c12a6b8a4e3201fa6753f4a3ff0568677322f2e7ea4bf00752c9f1e31e0"
+  },
+  "development_ids": [
+    "other-3",
+    "other-6",
+    "other-9",
+    "other-12",
+    "valve1-0",
+    "valve1-3",
+    "valve1-6",
+    "valve1-9",
+    "valve1-12",
+    "valve1-15",
+    "valve2-0",
+    "valve2-3"
+  ],
+  "source_hashes": {
+    "anomaly-free": "7641a8742957100ef424dd97adfb3eeab27d4d180645fe2b3c49b7f7146ae9a6",
+    "other-3": "f3c19a89f74f62a475c246b9263f161f7a734dd88304de803939cebaa55c7ebd",
+    "other-6": "eb8f05622a62c855040ea358b87be35fb1a4a3720ba0610569bab384db4b6e04",
+    "other-9": "11c4514b0bc706acff637fea6707ad9258ac878fe9dff3d0b11d2b618d94d8ea",
+    "other-12": "b0882efbcf2669223ae78bee61c9f10074a9b2375f0e86b8957ae5ce4aad1e72",
+    "valve1-0": "16af3f71313a23dd33d9b7b8065d836d05c3f9257588881cc7fbe07c076d9dc8",
+    "valve1-3": "cb6afea108eddfd8447307e405f86bbb764b8d8e9130d7849a46e1303e19b8b2",
+    "valve1-6": "97469c0e0c9c0e0ee5d30794f1f36c6785df5816a112a8b16c59637e8c894685",
+    "valve1-9": "2aa1ae1b2ff505caecda24802b877dc686924bbbeeb7e7db4faa261efb5ed5bd",
+    "valve1-12": "90adfa9bc86d4556e6a4ce734436fd5685af79c189cd9828f8df75a7f468ce07",
+    "valve1-15": "75cc86ab25d7091eee024739fa06d048753480d5d7d1507077231cab4f1b7a7e",
+    "valve2-0": "a6670e7a68c7c6ba62c649bd9d350633e80db624578e9529f2b736ced5e32bde",
+    "valve2-3": "86927555d5c523e587d41500bd5dee4e2468289ec1b988ac17755aeae697d7f8"
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "heldout_ids": [
+        "other-3",
+        "other-12",
+        "valve1-6",
+        "valve1-15"
+      ],
+      "train_ids": [
+        "other-6",
+        "other-9",
+        "valve1-0",
+        "valve1-3",
+        "valve1-9",
+        "valve1-12",
+        "valve2-0",
+        "valve2-3"
+      ]
+    },
+    {
+      "fold": 1,
+      "heldout_ids": [
+        "other-6",
+        "valve1-0",
+        "valve1-9",
+        "valve2-0"
+      ],
+      "train_ids": [
+        "other-3",
+        "other-9",
+        "other-12",
+        "valve1-3",
+        "valve1-6",
+        "valve1-12",
+        "valve1-15",
+        "valve2-3"
+      ]
+    },
+    {
+      "fold": 2,
+      "heldout_ids": [
+        "other-9",
+        "valve1-3",
+        "valve1-12",
+        "valve2-3"
+      ],
+      "train_ids": [
+        "other-3",
+        "other-6",
+        "other-12",
+        "valve1-0",
+        "valve1-6",
+        "valve1-9",
+        "valve1-15",
+        "valve2-0"
+      ]
+    }
+  ],
+  "confirmation_seconds": [
+    0.0,
+    1.0,
+    2.0,
+    5.0,
+    10.0
+  ],
+  "raw_threshold": 1.0,
+  "policy": "Consecutive OBSERVED finite raw scores strictly above1 spanning D elapsed seconds. This does not assert the analog signal stayed positive between observations.",
+  "activation": "Emit only at the current observed positive row where elapsed-current minus elapsed-pending-start >=D. Never backfill.",
+  "recovery": "Raw score<=1, nonfinite score or timestamp gap resets pending/confirmed state. No cooldown, delayed recovery, periodic rearming or label input.",
+  "scores": "Decision score is min(raw,1) while pending, otherwise actual raw score. Preserve every nonfinite value and finite exposure; D=0 is exact identity.",
+  "provenance": "raw_episode_start is the first row index of the uninterrupted observed positive raw episode, while pending or confirmed; otherwise -1. Confirmed episode onset is its actual emission row.",
+  "feasibility": {
+    "retain": "Every annotation event ID detected by raw OOF must also be detected after confirmation.",
+    "false_onsets_per_normal_hour_max": 2.0,
+    "normal_alert_fraction_max": 0.05,
+    "median_delay_increase_max_seconds": 10.0,
+    "scored_normal_exposure": "EXACT equality to raw control"
+  },
+  "ranking": "Fewer false onsets, lower normal-alert fraction, lower median delay, lower mean delay, then declared candidate order.",
+  "promotion": "Promote only a feasible nonidentity point with strictly fewer false onsets or lower normal-alert time than raw identity. Otherwise retain V5 and skip retrospective scoring.",
+  "event_protocol": "onset_v2 unchanged. Normal pending start -> anomalous confirmation can be a hit; anomalous pending start -> normal confirmation is false. Never inherit raw event status.",
+  "raw_metric_separation": "methods refer to decision scores. raw_methods describe original V5 scores. Capped decision-score AP is not unchanged model discrimination.",
+  "classifier_config": {
+    "algorithm": "HistGradientBoostingClassifier",
+    "max_iter": 150,
+    "max_leaf_nodes": 15,
+    "min_samples_leaf": 20,
+    "learning_rate": 0.05,
+    "l2_regularization": 1.0,
+    "early_stopping": false,
+    "weighting": "record_equal_class_balanced"
+  },
+  "innovation_config": {
+    "window": 2,
+    "min_samples_leaf": 12,
+    "n_estimators": 64
+  },
+  "branch_thresholds": "Keep preserved V5 classifier and residual thresholds and aggregation exactly.",
+  "final_refit": "After policy selection, fit both fixed branches on original development+normal train anchor. Policy is not selected using these in-sample scores. Compare refit raw scores with archived V5 template on development only for deterministic reproduction.",
+  "report_scope": "Repeated OOF DEVELOPMENT decision-policy selection; not independent validation or a blind test.",
+  "forbidden_access": [
+    "artifacts/v5/audit",
+    "artifacts/v5/frozen_evaluation.json",
+    "old test recordings"
+  ],
+  "old_test_access": false
+}

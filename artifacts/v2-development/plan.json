@@ -1,0 +1,257 @@
+{
+  "study": "normal-only-innovation-v2",
+  "schema_version": 1,
+  "dataset_snapshot": "b2c0d46c2971dcbfe71e26087b6d231998bb91c2",
+  "development_ids": [
+    "other-3",
+    "other-6",
+    "other-9",
+    "other-12",
+    "valve1-0",
+    "valve1-3",
+    "valve1-6",
+    "valve1-9",
+    "valve1-12",
+    "valve1-15",
+    "valve2-0",
+    "valve2-3"
+  ],
+  "source_hashes": {
+    "anomaly-free": "7641a8742957100ef424dd97adfb3eeab27d4d180645fe2b3c49b7f7146ae9a6",
+    "other-3": "f3c19a89f74f62a475c246b9263f161f7a734dd88304de803939cebaa55c7ebd",
+    "other-6": "eb8f05622a62c855040ea358b87be35fb1a4a3720ba0610569bab384db4b6e04",
+    "other-9": "11c4514b0bc706acff637fea6707ad9258ac878fe9dff3d0b11d2b618d94d8ea",
+    "other-12": "b0882efbcf2669223ae78bee61c9f10074a9b2375f0e86b8957ae5ce4aad1e72",
+    "valve1-0": "16af3f71313a23dd33d9b7b8065d836d05c3f9257588881cc7fbe07c076d9dc8",
+    "valve1-3": "cb6afea108eddfd8447307e405f86bbb764b8d8e9130d7849a46e1303e19b8b2",
+    "valve1-6": "97469c0e0c9c0e0ee5d30794f1f36c6785df5816a112a8b16c59637e8c894685",
+    "valve1-9": "2aa1ae1b2ff505caecda24802b877dc686924bbbeeb7e7db4faa261efb5ed5bd",
+    "valve1-12": "90adfa9bc86d4556e6a4ce734436fd5685af79c189cd9828f8df75a7f468ce07",
+    "valve1-15": "75cc86ab25d7091eee024739fa06d048753480d5d7d1507077231cab4f1b7a7e",
+    "valve2-0": "a6670e7a68c7c6ba62c649bd9d350633e80db624578e9529f2b736ced5e32bde",
+    "valve2-3": "86927555d5c523e587d41500bd5dee4e2468289ec1b988ac17755aeae697d7f8"
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "heldout_ids": [
+        "other-3",
+        "other-12",
+        "valve1-6",
+        "valve1-15"
+      ],
+      "train_ids": [
+        "other-6",
+        "other-9",
+        "valve1-0",
+        "valve1-3",
+        "valve1-9",
+        "valve1-12",
+        "valve2-0",
+        "valve2-3"
+      ]
+    },
+    {
+      "fold": 1,
+      "heldout_ids": [
+        "other-6",
+        "valve1-0",
+        "valve1-9",
+        "valve2-0"
+      ],
+      "train_ids": [
+        "other-3",
+        "other-9",
+        "other-12",
+        "valve1-3",
+        "valve1-6",
+        "valve1-12",
+        "valve1-15",
+        "valve2-3"
+      ]
+    },
+    {
+      "fold": 2,
+      "heldout_ids": [
+        "other-9",
+        "valve1-3",
+        "valve1-12",
+        "valve2-3"
+      ],
+      "train_ids": [
+        "other-3",
+        "other-6",
+        "other-12",
+        "valve1-0",
+        "valve1-6",
+        "valve1-9",
+        "valve1-15",
+        "valve2-0"
+      ]
+    }
+  ],
+  "normal_train_anchor": [
+    0,
+    5172
+  ],
+  "normal_scale_calibration_anchor": [
+    5202,
+    7524
+  ],
+  "anchors_note": "Chronological blocks of the original normal recording. Calibration is reused development material, not an independent audit.",
+  "normal_training_rule": "Target and every historical sample must have anomaly=0; no window may cross a gap. Held-out recordings never enter model/scaler fitting.",
+  "target": "Present eight-channel observation minus preceding-window mean, divided by fold-training innovation scale.",
+  "features": "Centered historical observations flattened, historical channel standard deviations and endpoint changes; no absolute levels, labels, timestamps or recording IDs.",
+  "candidates": [
+    {
+      "window": 2,
+      "min_samples_leaf": 4,
+      "n_estimators": 64
+    },
+    {
+      "window": 2,
+      "min_samples_leaf": 12,
+      "n_estimators": 64
+    },
+    {
+      "window": 5,
+      "min_samples_leaf": 4,
+      "n_estimators": 64
+    },
+    {
+      "window": 5,
+      "min_samples_leaf": 12,
+      "n_estimators": 64
+    },
+    {
+      "window": 10,
+      "min_samples_leaf": 4,
+      "n_estimators": 64
+    },
+    {
+      "window": 10,
+      "min_samples_leaf": 12,
+      "n_estimators": 64
+    }
+  ],
+  "random_state": 20261023,
+  "n_jobs": 1,
+  "smoothing_samples": 1,
+  "residual_scale": "Per-channel median absolute forecast residual on the separate normal calibration anchor, floored at0.03 standardized units. No in-sample residual normalization.",
+  "threshold_grid": {
+    "normal_quantiles": [
+      0.9,
+      0.901,
+      0.902,
+      0.903,
+      0.904,
+      0.905,
+      0.906,
+      0.907,
+      0.908,
+      0.909,
+      0.91,
+      0.911,
+      0.912,
+      0.913,
+      0.914,
+      0.915,
+      0.916,
+      0.917,
+      0.918,
+      0.919,
+      0.92,
+      0.921,
+      0.922,
+      0.923,
+      0.924,
+      0.925,
+      0.926,
+      0.927,
+      0.928,
+      0.929,
+      0.93,
+      0.931,
+      0.932,
+      0.933,
+      0.934,
+      0.935,
+      0.936,
+      0.937,
+      0.9380000000000001,
+      0.9390000000000001,
+      0.9400000000000001,
+      0.9410000000000001,
+      0.9420000000000001,
+      0.9430000000000001,
+      0.9440000000000001,
+      0.9450000000000001,
+      0.9460000000000001,
+      0.9470000000000001,
+      0.948,
+      0.9490000000000001,
+      0.95,
+      0.9510000000000001,
+      0.952,
+      0.9530000000000001,
+      0.954,
+      0.955,
+      0.956,
+      0.957,
+      0.958,
+      0.959,
+      0.96,
+      0.961,
+      0.962,
+      0.963,
+      0.964,
+      0.965,
+      0.966,
+      0.967,
+      0.968,
+      0.969,
+      0.97,
+      0.971,
+      0.972,
+      0.973,
+      0.974,
+      0.975,
+      0.976,
+      0.977,
+      0.978,
+      0.979,
+      0.98,
+      0.981,
+      0.982,
+      0.983,
+      0.984,
+      0.985,
+      0.986,
+      0.987,
+      0.988,
+      0.989,
+      0.99,
+      0.991,
+      0.992,
+      0.993,
+      0.994,
+      0.995,
+      0.996,
+      0.997,
+      0.998,
+      0.999,
+      1.0
+    ],
+    "additional": "nextafter(max normal score,+inf)"
+  },
+  "constraints": {
+    "normal_alert_fraction_max": 0.05,
+    "false_onsets_per_normal_hour_max": 2.0
+  },
+  "selection": "Evaluate every predefined threshold. Maximize onset_v2 recall among feasible points, then minimize normal-alert fraction, false onsets/hour, candidate order and threshold order.",
+  "no_feasible_behavior": "Save candidate audits and a no-feasible report; do not fit/promote a final model or inspect legacy test recordings.",
+  "protocol": "onset_v2 unchanged; literal consecutive alert episodes; no cooldown, pulsing, point adjustment or gap history carryover.",
+  "report_scope": "Grouped out-of-fold DEVELOPMENT selection, not unbiased validation or a new blind test.",
+  "availability": "Report per-window event observability plus point metrics on common legacy30-sample eligibility; do not manufacture new onsets by masking episodes.",
+  "legacy_test_access": false
+}

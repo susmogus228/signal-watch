@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "evidence_as_of": "2026-10-27",
+  "generator": "scripts/build_research_summary.py",
+  "generator_sha256": "354139a0d3f42d1dc8829ad79fb76074bbf77e1de94e42da131627de71af1a39",
+  "matplotlib_version": "3.11.2",
+  "training_or_model_inference": false,
+  "source_files_sha256": {
+    "artifacts/v1/frozen_evaluation.json": "0d6715e66214ea04a3027123647eddd530b05ac9532629a50b4b5569d0f30791",
+    "artifacts/v2/retrospective_audit.json": "0c9e3cacd0071b7d424f6b7d7625b9791aea21bfa03009110ca9e9ad9deb40bf",
+    "artifacts/supervised/retrospective_audit.json": "006fe0070c8c22a3dba9a402b8e0cec64173af63d0ae8051e91a465a23bdc87b",
+    "artifacts/supervised-weighted/retrospective_audit.json": "90462e2c8b5795d71b1b6e49e2f651ce2f4fef71b32b1a1db3fbd111e48ac1be",
+    "artifacts/hybrid/retrospective_audit.json": "0ff0b1999bb75a54d5cd6de6eb8cff32b896a05f7ebe23146d521284b0c6c16c",
+    "artifacts/calibrated/retrospective_audit.json": "cb73ed96d7e33aac38bac03ca63326b20919764267d56e786341dfd1c9274336",
+    "artifacts/hybrid-development/report.json": "8e2c39fc825c105111edd77592f5decf2dd4919d52647f8b719d087c71ce5749",
+    "artifacts/calibrated-development/report.json": "499241827eab82ba5794ce4f1abe6192671e8717d9df17ca73eb8aa4ddf44de6",
+    "artifacts/pressure-scaled-development/report.json": "6fe202065d97dc5eb9c332749e757ca7fc993b840547ed7c2ee6bfe79e5b5b2d",
+    "artifacts/pressure-scaled-development/K4_fit_evidence.json": "742d9b694b4a19e912d5e38a1d0e3c45942add2c91d52b069043b99a1e2eb485"
+  },
+  "outputs_sha256": {
+    "docs/research/chart-data.json": "e22fc3ee1f61251a582a6d818863ce4d26d7a72903b67563c225fac6afdd8e96",
+    "docs/research/figures/audit-tradeoff.png": "4509f985a9d62562ce08eabee6b982fc084434fd4f2aa5b004678d2911c3123a",
+    "docs/research/figures/audit-tradeoff.svg": "017a013c4580eef94d477efbfe631b185811280fa4b322b5c8eb3a9a39e88540",
+    "docs/research/figures/pressure-conditioning.png": "661b78661ce833dc2e2a38a99f9ce94c02d30a460fe8090b7c32c20c79952ca3",
+    "docs/research/figures/pressure-conditioning.svg": "14a0e7f539be7eaa36b5452a68f61ce70eebd088a5de076dfde4e0728616213f",
+    "docs/research/figures/pressure-tradeoff.png": "9b205da6dd977626e9bc9c12daf82c6601d2721721560ad1c4b7b9a84217b367",
+    "docs/research/figures/pressure-tradeoff.svg": "72336cf23ea1887560e684e528f93e570168b52032eafe49d67c1b8bbce4b525",
+    "docs/research/pressure-training-banks.csv": "78694599126b68678b7b1c526a0cb2a993c2152a11c084564ecb4464591a10d2",
+    "docs/research/retrospective-results.csv": "a2aa062006aa514c433fbf4d21d3c083333bbe153395ab5ad1da7fbf168030a3",
+    "docs/research/v13-paired-frontiers.csv": "b8bed9aea8719dba464711f67d17094e0b6db3641fc1a9391528cecca839b7a9"
+  }
+}

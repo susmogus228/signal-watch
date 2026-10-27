@@ -1,0 +1,1002 @@
+{
+  "recorded_at_utc": "2026-10-27T05:49:51.548974+00:00",
+  "scope": "V13 training-bank Pressure correction and one paired development study",
+  "status": "implementation_and_experiment_verified_quality_screen_failed",
+  "pressure_correction_and_comparison_complete": true,
+  "joint_model_quality_goal_achieved": false,
+  "active_version": "5.0.0",
+  "plan_sha256": "1ddc87534d98a776942af767d0e8db9222988dd26796292d825a16808a25267c",
+  "protocol_sha256": "3e76d2c1145dfb9b27865bbe8e7f770c15ec773d42fc23b9d133acba0ccffd72",
+  "report_sha256": "6fe202065d97dc5eb9c332749e757ca7fc993b840547ed7c2ee6bfe79e5b5b2d",
+  "candidate_sha256": "5b44c46b76f0aa3f993402c753c642044f6031768f8e2ebb973b1dee9cc9bb6c",
+  "selection_sha256": "b8979f93932a80f745f4283344ad072856cd4dc87689fdcc999990f6987d6f56",
+  "candidate_count": 306,
+  "feasible_count": 0,
+  "selected": null,
+  "final_fit": null,
+  "final_model_available": false,
+  "actual_top_level_fit_calls": 18,
+  "counters": {
+    "gmm_attempted": 9,
+    "gmm_completed": 9,
+    "gmm_converged": 9,
+    "gmm_internal_initializations": 9,
+    "hgb_attempted": 9,
+    "hgb_completed": 9
+  },
+  "study_seconds": 202.825,
+  "paired_frontiers": {
+    "K1": {
+      "v12": {
+        "progressive_recall_frontier": {
+          "threshold": 0.9718653604686452,
+          "metrics": {
+            "total_events": 29,
+            "detected_events": 27,
+            "missed_events": 2,
+            "false_episodes": 5,
+            "observed_normal_seconds": 9179.0,
+            "total_normal_seconds": 9203.0,
+            "observed_seconds": 14126.0,
+            "alert_seconds": 3255.0,
+            "false_alert_seconds": 37.0,
+            "true_positive_samples": 3043,
+            "false_positive_samples": 35,
+            "scored_samples": 13425,
+            "false_episodes_per_hour": 1.9609979300577405,
+            "mean_delay_seconds": 15.666666666666666,
+            "median_delay_seconds": 3.0,
+            "alert_fraction": 0.23042616451932607,
+            "normal_alert_fraction": 0.004030940189563134,
+            "point_precision": 0.98862897985705,
+            "average_precision": 0.9411181426199539,
+            "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+            "event_recall": 0.9310344827586207
+          },
+          "progressive_subset": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": 46.0,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": 646.0
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 7.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 606.0
+            }
+          ],
+          "progressive_event_outcomes": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": 46.0,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": 646.0
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 7.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 606.0
+            }
+          ]
+        },
+        "burden_limited_recall_frontier": {
+          "threshold": 0.9951986837854279,
+          "metrics": {
+            "total_events": 29,
+            "detected_events": 26,
+            "missed_events": 3,
+            "false_episodes": 1,
+            "observed_normal_seconds": 9179.0,
+            "total_normal_seconds": 9203.0,
+            "observed_seconds": 14126.0,
+            "alert_seconds": 2675.0,
+            "false_alert_seconds": 28.0,
+            "true_positive_samples": 2508,
+            "false_positive_samples": 27,
+            "scored_samples": 13425,
+            "false_episodes_per_hour": 0.3921995860115481,
+            "mean_delay_seconds": 16.615384615384617,
+            "median_delay_seconds": 4.0,
+            "alert_fraction": 0.18936712445136628,
+            "normal_alert_fraction": 0.003050441224534263,
+            "point_precision": 0.9893491124260355,
+            "average_precision": 0.9411181426199539,
+            "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+            "event_recall": 0.896551724137931
+          },
+          "progressive_subset": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "missed",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": null,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": null
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 25.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 624.0
+            }
+          ],
+          "progressive_event_outcomes": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "missed",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": null,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": null
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 25.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 624.0
+            }
+          ]
+        }
+      },
+      "v13": {
+        "progressive_recall_frontier": {
+          "threshold": 0.9718653604686452,
+          "metrics": {
+            "total_events": 29,
+            "detected_events": 27,
+            "missed_events": 2,
+            "false_episodes": 5,
+            "observed_normal_seconds": 9179.0,
+            "total_normal_seconds": 9203.0,
+            "observed_seconds": 14126.0,
+            "alert_seconds": 3255.0,
+            "false_alert_seconds": 37.0,
+            "true_positive_samples": 3043,
+            "false_positive_samples": 35,
+            "scored_samples": 13425,
+            "false_episodes_per_hour": 1.9609979300577405,
+            "mean_delay_seconds": 15.666666666666666,
+            "median_delay_seconds": 3.0,
+            "alert_fraction": 0.23042616451932607,
+            "normal_alert_fraction": 0.004030940189563134,
+            "point_precision": 0.98862897985705,
+            "average_precision": 0.9411181426199539,
+            "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+            "event_recall": 0.9310344827586207
+          },
+          "progressive_subset": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": 46.0,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": 646.0
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 7.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 606.0
+            }
+          ],
+          "progressive_event_outcomes": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": 46.0,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": 646.0
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 7.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 606.0
+            }
+          ]
+        },
+        "burden_limited_recall_frontier": {
+          "threshold": 0.9951986837854279,
+          "metrics": {
+            "total_events": 29,
+            "detected_events": 26,
+            "missed_events": 3,
+            "false_episodes": 1,
+            "observed_normal_seconds": 9179.0,
+            "total_normal_seconds": 9203.0,
+            "observed_seconds": 14126.0,
+            "alert_seconds": 2675.0,
+            "false_alert_seconds": 28.0,
+            "true_positive_samples": 2508,
+            "false_positive_samples": 27,
+            "scored_samples": 13425,
+            "false_episodes_per_hour": 0.3921995860115481,
+            "mean_delay_seconds": 16.615384615384617,
+            "median_delay_seconds": 4.0,
+            "alert_fraction": 0.18936712445136628,
+            "normal_alert_fraction": 0.003050441224534263,
+            "point_precision": 0.9893491124260355,
+            "average_precision": 0.9411181426199539,
+            "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+            "event_recall": 0.896551724137931
+          },
+          "progressive_subset": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "missed",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": null,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": null
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 25.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 624.0
+            }
+          ],
+          "progressive_event_outcomes": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "missed",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": null,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": null
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 25.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 624.0
+            }
+          ]
+        }
+      }
+    },
+    "K2": {
+      "v12": {
+        "progressive_recall_frontier": {
+          "threshold": 0.9555687264953208,
+          "metrics": {
+            "total_events": 29,
+            "detected_events": 27,
+            "missed_events": 2,
+            "false_episodes": 6,
+            "observed_normal_seconds": 9179.0,
+            "total_normal_seconds": 9203.0,
+            "observed_seconds": 14126.0,
+            "alert_seconds": 3179.0,
+            "false_alert_seconds": 37.0,
+            "true_positive_samples": 2968,
+            "false_positive_samples": 35,
+            "scored_samples": 13425,
+            "false_episodes_per_hour": 2.3531975160692884,
+            "mean_delay_seconds": 15.333333333333334,
+            "median_delay_seconds": 3.0,
+            "alert_fraction": 0.22504601444145547,
+            "normal_alert_fraction": 0.004030940189563134,
+            "point_precision": 0.9883449883449883,
+            "average_precision": 0.9512809126496992,
+            "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+            "event_recall": 0.9310344827586207
+          },
+          "progressive_subset": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": 46.0,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": 646.0
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 7.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 606.0
+            }
+          ],
+          "progressive_event_outcomes": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": 46.0,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": 646.0
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 7.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 606.0
+            }
+          ]
+        },
+        "burden_limited_recall_frontier": {
+          "threshold": 0.9909371983178837,
+          "metrics": {
+            "total_events": 29,
+            "detected_events": 26,
+            "missed_events": 3,
+            "false_episodes": 1,
+            "observed_normal_seconds": 9179.0,
+            "total_normal_seconds": 9203.0,
+            "observed_seconds": 14126.0,
+            "alert_seconds": 2828.0,
+            "false_alert_seconds": 28.0,
+            "true_positive_samples": 2651,
+            "false_positive_samples": 27,
+            "scored_samples": 13425,
+            "false_episodes_per_hour": 0.3921995860115481,
+            "mean_delay_seconds": 15.961538461538462,
+            "median_delay_seconds": 3.5,
+            "alert_fraction": 0.2001982160555005,
+            "normal_alert_fraction": 0.003050441224534263,
+            "point_precision": 0.9899178491411501,
+            "average_precision": 0.9512809126496992,
+            "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+            "event_recall": 0.896551724137931
+          },
+          "progressive_subset": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "missed",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": null,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": null
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 25.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 624.0
+            }
+          ],
+          "progressive_event_outcomes": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "missed",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": null,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": null
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 25.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 624.0
+            }
+          ]
+        }
+      },
+      "v13": {
+        "progressive_recall_frontier": {
+          "threshold": 0.9176793138426952,
+          "metrics": {
+            "total_events": 29,
+            "detected_events": 27,
+            "missed_events": 2,
+            "false_episodes": 17,
+            "observed_normal_seconds": 9179.0,
+            "total_normal_seconds": 9203.0,
+            "observed_seconds": 14126.0,
+            "alert_seconds": 3270.0,
+            "false_alert_seconds": 75.0,
+            "true_positive_samples": 3017,
+            "false_positive_samples": 70,
+            "scored_samples": 13425,
+            "false_episodes_per_hour": 6.667392962196318,
+            "mean_delay_seconds": 14.444444444444445,
+            "median_delay_seconds": 3.0,
+            "alert_fraction": 0.23148803624522157,
+            "normal_alert_fraction": 0.008170824708573918,
+            "point_precision": 0.9773242630385488,
+            "average_precision": 0.9512742271847098,
+            "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+            "event_recall": 0.9310344827586207
+          },
+          "progressive_subset": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": 26.0,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": 626.0
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 7.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 606.0
+            }
+          ],
+          "progressive_event_outcomes": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": 26.0,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": 626.0
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 7.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 606.0
+            }
+          ]
+        },
+        "burden_limited_recall_frontier": {
+          "threshold": 0.9909371983178837,
+          "metrics": {
+            "total_events": 29,
+            "detected_events": 26,
+            "missed_events": 3,
+            "false_episodes": 1,
+            "observed_normal_seconds": 9179.0,
+            "total_normal_seconds": 9203.0,
+            "observed_seconds": 14126.0,
+            "alert_seconds": 2815.0,
+            "false_alert_seconds": 28.0,
+            "true_positive_samples": 2638,
+            "false_positive_samples": 27,
+            "scored_samples": 13425,
+            "false_episodes_per_hour": 0.3921995860115481,
+            "mean_delay_seconds": 16.0,
+            "median_delay_seconds": 3.5,
+            "alert_fraction": 0.19927792722639104,
+            "normal_alert_fraction": 0.003050441224534263,
+            "point_precision": 0.9898686679174484,
+            "average_precision": 0.9512742271847098,
+            "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+            "event_recall": 0.896551724137931
+          },
+          "progressive_subset": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "missed",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": null,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": null
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 25.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 624.0
+            }
+          ],
+          "progressive_event_outcomes": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "missed",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": null,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": null
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 25.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 624.0
+            }
+          ]
+        }
+      }
+    },
+    "K4": {
+      "v12": {
+        "progressive_recall_frontier": {
+          "threshold": 0.8571184329230667,
+          "metrics": {
+            "total_events": 29,
+            "detected_events": 27,
+            "missed_events": 2,
+            "false_episodes": 40,
+            "observed_normal_seconds": 9179.0,
+            "total_normal_seconds": 9203.0,
+            "observed_seconds": 14126.0,
+            "alert_seconds": 3734.0,
+            "false_alert_seconds": 176.0,
+            "true_positive_samples": 3370,
+            "false_positive_samples": 167,
+            "scored_samples": 13425,
+            "false_episodes_per_hour": 15.687983440461924,
+            "mean_delay_seconds": 13.62962962962963,
+            "median_delay_seconds": 3.0,
+            "alert_fraction": 0.2643352682995894,
+            "normal_alert_fraction": 0.019174201982786795,
+            "point_precision": 0.9527848459146169,
+            "average_precision": 0.9146412884036854,
+            "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+            "event_recall": 0.9310344827586207
+          },
+          "progressive_subset": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": 3.0,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": 603.0
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 7.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 606.0
+            }
+          ],
+          "progressive_event_outcomes": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": 3.0,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": 603.0
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 7.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 606.0
+            }
+          ]
+        },
+        "burden_limited_recall_frontier": {
+          "threshold": 0.9952499532688787,
+          "metrics": {
+            "total_events": 29,
+            "detected_events": 9,
+            "missed_events": 20,
+            "false_episodes": 1,
+            "observed_normal_seconds": 9179.0,
+            "total_normal_seconds": 9203.0,
+            "observed_seconds": 14126.0,
+            "alert_seconds": 2239.0,
+            "false_alert_seconds": 28.0,
+            "true_positive_samples": 2107,
+            "false_positive_samples": 27,
+            "scored_samples": 13425,
+            "false_episodes_per_hour": 0.3921995860115481,
+            "mean_delay_seconds": 34.0,
+            "median_delay_seconds": 25.0,
+            "alert_fraction": 0.1585020529520034,
+            "normal_alert_fraction": 0.003050441224534263,
+            "point_precision": 0.9873477038425492,
+            "average_precision": 0.9146412884036854,
+            "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+            "event_recall": 0.3103448275862069
+          },
+          "progressive_subset": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "missed",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": null,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": null
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 25.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 624.0
+            }
+          ],
+          "progressive_event_outcomes": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "missed",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": null,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": null
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 25.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 624.0
+            }
+          ]
+        }
+      },
+      "v13": {
+        "progressive_recall_frontier": {
+          "threshold": 0.8395438345167259,
+          "metrics": {
+            "total_events": 29,
+            "detected_events": 27,
+            "missed_events": 2,
+            "false_episodes": 21,
+            "observed_normal_seconds": 9179.0,
+            "total_normal_seconds": 9203.0,
+            "observed_seconds": 14126.0,
+            "alert_seconds": 3598.0,
+            "false_alert_seconds": 111.0,
+            "true_positive_samples": 3299,
+            "false_positive_samples": 105,
+            "scored_samples": 13425,
+            "false_episodes_per_hour": 8.23619130624251,
+            "mean_delay_seconds": 15.037037037037036,
+            "median_delay_seconds": 2.0,
+            "alert_fraction": 0.2547076313181368,
+            "normal_alert_fraction": 0.0120928205686894,
+            "point_precision": 0.9691539365452408,
+            "average_precision": 0.9124814590934455,
+            "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+            "event_recall": 0.9310344827586207
+          },
+          "progressive_subset": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": 46.0,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": 646.0
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 6.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 605.0
+            }
+          ],
+          "progressive_event_outcomes": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": 46.0,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": 646.0
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 6.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 605.0
+            }
+          ]
+        },
+        "burden_limited_recall_frontier": {
+          "threshold": 0.9966209985524801,
+          "metrics": {
+            "total_events": 29,
+            "detected_events": 9,
+            "missed_events": 20,
+            "false_episodes": 1,
+            "observed_normal_seconds": 9179.0,
+            "total_normal_seconds": 9203.0,
+            "observed_seconds": 14126.0,
+            "alert_seconds": 2221.0,
+            "false_alert_seconds": 18.0,
+            "true_positive_samples": 2100,
+            "false_positive_samples": 18,
+            "scored_samples": 13425,
+            "false_episodes_per_hour": 0.3921995860115481,
+            "mean_delay_seconds": 37.888888888888886,
+            "median_delay_seconds": 36.0,
+            "alert_fraction": 0.15722780688092877,
+            "normal_alert_fraction": 0.0019609979300577404,
+            "point_precision": 0.9915014164305949,
+            "average_precision": 0.9124814590934455,
+            "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+            "event_recall": 0.3103448275862069
+          },
+          "progressive_subset": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "missed",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": null,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": null
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 21.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 620.0
+            }
+          ],
+          "progressive_event_outcomes": [
+            {
+              "id": "other-6-event-0",
+              "reference_status": "detected",
+              "candidate_status": "missed",
+              "reference_delay_seconds": 0.0,
+              "candidate_delay_seconds": null,
+              "reference_first_alert_seconds": 600.0,
+              "candidate_first_alert_seconds": null
+            },
+            {
+              "id": "other-9-event-0",
+              "reference_status": "detected",
+              "candidate_status": "detected",
+              "reference_delay_seconds": 3.0,
+              "candidate_delay_seconds": 21.0,
+              "reference_first_alert_seconds": 602.0,
+              "candidate_first_alert_seconds": 620.0
+            }
+          ]
+        }
+      }
+    }
+  },
+  "numerical_checks": {
+    "saved_audits": 279,
+    "all_passed": true,
+    "max_fixed_parameter_absolute_nll_difference": 3.637978807091713e-12,
+    "minimum_variance": 0.0010045758539011574,
+    "maximum_training_bank_abs_pressure_z": 6.2808669122,
+    "maximum_all_audited_eligible_abs_pressure_z": 6.375827511,
+    "unchanged_fold_0_same_k_scores_max_absolute_difference": 0.0,
+    "caveat": "Scaling also changes physical regularization and initialization geometry; this is not an isolated arithmetic-only intervention."
+  },
+  "dependencies_match": {
+    "docs/ML_V10_TREND_MODEL_PLAN.md": true,
+    "signalwatch/ml_trends.py": true,
+    "tests/test_ml_trends.py": true,
+    "scripts/study_trends.py": true,
+    "signalwatch/dataset.py": true,
+    "signalwatch/evaluation.py": true,
+    "signalwatch/ml_supervised.py": true,
+    "signalwatch/ml_supervised_weighted.py": true,
+    "signalwatch/ml_ablation.py": true,
+    "signalwatch/ml_hybrid.py": true,
+    "signalwatch/ml_v2.py": true,
+    "artifacts/v5/preservation_manifest.json": true,
+    "data/SKAB-DATA-README.md": true,
+    "artifacts/v5/development/plan.json": true,
+    "artifacts/v5/development/report.json": true,
+    "artifacts/v5/development/classifier_oof_scores.npz": true,
+    "artifacts/v5/development/selected_oof_scores.npz": true,
+    "docs/ML_V11_TREND_BACKBONE_PLAN.md": true,
+    "signalwatch/ml_trend_backbones.py": true,
+    "tests/test_ml_trend_backbones.py": true,
+    "scripts/study_trend_backbones.py": true,
+    "artifacts/trend-development/plan.json": true,
+    "artifacts/trend-development/report.json": true,
+    "artifacts/trend-development/B_oof_scores.npz": true,
+    "artifacts/trend-development/C_oof_scores.npz": true,
+    "artifacts/trend-development/candidate_audits.json": true,
+    "artifacts/trend-development/execution_started.json": true,
+    "artifacts/trend-development/inner_mining_oof_scores.npz": true,
+    "artifacts/trend-development/selection_before_final_fit.json": true,
+    "docs/ML_V12_NORMAL_REGIME_PLAN.md": true,
+    "docs/ML_V12_NORMAL_REGIME_PROPOSAL.md": true,
+    "signalwatch/ml_regimes.py": true,
+    "tests/test_ml_regimes.py": true,
+    "scripts/study_regimes.py": true,
+    "data/manifest.json": true,
+    "data/SKAB-LICENSE": true,
+    "data/SKAB-README.md": true,
+    "artifacts/trend-backbones-development/candidate_audits.json": true,
+    "artifacts/trend-backbones-development/execution_started.json": true,
+    "artifacts/trend-backbones-development/ExtraTrees256_oof_scores.npz": true,
+    "artifacts/trend-backbones-development/HGB31_oof_scores.npz": true,
+    "artifacts/trend-backbones-development/plan.json": true,
+    "artifacts/trend-backbones-development/report.json": true,
+    "artifacts/trend-backbones-development/selection_before_final_fit.json": true,
+    "data/raw/anomaly-free/anomaly-free.csv": true,
+    "data/raw/other/3.csv": true,
+    "data/raw/other/6.csv": true,
+    "data/raw/other/9.csv": true,
+    "data/raw/other/12.csv": true,
+    "data/raw/valve1/0.csv": true,
+    "data/raw/valve1/3.csv": true,
+    "data/raw/valve1/6.csv": true,
+    "data/raw/valve1/9.csv": true,
+    "data/raw/valve1/12.csv": true,
+    "data/raw/valve1/15.csv": true,
+    "data/raw/valve2/0.csv": true,
+    "data/raw/valve2/3.csv": true,
+    "docs/ML_V13_PRESSURE_SCALING_PLAN.md": true,
+    "signalwatch/ml_pressure_scaled.py": true,
+    "tests/test_ml_pressure_scaled.py": true,
+    "scripts/study_pressure_scaled.py": true,
+    "signalwatch/trend_diagnostics.py": true,
+    "tests/test_trend_diagnostics.py": true,
+    "scripts/check_trend_model.py": true,
+    "artifacts/regime-development/candidate_audits.json": true,
+    "artifacts/regime-development/execution_started.json": true,
+    "artifacts/regime-development/K1_fit_evidence.json": true,
+    "artifacts/regime-development/K1_oof_scores.npz": true,
+    "artifacts/regime-development/K2_fit_evidence.json": true,
+    "artifacts/regime-development/K2_oof_scores.npz": true,
+    "artifacts/regime-development/K4_fit_evidence.json": true,
+    "artifacts/regime-development/K4_oof_scores.npz": true,
+    "artifacts/regime-development/plan.json": true,
+    "artifacts/regime-development/report.json": true,
+    "artifacts/regime-development/selection_before_final_fit.json": true
+  },
+  "v12_dependency_count": 57,
+  "all_v12_dependencies_match": true,
+  "all_six_active_files_match_preservation": true,
+  "active_v5_hashes": {
+    "model.joblib": "16a932107f2c73f80b03637bdaf1956723734b2de4d58b4b9d96f30b3998d57d",
+    "metadata.json": "0625694566cf641dc9716ae3ce3436a8508b1d9345479be2f3ff7034a5c07f03",
+    "frozen_evaluation.json": "83bf1fd04a016d69d5df353a27d1ca24f94118cb833bc2b935d2ebe9533f6347",
+    "selection_manifest.json": "487554a016d300b97ae1f1a4db0df108c27f23200ff6416a566e918b43a8ef47",
+    "split_manifest.json": "870af2b6bb046fa6acba529d62163a5f44d893e09d6607f6eb1b6fb1ba77b941",
+    "release_manifest.json": "caf48cdcb37f6440dab175e351f2654bbcd74882a2dd5c5e771da79ceafbf6fb"
+  },
+  "data_manifest_sha256": "4394050c7436f3d0db16266fc81776ae060e7da83070f13e180fea60b9e07479",
+  "old_audit_scored": false,
+  "teaser_scored": false,
+  "activation": false,
+  "backend_suite": {
+    "command": ".venv/Scripts/python.exe -m pytest --basetemp=work/pytest-v13-final-20261027",
+    "passed": 192,
+    "warnings": 7,
+    "seconds": 54.63,
+    "timing": "Before the sole frozen study; source unchanged afterward.",
+    "warning_scope": "Existing Starlette/httpx deprecation and FrozenEstimator calibration-weight warnings."
+  },
+  "independent_qa": {
+    "profile": "Model QA Specialist",
+    "post_run_verdict": "PASS for experimental reconstruction, numeric/provenance checks and correct rejection; FAIL for joint model quality",
+    "candidate_and_same_k_frontiers_reconstructed": 306,
+    "bank_row_selections_checked": 41472,
+    "record_class_mass_entries_checked": 153,
+    "numerical_audits_checked": 279,
+    "density_summaries_checked": 270,
+    "proper_loss_probability_banks_checked": 10,
+    "training_fit_or_new_classifier_inference": false,
+    "draft_review": "PASS: research/shared-document factual review; old README development/audit wording corrected afterward.",
+    "final_evidence_review": "PASS: all twelve compact frontier snapshots exactly match the frozen report; all nine document hashes and artifact hashes match; final shared-document wording is accurate.",
+    "mandatory_unresolved_findings": [],
+    "review_scope_limit": "Internal independent reconstruction and factual review, not external scientific peer review or field validation."
+  },
+  "documentation_checks": {
+    "english_files": [
+      "README.md",
+      "docs/REQUIREMENTS.md",
+      "docs/RESOURCES.md",
+      "docs/ML_EVALUATION.md",
+      "docs/MODEL_CARD.md",
+      "docs/RESEARCH_LOG.md",
+      "docs/VERIFICATION.md",
+      "docs/ML_V13_PRESSURE_SCALING_PLAN.md",
+      "docs/ML_V13_PRESSURE_SCALING_RESEARCH.md",
+      "signalwatch/ml_pressure_scaled.py",
+      "tests/test_ml_pressure_scaled.py",
+      "scripts/study_pressure_scaled.py"
+    ],
+    "missing_links": [],
+    "local_markdown_links_checked": 105
+  },
+  "changed_document_sha256": {
+    "README.md": "1d79501a18b1502cf16d63c297a4984df7664b752632313d369f7862001f6df0",
+    "docs/REQUIREMENTS.md": "58dcc62b849bb27c9662b08ad03e12d0cae9c276fd66ef8c0b94efd786891372",
+    "docs/RESOURCES.md": "40a5e54c47e98149efc59a8ca6cdf22889ccd083c01762c955c354c0633236d9",
+    "docs/ML_EVALUATION.md": "2717993c66212bb87e4b6242b275801686e5246a7340e7bba4c131181b335628",
+    "docs/MODEL_CARD.md": "e609f062efb7efe2fbb112cf0431646742d8395cbd1a2b7246f86b7ab1feb791",
+    "docs/RESEARCH_LOG.md": "70ad703c44a89252fa9634572be031e3df1043c709e25b61fed17151b9e5c11e",
+    "docs/VERIFICATION.md": "d1c5aa5537571099611e193c8b3e0071f35bb09884a7090c0ee4d917a45a20cf",
+    "docs/ML_V13_PRESSURE_SCALING_PLAN.md": "3e76d2c1145dfb9b27865bbe8e7f770c15ec773d42fc23b9d133acba0ccffd72",
+    "docs/ML_V13_PRESSURE_SCALING_RESEARCH.md": "5902b3484b532b9cfc1d1a922e971d483733ae07a3699d250a8145e60026a294"
+  },
+  "limitations": [
+    "Reused development records, not fresh independent validation.",
+    "Only two source-described gradual intervals.",
+    "K4 burden improves with linear delay worsening from 3 to 46 seconds; K2 burden worsens.",
+    "No qualifying final model; real conditional final path is unexercised.",
+    "No new browser/build, external clean installation, physical-device, field-equipment, Git push or deployment check."
+  ],
+  "paired_frontier_source": "artifacts/pressure-scaled-development/report.json:v12_same_k_comparisons; complete per-record/event pairing remains there."
+}

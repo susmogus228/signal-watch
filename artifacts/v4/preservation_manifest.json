@@ -1,0 +1,24 @@
+{
+  "version": 4,
+  "preserved_before_v5": true,
+  "files": {
+    "frozen_evaluation.json": "dce093bbc0a55e6315679cc161ab23a2a7c5801b47ce326306d6fca0cc9dfc07",
+    "metadata.json": "a18eb31c8d86905ad8a621234a0516b92b56098c2c29ae5bf414f4df3f19c497",
+    "model.joblib": "eb198d7e3c82c2d7600eda83d6df101ed2160e6a7e5994b4d5d3d1f6bce1048b",
+    "release_manifest.json": "5b9261bebb960f5c7e66f329bc6ba076a1e568443aa206c5c72ab2084efe2694",
+    "selection_manifest.json": "8166009ebb28f46439ced04d1c7ebca34ff52e8b7b4312d40b12d4914460afbe",
+    "split_manifest.json": "870af2b6bb046fa6acba529d62163a5f44d893e09d6607f6eb1b6fb1ba77b941",
+    "development/candidate_audits.json": "40072398706f0426e8153b32ca5d5efda89587f21ce3903c990aff70cbb7f9c1",
+    "development/plan.json": "598b2a7eace3ddd8e8d9d5bcf2164865b39d0686c743862d30fe12174c0aef5f",
+    "development/report.json": "c89ba7446fa09ff4416278535a8f4f46b3d5523a4f7caaa3a00bf694f02091db",
+    "development/selected_bundle.joblib": "2c90ac0d48452412710204b5255e094fd918246985b929f58b3d4560bb73b374",
+    "development/selected_oof_scores.npz": "cd7c2f2bd23f241141871c9a8644b54418f0bf906c80caa5221ed529b1af80ad",
+    "development/selection_before_refit.json": "3745cf10af1e50a44d2ed3d2cfe7ac95b048bc09159e84b83ecec31affbd28ba",
+    "source/evaluation.py": "453005a0c7622b4cd7103acb5b3ca4ec5d90f834d2abcade6d230cdf315ba4c2",
+    "source/ml.py": "a8c76ee157d0a2ea2b37d1ffbc4a939945597d56291cf0907804e010bc4f9587",
+    "source/ml_supervised.py": "ff3e713af3a1ef4b739c088bf83c29399f69cd7835100979df8b22b204170a11",
+    "source/ml_supervised_weighted.py": "ab5a7d2a3c2179c2e8bccab724ad42d5a2f6c0da3dfce3914d16f7f22817ef49",
+    "source/ml_v2.py": "5d1afcf5c53c058776d9d7df46261207e50b0bac9ba45b5e0225e037e1da2de1",
+    "source/release.py": "695f2a593ec27ae657526635705257b3d61cd965aff6432db3c2d23ee6c88401"
+  }
+}

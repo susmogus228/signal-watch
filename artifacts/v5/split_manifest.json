@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "dataset_snapshot": "b2c0d46c2971dcbfe71e26087b6d231998bb91c2",
+  "window": 30,
+  "normal_source_sha256": "7641a8742957100ef424dd97adfb3eeab27d4d180645fe2b3c49b7f7146ae9a6",
+  "normal_blocks": {
+    "train": [
+      0,
+      5172
+    ],
+    "calibration": [
+      5202,
+      7524
+    ],
+    "audit": [
+      7554,
+      9405
+    ]
+  },
+  "purge_samples": 30,
+  "boundary_rule": "Half-open chronological blocks; next block starts30 samples after the preceding endpoint. Warm-up repeats inside each block.",
+  "validation_ids": [
+    "other-3",
+    "other-6",
+    "other-9",
+    "other-12",
+    "valve1-0",
+    "valve1-3",
+    "valve1-6",
+    "valve1-9",
+    "valve1-12",
+    "valve1-15",
+    "valve2-0",
+    "valve2-3"
+  ],
+  "test_ids": [
+    "other-1",
+    "other-2",
+    "other-4",
+    "other-5",
+    "other-7",
+    "other-8",
+    "other-10",
+    "other-11",
+    "other-13",
+    "other-14",
+    "valve1-1",
+    "valve1-2",
+    "valve1-4",
+    "valve1-5",
+    "valve1-7",
+    "valve1-8",
+    "valve1-10",
+    "valve1-11",
+    "valve1-13",
+    "valve1-14",
+    "valve2-1",
+    "valve2-2",
+    "normal_audit"
+  ],
+  "candidates": [
+    {
+      "n_estimators": 64,
+      "min_samples_leaf": 4
+    },
+    {
+      "n_estimators": 64,
+      "min_samples_leaf": 12
+    }
+  ],
+  "alert_budget": 2.0,
+  "selection_rule": "Maximize validation event recall minus 0.02 times validation false episodes/hour; tie uses candidate order.",
+  "event_rule": "Contiguous label1 intervals, split at gaps. A hit requires an actual alert within the interval. No point adjustment.",
+  "episode_rule": "Consecutive above-threshold samples; no merging, smoothing, cooldown or persistence requirement. Reset at gaps.",
+  "gap_rule": "Reset when timestamp interval >3 times per-recording median cadence; gaps excluded from observed exposure.",
+  "exposure_rule": "Left-endpoint intervals between observed samples, excluding gaps and unscored warm-up; terminal sample contributes0 seconds."
+}

@@ -1,0 +1,48 @@
+{
+  "study_version": 4,
+  "study_directory": "supervised-weighted-development",
+  "plan_sha256": "598b2a7eace3ddd8e8d9d5bcf2164865b39d0686c743862d30fe12174c0aef5f",
+  "selected": {
+    "index": 0,
+    "threshold_index": 97,
+    "threshold": 0.9954052245087474,
+    "feasible": true,
+    "metrics": {
+      "total_events": 29,
+      "detected_events": 25,
+      "missed_events": 4,
+      "false_episodes": 0,
+      "observed_normal_seconds": 9179.0,
+      "total_normal_seconds": 9203.0,
+      "observed_seconds": 14126.0,
+      "alert_seconds": 2623.0,
+      "false_alert_seconds": 28.0,
+      "true_positive_samples": 2450,
+      "false_positive_samples": 27,
+      "scored_samples": 13425,
+      "false_episodes_per_hour": 0.0,
+      "mean_delay_seconds": 16.12,
+      "median_delay_seconds": 4.0,
+      "alert_fraction": 0.1856859691349285,
+      "normal_alert_fraction": 0.003050441224534263,
+      "point_precision": 0.9890997174000807,
+      "average_precision": 0.9213112864194429,
+      "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+      "event_recall": 0.8620689655172413
+    },
+    "candidate": {
+      "algorithm": "HistGradientBoostingClassifier",
+      "max_iter": 150,
+      "max_leaf_nodes": 15,
+      "min_samples_leaf": 20,
+      "learning_rate": 0.05,
+      "l2_regularization": 1.0,
+      "early_stopping": false,
+      "weighting": "record_equal_class_balanced"
+    }
+  },
+  "audit_path": "supervised-weighted/retrospective_audit.json",
+  "audit_sha256": "90462e2c8b5795d71b1b6e49e2f651ce2f4fef71b32b1a1db3fbd111e48ac1be",
+  "audited_child_sha256": "df23f59f73bd35d3c72660540c1aeb13dc77bd218d82d35a74e8f132f8f3cdec",
+  "choice_rule": "Frozen before weighted results: maximize selected grouped OOF event hits, then minimize normal alert fraction, then false onsets/hour; exact ties retain original supervised study. Retrospective audit is not used to select the release."
+}

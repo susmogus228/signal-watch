@@ -1,0 +1,168 @@
+{
+  "name": "SignalWatch normal predictor",
+  "version": "1.0.0",
+  "algorithm": "ExtraTreesRegressor",
+  "sklearn_version": "1.9.1",
+  "window": 30,
+  "warmup_samples": 30,
+  "feature_count": 32,
+  "features": "Previous observation, past-window mean, population standard deviation and endpoint change;8 sensors each.",
+  "sensor_keys": [
+    "Accelerometer1RMS",
+    "Accelerometer2RMS",
+    "Current",
+    "Pressure",
+    "Temperature",
+    "Thermocouple",
+    "Voltage",
+    "Volume Flow RateRMS"
+  ],
+  "training_rows": 5142,
+  "training_source_rows": 5172,
+  "training_scope": "Normal train block only; labels never enter scoring.",
+  "parameters": {
+    "n_estimators": 64,
+    "min_samples_leaf": 4
+  },
+  "model_sha256": "1c8554a484148129b281e7aa6657d078658d778b3cff6edbf3f4f16594a36cc2",
+  "thresholds": {
+    "learned": 21.56553575229285,
+    "robust": 104.30872923840622,
+    "persistence": 8.452042628774407
+  },
+  "calibration": {
+    "learned": {
+      "threshold": 21.56553575229285,
+      "false_episodes": 0,
+      "observed_normal_seconds": 2399.0,
+      "false_episodes_per_hour": 0.0,
+      "requested_budget": 2.0,
+      "one_episode_resolution_per_hour": 1.5006252605252188,
+      "short_exposure": true,
+      "candidate_quantiles": [
+        0.9,
+        1.0,
+        101
+      ],
+      "note": "Empirical calibration only; this rate is not a future guarantee."
+    },
+    "robust": {
+      "threshold": 104.30872923840622,
+      "false_episodes": 0,
+      "observed_normal_seconds": 2399.0,
+      "false_episodes_per_hour": 0.0,
+      "requested_budget": 2.0,
+      "one_episode_resolution_per_hour": 1.5006252605252188,
+      "short_exposure": true,
+      "candidate_quantiles": [
+        0.9,
+        1.0,
+        101
+      ],
+      "note": "Empirical calibration only; this rate is not a future guarantee."
+    },
+    "persistence": {
+      "threshold": 8.452042628774407,
+      "false_episodes": 0,
+      "observed_normal_seconds": 2399.0,
+      "false_episodes_per_hour": 0.0,
+      "requested_budget": 2.0,
+      "one_episode_resolution_per_hour": 1.5006252605252188,
+      "short_exposure": true,
+      "candidate_quantiles": [
+        0.9,
+        1.0,
+        101
+      ],
+      "note": "Empirical calibration only; this rate is not a future guarantee."
+    }
+  },
+  "dataset_snapshot": "b2c0d46c2971dcbfe71e26087b6d231998bb91c2",
+  "training_seconds": 5.432,
+  "created_at": "2026-10-23T09:17:02.582155+00:00",
+  "split_manifest": {
+    "schema_version": 1,
+    "dataset_snapshot": "b2c0d46c2971dcbfe71e26087b6d231998bb91c2",
+    "window": 30,
+    "normal_source_sha256": "7641a8742957100ef424dd97adfb3eeab27d4d180645fe2b3c49b7f7146ae9a6",
+    "normal_blocks": {
+      "train": [
+        0,
+        5172
+      ],
+      "calibration": [
+        5202,
+        7524
+      ],
+      "audit": [
+        7554,
+        9405
+      ]
+    },
+    "purge_samples": 30,
+    "boundary_rule": "Half-open chronological blocks; next block starts30 samples after the preceding endpoint. Warm-up repeats inside each block.",
+    "validation_ids": [
+      "other-3",
+      "other-6",
+      "other-9",
+      "other-12",
+      "valve1-0",
+      "valve1-3",
+      "valve1-6",
+      "valve1-9",
+      "valve1-12",
+      "valve1-15",
+      "valve2-0",
+      "valve2-3"
+    ],
+    "test_ids": [
+      "other-1",
+      "other-2",
+      "other-4",
+      "other-5",
+      "other-7",
+      "other-8",
+      "other-10",
+      "other-11",
+      "other-13",
+      "other-14",
+      "valve1-1",
+      "valve1-2",
+      "valve1-4",
+      "valve1-5",
+      "valve1-7",
+      "valve1-8",
+      "valve1-10",
+      "valve1-11",
+      "valve1-13",
+      "valve1-14",
+      "valve2-1",
+      "valve2-2",
+      "normal_audit"
+    ],
+    "candidates": [
+      {
+        "n_estimators": 64,
+        "min_samples_leaf": 4
+      },
+      {
+        "n_estimators": 64,
+        "min_samples_leaf": 12
+      }
+    ],
+    "alert_budget": 2.0,
+    "selection_rule": "Maximize validation event recall minus 0.02 times validation false episodes/hour; tie uses candidate order.",
+    "event_rule": "Contiguous label1 intervals, split at gaps. A hit requires an actual alert within the interval. No point adjustment.",
+    "episode_rule": "Consecutive above-threshold samples; no merging, smoothing, cooldown or persistence requirement. Reset at gaps.",
+    "gap_rule": "Reset when timestamp interval >3 times per-recording median cadence; gaps excluded from observed exposure.",
+    "exposure_rule": "Left-endpoint intervals between observed samples, excluding gaps and unscored warm-up; terminal sample contributes0 seconds."
+  },
+  "limitations": [
+    "Frozen learned detector alarms for98.4% of scored time; inspect the operating-point verdict before use.",
+    "Only one physical testbed and limited normal calibration exposure.",
+    "Prediction residuals are not fault probabilities or explanations of physical causes.",
+    "Empirical threshold budgets do not guarantee held-out false-alert rates.",
+    "Baselines can outperform the learned model. No production or equipment-transfer claim."
+  ],
+  "operating_point_verdict": "Failed practical alert-burden check: the learned model stays in alert for almost all observed time. Event recall alone is misleading."
+}

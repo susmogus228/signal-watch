@@ -1,0 +1,1328 @@
+[
+  {
+    "confirmation_seconds": 1.0,
+    "classifier": "immediate",
+    "metrics": {
+      "total_events": 29,
+      "detected_events": 27,
+      "missed_events": 2,
+      "false_episodes": 1,
+      "observed_normal_seconds": 9179.0,
+      "total_normal_seconds": 9203.0,
+      "observed_seconds": 14126.0,
+      "alert_seconds": 2731.0,
+      "false_alert_seconds": 34.0,
+      "true_positive_samples": 2548,
+      "false_positive_samples": 33,
+      "scored_samples": 13425,
+      "false_episodes_per_hour": 0.3921995860115481,
+      "mean_delay_seconds": 14.62962962962963,
+      "median_delay_seconds": 3.0,
+      "alert_fraction": 0.1933314455613762,
+      "normal_alert_fraction": 0.0037041072012201767,
+      "point_precision": 0.9872142580395196,
+      "average_precision": 0.8808209891511812,
+      "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+      "event_recall": 0.9310344827586207
+    },
+    "feasible": true,
+    "rejection_reasons": [],
+    "lost_event_ids": [
+      "other-12-event-16"
+    ],
+    "gained_event_ids": [],
+    "paired_outcomes": [
+      {
+        "id": "other-3-event-0",
+        "raw_status": "missed",
+        "policy_status": "missed",
+        "raw_first_alert_seconds": null,
+        "policy_first_alert_seconds": null,
+        "raw_delay_seconds": null,
+        "policy_delay_seconds": null
+      },
+      {
+        "id": "other-6-event-0",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 600.0,
+        "policy_first_alert_seconds": 601.0,
+        "raw_delay_seconds": 0.0,
+        "policy_delay_seconds": 1.0
+      },
+      {
+        "id": "other-9-event-0",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 602.0,
+        "policy_first_alert_seconds": 603.0,
+        "raw_delay_seconds": 3.0,
+        "policy_delay_seconds": 4.0
+      },
+      {
+        "id": "other-12-event-0",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 655.0,
+        "policy_first_alert_seconds": 676.0,
+        "raw_delay_seconds": 55.0,
+        "policy_delay_seconds": 76.0
+      },
+      {
+        "id": "other-12-event-1",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 708.0,
+        "policy_first_alert_seconds": 711.0,
+        "raw_delay_seconds": 2.0,
+        "policy_delay_seconds": 5.0
+      },
+      {
+        "id": "other-12-event-2",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 720.0,
+        "policy_first_alert_seconds": 721.0,
+        "raw_delay_seconds": 2.0,
+        "policy_delay_seconds": 3.0
+      },
+      {
+        "id": "other-12-event-3",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 729.0,
+        "policy_first_alert_seconds": 730.0,
+        "raw_delay_seconds": 2.0,
+        "policy_delay_seconds": 3.0
+      },
+      {
+        "id": "other-12-event-4",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 764.0,
+        "policy_first_alert_seconds": 765.0,
+        "raw_delay_seconds": 3.0,
+        "policy_delay_seconds": 4.0
+      },
+      {
+        "id": "other-12-event-5",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 789.0,
+        "policy_first_alert_seconds": 789.0,
+        "raw_delay_seconds": 2.0,
+        "policy_delay_seconds": 2.0
+      },
+      {
+        "id": "other-12-event-6",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 803.0,
+        "policy_first_alert_seconds": 803.0,
+        "raw_delay_seconds": 2.0,
+        "policy_delay_seconds": 2.0
+      },
+      {
+        "id": "other-12-event-7",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 809.0,
+        "policy_first_alert_seconds": 810.0,
+        "raw_delay_seconds": 2.0,
+        "policy_delay_seconds": 3.0
+      },
+      {
+        "id": "other-12-event-8",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 842.0,
+        "policy_first_alert_seconds": 843.0,
+        "raw_delay_seconds": 2.0,
+        "policy_delay_seconds": 3.0
+      },
+      {
+        "id": "other-12-event-9",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 858.0,
+        "policy_first_alert_seconds": 858.0,
+        "raw_delay_seconds": 4.0,
+        "policy_delay_seconds": 4.0
+      },
+      {
+        "id": "other-12-event-10",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 869.0,
+        "policy_first_alert_seconds": 870.0,
+        "raw_delay_seconds": 2.0,
+        "policy_delay_seconds": 3.0
+      },
+      {
+        "id": "other-12-event-11",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 910.0,
+        "policy_first_alert_seconds": 911.0,
+        "raw_delay_seconds": 3.0,
+        "policy_delay_seconds": 4.0
+      },
+      {
+        "id": "other-12-event-12",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 925.0,
+        "policy_first_alert_seconds": 926.0,
+        "raw_delay_seconds": 2.0,
+        "policy_delay_seconds": 3.0
+      },
+      {
+        "id": "other-12-event-13",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 933.0,
+        "policy_first_alert_seconds": 933.0,
+        "raw_delay_seconds": 2.0,
+        "policy_delay_seconds": 2.0
+      },
+      {
+        "id": "other-12-event-14",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 986.0,
+        "policy_first_alert_seconds": 987.0,
+        "raw_delay_seconds": 2.0,
+        "policy_delay_seconds": 3.0
+      },
+      {
+        "id": "other-12-event-15",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 998.0,
+        "policy_first_alert_seconds": 999.0,
+        "raw_delay_seconds": 2.0,
+        "policy_delay_seconds": 3.0
+      },
+      {
+        "id": "other-12-event-16",
+        "raw_status": "detected",
+        "policy_status": "missed",
+        "raw_first_alert_seconds": 1006.0,
+        "policy_first_alert_seconds": null,
+        "raw_delay_seconds": 2.0,
+        "policy_delay_seconds": null
+      },
+      {
+        "id": "other-12-event-17",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 1012.0,
+        "policy_first_alert_seconds": 1013.0,
+        "raw_delay_seconds": 2.0,
+        "policy_delay_seconds": 3.0
+      },
+      {
+        "id": "valve1-0-event-0",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 602.0,
+        "policy_first_alert_seconds": 602.0,
+        "raw_delay_seconds": 2.0,
+        "policy_delay_seconds": 2.0
+      },
+      {
+        "id": "valve1-3-event-0",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 617.0,
+        "policy_first_alert_seconds": 617.0,
+        "raw_delay_seconds": 17.0,
+        "policy_delay_seconds": 17.0
+      },
+      {
+        "id": "valve1-6-event-0",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 666.0,
+        "policy_first_alert_seconds": 666.0,
+        "raw_delay_seconds": 66.0,
+        "policy_delay_seconds": 66.0
+      },
+      {
+        "id": "valve1-9-event-0",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 636.0,
+        "policy_first_alert_seconds": 636.0,
+        "raw_delay_seconds": 36.0,
+        "policy_delay_seconds": 36.0
+      },
+      {
+        "id": "valve1-12-event-0",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 606.0,
+        "policy_first_alert_seconds": 606.0,
+        "raw_delay_seconds": 6.0,
+        "policy_delay_seconds": 6.0
+      },
+      {
+        "id": "valve1-15-event-0",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 660.0,
+        "policy_first_alert_seconds": 660.0,
+        "raw_delay_seconds": 60.0,
+        "policy_delay_seconds": 60.0
+      },
+      {
+        "id": "valve2-0-event-0",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 624.0,
+        "policy_first_alert_seconds": 624.0,
+        "raw_delay_seconds": 24.0,
+        "policy_delay_seconds": 24.0
+      },
+      {
+        "id": "valve2-3-event-0",
+        "raw_status": "detected",
+        "policy_status": "detected",
+        "raw_first_alert_seconds": 653.0,
+        "policy_first_alert_seconds": 653.0,
+        "raw_delay_seconds": 53.0,
+        "policy_delay_seconds": 53.0
+      }
+    ],
+    "group_slices": {
+      "other": {
+        "total_events": 21,
+        "detected_events": 19,
+        "missed_events": 2,
+        "false_episodes": 1,
+        "observed_normal_seconds": 3106.0,
+        "total_normal_seconds": 3114.0,
+        "observed_seconds": 4686.0,
+        "alert_seconds": 607.0,
+        "false_alert_seconds": 6.0,
+        "true_positive_samples": 551,
+        "false_positive_samples": 6,
+        "scored_samples": 4434,
+        "false_episodes_per_hour": 1.1590470057952351,
+        "mean_delay_seconds": 6.894736842105263,
+        "median_delay_seconds": 3.0,
+        "alert_fraction": 0.12953478446436192,
+        "normal_alert_fraction": 0.0019317450096587251,
+        "point_precision": 0.9892280071813285,
+        "average_precision": 0.7817958829578079,
+        "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+        "event_recall": 0.9047619047619048
+      },
+      "valve1": {
+        "total_events": 6,
+        "detected_events": 6,
+        "missed_events": 0,
+        "false_episodes": 0,
+        "observed_normal_seconds": 4661.0,
+        "total_normal_seconds": 4673.0,
+        "observed_seconds": 7187.0,
+        "alert_seconds": 1765.0,
+        "false_alert_seconds": 28.0,
+        "true_positive_samples": 1659,
+        "false_positive_samples": 27,
+        "scored_samples": 6875,
+        "false_episodes_per_hour": 0.0,
+        "mean_delay_seconds": 31.166666666666668,
+        "median_delay_seconds": 26.5,
+        "alert_fraction": 0.24558230137748713,
+        "normal_alert_fraction": 0.006007294571980262,
+        "point_precision": 0.9839857651245552,
+        "average_precision": 0.9218311241790613,
+        "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+        "event_recall": 1.0
+      },
+      "valve2": {
+        "total_events": 2,
+        "detected_events": 2,
+        "missed_events": 0,
+        "false_episodes": 0,
+        "observed_normal_seconds": 1412.0,
+        "total_normal_seconds": 1416.0,
+        "observed_seconds": 2253.0,
+        "alert_seconds": 359.0,
+        "false_alert_seconds": 0.0,
+        "true_positive_samples": 338,
+        "false_positive_samples": 0,
+        "scored_samples": 2116,
+        "false_episodes_per_hour": 0.0,
+        "mean_delay_seconds": 38.5,
+        "median_delay_seconds": 38.5,
+        "alert_fraction": 0.15934309809143365,
+        "normal_alert_fraction": 0.0,
+        "point_precision": 1.0,
+        "average_precision": 0.9558407964542868,
+        "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+        "event_recall": 1.0
+      }
+    },
+    "per_recording": [
+      {
+        "id": "other-3",
+        "group": "other",
+        "metrics": {
+          "total_events": 1,
+          "detected_events": 0,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 776.0,
+          "total_normal_seconds": 778.0,
+          "observed_seconds": 1196.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": null,
+          "median_delay_seconds": null,
+          "delay_seconds": [],
+          "alert_seconds": 0.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 0,
+          "false_positive_samples": 0,
+          "point_precision": null,
+          "point_recall": 0.0,
+          "alert_fraction": 0.0,
+          "scored_samples": 1135,
+          "average_precision": 0.3484225627818698
+        },
+        "events": [
+          {
+            "id": "other-3-event-0",
+            "title": "Annotated interval 1",
+            "status": "missed",
+            "start_index": 568,
+            "end_index": 965,
+            "start_seconds": 599.0,
+            "end_seconds": 1018.0,
+            "first_alert_seconds": null,
+            "delay_seconds": null,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          }
+        ]
+      },
+      {
+        "id": "other-6",
+        "group": "other",
+        "metrics": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 1,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1198.0,
+          "false_episodes_per_hour": 4.633204633204633,
+          "mean_delay_seconds": 1.0,
+          "median_delay_seconds": 1.0,
+          "delay_seconds": [
+            1.0
+          ],
+          "alert_seconds": 29.0,
+          "false_alert_seconds": 3.0,
+          "normal_alert_fraction": 0.003861003861003861,
+          "true_positive_samples": 24,
+          "false_positive_samples": 3,
+          "point_precision": 0.8888888888888888,
+          "point_recall": 0.05970149253731343,
+          "alert_fraction": 0.024207011686143573,
+          "scored_samples": 1145,
+          "average_precision": 0.9686260864202632
+        },
+        "events": [
+          {
+            "id": "other-6-event-0",
+            "title": "Annotated interval 1",
+            "status": "detected",
+            "start_index": 573,
+            "end_index": 974,
+            "start_seconds": 600.0,
+            "end_seconds": 1020.0,
+            "first_alert_seconds": 601.0,
+            "delay_seconds": 1.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-6-alert-12",
+            "title": "Alert episode 13",
+            "status": "false_alert",
+            "start_index": 975,
+            "end_index": 977,
+            "start_seconds": 1021.0,
+            "end_seconds": 1023.0,
+            "first_alert_seconds": 1021.0,
+            "delay_seconds": null,
+            "method": "learned",
+            "contributing_sensors": [],
+            "ongoing": false,
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Alert episode started outside a known annotation; later overlap does not turn it into a fresh detection.",
+            "contributions_kind": "prediction_residual"
+          }
+        ]
+      },
+      {
+        "id": "other-9",
+        "group": "other",
+        "metrics": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 776.0,
+          "total_normal_seconds": 778.0,
+          "observed_seconds": 1197.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 4.0,
+          "median_delay_seconds": 4.0,
+          "delay_seconds": [
+            4.0
+          ],
+          "alert_seconds": 385.0,
+          "false_alert_seconds": 3.0,
+          "normal_alert_fraction": 0.003865979381443299,
+          "true_positive_samples": 366,
+          "false_positive_samples": 3,
+          "point_precision": 0.991869918699187,
+          "point_recall": 0.912718204488778,
+          "alert_fraction": 0.3216374269005848,
+          "scored_samples": 1142,
+          "average_precision": 0.9710178114730612
+        },
+        "events": [
+          {
+            "id": "other-9-event-0",
+            "title": "Annotated interval 1",
+            "status": "detected",
+            "start_index": 572,
+            "end_index": 972,
+            "start_seconds": 599.0,
+            "end_seconds": 1019.0,
+            "first_alert_seconds": 603.0,
+            "delay_seconds": 4.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          }
+        ]
+      },
+      {
+        "id": "other-12",
+        "group": "other",
+        "metrics": {
+          "total_events": 18,
+          "detected_events": 17,
+          "missed_events": 1,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1095.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 7.411764705882353,
+          "median_delay_seconds": 3.0,
+          "delay_seconds": [
+            76.0,
+            5.0,
+            3.0,
+            3.0,
+            4.0,
+            2.0,
+            2.0,
+            3.0,
+            3.0,
+            4.0,
+            3.0,
+            4.0,
+            3.0,
+            2.0,
+            3.0,
+            3.0,
+            3.0
+          ],
+          "alert_seconds": 193.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 161,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.5854545454545454,
+          "alert_fraction": 0.17625570776255708,
+          "scored_samples": 1012,
+          "average_precision": 0.8391170711560375
+        },
+        "events": [
+          {
+            "id": "other-12-event-0",
+            "title": "Annotated interval 1",
+            "status": "detected",
+            "start_index": 568,
+            "end_index": 662,
+            "start_seconds": 600.0,
+            "end_seconds": 702.0,
+            "first_alert_seconds": 676.0,
+            "delay_seconds": 76.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-1",
+            "title": "Annotated interval 2",
+            "status": "detected",
+            "start_index": 663,
+            "end_index": 669,
+            "start_seconds": 706.0,
+            "end_seconds": 714.0,
+            "first_alert_seconds": 711.0,
+            "delay_seconds": 5.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-2",
+            "title": "Annotated interval 3",
+            "status": "detected",
+            "start_index": 670,
+            "end_index": 674,
+            "start_seconds": 718.0,
+            "end_seconds": 723.0,
+            "first_alert_seconds": 721.0,
+            "delay_seconds": 3.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-3",
+            "title": "Annotated interval 4",
+            "status": "detected",
+            "start_index": 675,
+            "end_index": 698,
+            "start_seconds": 727.0,
+            "end_seconds": 756.0,
+            "first_alert_seconds": 730.0,
+            "delay_seconds": 3.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-4",
+            "title": "Annotated interval 5",
+            "status": "detected",
+            "start_index": 699,
+            "end_index": 716,
+            "start_seconds": 761.0,
+            "end_seconds": 783.0,
+            "first_alert_seconds": 765.0,
+            "delay_seconds": 4.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-5",
+            "title": "Annotated interval 6",
+            "status": "detected",
+            "start_index": 717,
+            "end_index": 725,
+            "start_seconds": 787.0,
+            "end_seconds": 797.0,
+            "first_alert_seconds": 789.0,
+            "delay_seconds": 2.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-6",
+            "title": "Annotated interval 7",
+            "status": "detected",
+            "start_index": 726,
+            "end_index": 728,
+            "start_seconds": 801.0,
+            "end_seconds": 803.0,
+            "first_alert_seconds": 803.0,
+            "delay_seconds": 2.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-7",
+            "title": "Annotated interval 8",
+            "status": "detected",
+            "start_index": 729,
+            "end_index": 751,
+            "start_seconds": 807.0,
+            "end_seconds": 835.0,
+            "first_alert_seconds": 810.0,
+            "delay_seconds": 3.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-8",
+            "title": "Annotated interval 9",
+            "status": "detected",
+            "start_index": 752,
+            "end_index": 760,
+            "start_seconds": 840.0,
+            "end_seconds": 850.0,
+            "first_alert_seconds": 843.0,
+            "delay_seconds": 3.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-9",
+            "title": "Annotated interval 10",
+            "status": "detected",
+            "start_index": 761,
+            "end_index": 767,
+            "start_seconds": 854.0,
+            "end_seconds": 863.0,
+            "first_alert_seconds": 858.0,
+            "delay_seconds": 4.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-10",
+            "title": "Annotated interval 11",
+            "status": "detected",
+            "start_index": 768,
+            "end_index": 794,
+            "start_seconds": 867.0,
+            "end_seconds": 903.0,
+            "first_alert_seconds": 870.0,
+            "delay_seconds": 3.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-11",
+            "title": "Annotated interval 12",
+            "status": "detected",
+            "start_index": 795,
+            "end_index": 805,
+            "start_seconds": 907.0,
+            "end_seconds": 919.0,
+            "first_alert_seconds": 911.0,
+            "delay_seconds": 4.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-12",
+            "title": "Annotated interval 13",
+            "status": "detected",
+            "start_index": 806,
+            "end_index": 809,
+            "start_seconds": 923.0,
+            "end_seconds": 926.0,
+            "first_alert_seconds": 926.0,
+            "delay_seconds": 3.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-13",
+            "title": "Annotated interval 14",
+            "status": "detected",
+            "start_index": 810,
+            "end_index": 846,
+            "start_seconds": 931.0,
+            "end_seconds": 980.0,
+            "first_alert_seconds": 933.0,
+            "delay_seconds": 2.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-14",
+            "title": "Annotated interval 15",
+            "status": "detected",
+            "start_index": 847,
+            "end_index": 855,
+            "start_seconds": 984.0,
+            "end_seconds": 992.0,
+            "first_alert_seconds": 987.0,
+            "delay_seconds": 3.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-15",
+            "title": "Annotated interval 16",
+            "status": "detected",
+            "start_index": 856,
+            "end_index": 860,
+            "start_seconds": 996.0,
+            "end_seconds": 1000.0,
+            "first_alert_seconds": 999.0,
+            "delay_seconds": 3.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-16",
+            "title": "Annotated interval 17",
+            "status": "missed",
+            "start_index": 861,
+            "end_index": 863,
+            "start_seconds": 1004.0,
+            "end_seconds": 1006.0,
+            "first_alert_seconds": null,
+            "delay_seconds": null,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          },
+          {
+            "id": "other-12-event-17",
+            "title": "Annotated interval 18",
+            "status": "detected",
+            "start_index": 864,
+            "end_index": 876,
+            "start_seconds": 1010.0,
+            "end_seconds": 1023.0,
+            "first_alert_seconds": 1013.0,
+            "delay_seconds": 3.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          }
+        ]
+      },
+      {
+        "id": "valve1-0",
+        "group": "valve1",
+        "metrics": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1197.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 2.0,
+          "median_delay_seconds": 2.0,
+          "delay_seconds": [
+            2.0
+          ],
+          "alert_seconds": 11.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 10,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.02493765586034913,
+          "alert_fraction": 0.009189640768588136,
+          "scored_samples": 1145,
+          "average_precision": 0.8145919280010696
+        },
+        "events": [
+          {
+            "id": "valve1-0-event-0",
+            "title": "Annotated interval 1",
+            "status": "detected",
+            "start_index": 573,
+            "end_index": 973,
+            "start_seconds": 600.0,
+            "end_seconds": 1019.0,
+            "first_alert_seconds": 602.0,
+            "delay_seconds": 2.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          }
+        ]
+      },
+      {
+        "id": "valve1-3",
+        "group": "valve1",
+        "metrics": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1199.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 17.0,
+          "median_delay_seconds": 17.0,
+          "delay_seconds": [
+            17.0
+          ],
+          "alert_seconds": 384.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 368,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.9108910891089109,
+          "alert_fraction": 0.3202668890742285,
+          "scored_samples": 1146,
+          "average_precision": 0.9742938961750831
+        },
+        "events": [
+          {
+            "id": "valve1-3-event-0",
+            "title": "Annotated interval 1",
+            "status": "detected",
+            "start_index": 573,
+            "end_index": 976,
+            "start_seconds": 600.0,
+            "end_seconds": 1021.0,
+            "first_alert_seconds": 617.0,
+            "delay_seconds": 17.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          }
+        ]
+      },
+      {
+        "id": "valve1-6",
+        "group": "valve1",
+        "metrics": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 776.0,
+          "total_normal_seconds": 778.0,
+          "observed_seconds": 1197.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 66.0,
+          "median_delay_seconds": 66.0,
+          "delay_seconds": [
+            66.0
+          ],
+          "alert_seconds": 276.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 264,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.6518518518518519,
+          "alert_fraction": 0.23057644110275688,
+          "scored_samples": 1152,
+          "average_precision": 0.9195010453554295
+        },
+        "events": [
+          {
+            "id": "valve1-6-event-0",
+            "title": "Annotated interval 1",
+            "status": "detected",
+            "start_index": 576,
+            "end_index": 980,
+            "start_seconds": 600.0,
+            "end_seconds": 1020.0,
+            "first_alert_seconds": 666.0,
+            "delay_seconds": 66.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          }
+        ]
+      },
+      {
+        "id": "valve1-9",
+        "group": "valve1",
+        "metrics": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1198.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 36.0,
+          "median_delay_seconds": 36.0,
+          "delay_seconds": [
+            36.0
+          ],
+          "alert_seconds": 343.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 328,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.8159203980099502,
+          "alert_fraction": 0.2863105175292154,
+          "scored_samples": 1146,
+          "average_precision": 0.9431221874603651
+        },
+        "events": [
+          {
+            "id": "valve1-9-event-0",
+            "title": "Annotated interval 1",
+            "status": "detected",
+            "start_index": 574,
+            "end_index": 975,
+            "start_seconds": 600.0,
+            "end_seconds": 1020.0,
+            "first_alert_seconds": 636.0,
+            "delay_seconds": 36.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          }
+        ]
+      },
+      {
+        "id": "valve1-12",
+        "group": "valve1",
+        "metrics": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1198.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 6.0,
+          "median_delay_seconds": 6.0,
+          "delay_seconds": [
+            6.0
+          ],
+          "alert_seconds": 443.0,
+          "false_alert_seconds": 28.0,
+          "normal_alert_fraction": 0.036036036036036036,
+          "true_positive_samples": 393,
+          "false_positive_samples": 27,
+          "point_precision": 0.9357142857142857,
+          "point_recall": 0.9849624060150376,
+          "alert_fraction": 0.36978297161936563,
+          "scored_samples": 1138,
+          "average_precision": 0.993459092701413
+        },
+        "events": [
+          {
+            "id": "valve1-12-event-0",
+            "title": "Annotated interval 1",
+            "status": "detected",
+            "start_index": 570,
+            "end_index": 968,
+            "start_seconds": 600.0,
+            "end_seconds": 1020.0,
+            "first_alert_seconds": 606.0,
+            "delay_seconds": 6.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          }
+        ]
+      },
+      {
+        "id": "valve1-15",
+        "group": "valve1",
+        "metrics": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1198.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 60.0,
+          "median_delay_seconds": 60.0,
+          "delay_seconds": [
+            60.0
+          ],
+          "alert_seconds": 308.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 296,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.7326732673267327,
+          "alert_fraction": 0.2570951585976628,
+          "scored_samples": 1148,
+          "average_precision": 0.8860185953810078
+        },
+        "events": [
+          {
+            "id": "valve1-15-event-0",
+            "title": "Annotated interval 1",
+            "status": "detected",
+            "start_index": 574,
+            "end_index": 977,
+            "start_seconds": 600.0,
+            "end_seconds": 1020.0,
+            "first_alert_seconds": 660.0,
+            "delay_seconds": 60.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          }
+        ]
+      },
+      {
+        "id": "valve2-0",
+        "group": "valve2",
+        "metrics": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 777.0,
+          "total_normal_seconds": 779.0,
+          "observed_seconds": 1197.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 24.0,
+          "median_delay_seconds": 24.0,
+          "delay_seconds": [
+            24.0
+          ],
+          "alert_seconds": 23.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 22,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.05583756345177665,
+          "alert_fraction": 0.01921470342522974,
+          "scored_samples": 1123,
+          "average_precision": 0.9795812036407345
+        },
+        "events": [
+          {
+            "id": "valve2-0-event-0",
+            "title": "Annotated interval 1",
+            "status": "detected",
+            "start_index": 562,
+            "end_index": 955,
+            "start_seconds": 600.0,
+            "end_seconds": 1019.0,
+            "first_alert_seconds": 624.0,
+            "delay_seconds": 24.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          }
+        ]
+      },
+      {
+        "id": "valve2-3",
+        "group": "valve2",
+        "metrics": {
+          "total_events": 1,
+          "detected_events": 1,
+          "missed_events": 0,
+          "false_episodes": 0,
+          "observed_normal_seconds": 635.0,
+          "total_normal_seconds": 637.0,
+          "observed_seconds": 1056.0,
+          "false_episodes_per_hour": 0.0,
+          "mean_delay_seconds": 53.0,
+          "median_delay_seconds": 53.0,
+          "delay_seconds": [
+            53.0
+          ],
+          "alert_seconds": 336.0,
+          "false_alert_seconds": 0.0,
+          "normal_alert_fraction": 0.0,
+          "true_positive_samples": 316,
+          "false_positive_samples": 0,
+          "point_precision": 1.0,
+          "point_recall": 0.8,
+          "alert_fraction": 0.3181818181818182,
+          "scored_samples": 993,
+          "average_precision": 0.932100389267839
+        },
+        "events": [
+          {
+            "id": "valve2-3-event-0",
+            "title": "Annotated interval 1",
+            "status": "detected",
+            "start_index": 564,
+            "end_index": 958,
+            "start_seconds": 600.0,
+            "end_seconds": 1020.0,
+            "first_alert_seconds": 653.0,
+            "delay_seconds": 53.0,
+            "method": "learned",
+            "contributing_sensors": [],
+            "baseline_overlap": {
+              "robust": false,
+              "persistence": false
+            },
+            "evidence": "Largest normalized prediction residuals; not a diagnosis.",
+            "contributions_kind": "prediction_residual"
+          }
+        ]
+      }
+    ]
+  }
+]

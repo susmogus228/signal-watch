@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-23",
+  "scope": "fixed-model diagnosis and literature review; no training, threshold tuning, annotation edits or activation",
+  "diagnostics_sha256": "338c7ce31a4e8ad19a6acf4012cbd036300348d34e7f8b17128c92671800e9c3",
+  "diagnostic_script_sha256": "bf168a6b35638223a2806352a7e4f7d21b83a276afae38d97d2d7d2229a1a4d0",
+  "csv_rows": 137,
+  "chosen_cases": [
+    "other-13",
+    "valve1-2",
+    "normal_audit"
+  ],
+  "active_v5_all_six_artifacts_unchanged": true,
+  "scientific_dependencies_unchanged": true,
+  "live_active_version": "5.0.0",
+  "figures": {
+    "trace-normal_audit.svg": {
+      "sha256": "345400b6fccf3129eeffd02ecbd9b86aab1d3f84d5a6e9ec10aa5a388fff4506",
+      "bytes": 107480
+    },
+    "trace-other-13.svg": {
+      "sha256": "121f7c89e1fb975d76db2a33edfa032c33371e292f8c317480088ddb69bc5832",
+      "bytes": 82991
+    },
+    "trace-valve1-2.svg": {
+      "sha256": "435814aedfb49b0c3f6f06fc284f9d771f46e77df99d3f0aefdb9334b641e1c1",
+      "bytes": 91884
+    }
+  },
+  "files": {
+    "outputs/v7-diagnosis/report.html": "765f931524fad7f62b43d453f1d4f73869faef73f456d4d18f6fad561d8b4b76",
+    "outputs/v7-diagnosis/false-episodes.csv": "46cb919a653b25a1cdb6bed4da547835dccc59922bfdd0accf02bc7af5c4a658",
+    "docs/ML_V7_DEGRADATION_REVIEW.md": "5e1039faf112f4a623667fefa69af5901a318d8bf6386661ae9786ebcef68a20"
+  },
+  "markdown_missing_links": [],
+  "reviewer": {
+    "profile": "Model QA Specialist",
+    "verdict": "PASS",
+    "data_and_claims_checked": true,
+    "physical_hazard_determined": false
+  },
+  "browser": {
+    "desktop_css_viewport": [
+      1487,
+      1058
+    ],
+    "mobile_css_viewport": [
+      390,
+      844
+    ],
+    "no_page_horizontal_overflow": true,
+    "inventory_expands": true,
+    "rendered_inventory_rows": 137,
+    "console_errors": []
+  },
+  "limits": [
+    "No causal ablation of calibration alone.",
+    "No independent physical hazard or annotation adjudication.",
+    "Previously examined audit; no new generalization estimate.",
+    "Model quality remains unfixed; V7 rejected and V5 active."
+  ]
+}

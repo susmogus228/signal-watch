@@ -1,0 +1,7 @@
+version,source,json_pointer,total_events,detected_events,missed_events,false_episodes,observed_normal_seconds,false_episodes_per_hour,false_alert_seconds,normal_alert_fraction,median_delay_seconds,mean_delay_seconds
+V1,artifacts/v1/frozen_evaluation.json,/methods/learned,28,5,23,33,17311.0,6.862688463982439,16901.0,0.9763156374559528,32.0,31.8
+V2,artifacts/v2/retrospective_audit.json,/methods/learned,28,11,17,43,18208.0,8.501757469244287,177.0,0.009721001757469244,2.0,12.454545454545455
+V3,artifacts/supervised/retrospective_audit.json,/methods/learned,28,23,5,40,18208.0,7.9086115992970125,270.0,0.014828646748681899,35.0,36.78260869565217
+V4,artifacts/supervised-weighted/retrospective_audit.json,/methods/learned,28,22,6,43,18208.0,8.501757469244287,245.0,0.013455623901581722,29.0,43.5
+V5,artifacts/hybrid/retrospective_audit.json,/methods/learned,28,26,2,56,18208.0,11.072056239015817,272.0,0.014938488576449912,18.0,25.115384615384617
+V7,artifacts/calibrated/retrospective_audit.json,/methods/learned,28,23,5,81,18208.0,16.01493848857645,386.0,0.021199472759226713,3.0,19.869565217391305

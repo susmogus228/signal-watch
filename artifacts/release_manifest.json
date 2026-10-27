@@ -1,0 +1,48 @@
+{
+  "study_version": 5,
+  "study_directory": "hybrid-development",
+  "plan_sha256": "0fc5da6ef7a9e2badb6f0d8fdc40f5c47861dca215ff4a12645b9d26a8c5dfdc",
+  "selected": {
+    "index": 1,
+    "aggregation": "max",
+    "threshold_index": 99,
+    "threshold": 1.0,
+    "residual_threshold": 16.174573325357347,
+    "classifier_threshold": 0.9954052245087474,
+    "metrics": {
+      "total_events": 29,
+      "detected_events": 28,
+      "missed_events": 1,
+      "false_episodes": 3,
+      "observed_normal_seconds": 9179.0,
+      "total_normal_seconds": 9203.0,
+      "observed_seconds": 14126.0,
+      "alert_seconds": 2797.0,
+      "false_alert_seconds": 37.0,
+      "true_positive_samples": 2606,
+      "false_positive_samples": 36,
+      "scored_samples": 13425,
+      "false_episodes_per_hour": 1.1765987580346442,
+      "mean_delay_seconds": 12.857142857142858,
+      "median_delay_seconds": 2.0,
+      "alert_fraction": 0.19800368115531644,
+      "normal_alert_fraction": 0.004030940189563134,
+      "point_precision": 0.9863739591218774,
+      "average_precision": 0.8800799518653227,
+      "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+      "event_recall": 0.9655172413793104
+    },
+    "feasible": true
+  },
+  "audit_path": "hybrid/retrospective_audit.json",
+  "audit_sha256": "0ff0b1999bb75a54d5cd6de6eb8cff32b896a05f7ebe23146d521284b0c6c16c",
+  "audited_child_sha256": "05e4679c7f66df7eff8dfa348eb2146972f5424c92713a25117d65444caa5085",
+  "audited_child_artifact": "hybrid/audited_bundle.joblib",
+  "study_dependencies": [
+    "v4/development",
+    "v2-development",
+    "hybrid/audited_bundle.joblib",
+    "hybrid/audited_development_report.json"
+  ],
+  "choice_rule": "Frozen V5 grouped OOF selection: maximize onset event hits subject to <=5% normal alert time and <=2 false onsets/hour; then lower normal burden, lower false rate, candidate order and threshold order. Classifier-only wins exact ties. Retrospective results never select variants."
+}

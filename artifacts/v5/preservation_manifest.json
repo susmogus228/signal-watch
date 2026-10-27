@@ -1,0 +1,31 @@
+{
+  "version": 5,
+  "files": {
+    "frozen_evaluation.json": "83bf1fd04a016d69d5df353a27d1ca24f94118cb833bc2b935d2ebe9533f6347",
+    "metadata.json": "0625694566cf641dc9716ae3ce3436a8508b1d9345479be2f3ff7034a5c07f03",
+    "model.joblib": "16a932107f2c73f80b03637bdaf1956723734b2de4d58b4b9d96f30b3998d57d",
+    "release_manifest.json": "caf48cdcb37f6440dab175e351f2654bbcd74882a2dd5c5e771da79ceafbf6fb",
+    "selection_manifest.json": "487554a016d300b97ae1f1a4db0df108c27f23200ff6416a566e918b43a8ef47",
+    "split_manifest.json": "870af2b6bb046fa6acba529d62163a5f44d893e09d6607f6eb1b6fb1ba77b941",
+    "audit/audited_bundle.joblib": "05e4679c7f66df7eff8dfa348eb2146972f5424c92713a25117d65444caa5085",
+    "audit/audited_development_report.json": "a41a182cda1fd06c964c0ea4054a9f7fd041ba67cc48ffdddf82a8af9a47beb0",
+    "audit/retrospective_audit.json": "0ff0b1999bb75a54d5cd6de6eb8cff32b896a05f7ebe23146d521284b0c6c16c",
+    "development/candidate_audits.json": "3cab2ed1e5060f977d8ad6ad12a5e025c9fed774fc4f9b6d907e7bb02c1fcacb",
+    "development/classifier_oof_scores.npz": "cd7c2f2bd23f241141871c9a8644b54418f0bf906c80caa5221ed529b1af80ad",
+    "development/plan.json": "0fc5da6ef7a9e2badb6f0d8fdc40f5c47861dca215ff4a12645b9d26a8c5dfdc",
+    "development/report.json": "8e2c39fc825c105111edd77592f5decf2dd4919d52647f8b719d087c71ce5749",
+    "development/residual_oof_channels.npz": "500d3253892e04aaa63385566ce0a6410c0ae55889052d3bda72eb99cb627679",
+    "development/selected_bundle.joblib": "15f74ee1b89bc8da24c9e3ed65ae122efb40790e57f39cddbb0fda92dbd71a55",
+    "development/selected_oof_scores.npz": "4904899a8a7ca8ac43ea33dd3a556f393f6bab717add48686622b3efcfc081c5",
+    "development/selection_before_refit.json": "ff1fe88c29e86c890165ab8f781974260a3f5f9a713248c1cef61b6bb5ea0655",
+    "source/dataset.py": "0f854d5772a555dd80b0874987e68f6d2d6494741046ad871382cd031738106a",
+    "source/development.py": "e865ca5e361c94e54eec7eaa6ad73bd71bbed048eb4154c4711539a285fe44b3",
+    "source/evaluation.py": "dbf17c12a6b8a4e3201fa6753f4a3ff0568677322f2e7ea4bf00752c9f1e31e0",
+    "source/ml.py": "f3c725f2f9431f53cbc3d22a1bc3e484d5d8a43aa8f3419b858b5822c533bfde",
+    "source/ml_hybrid.py": "1b1d706ee23cbf1a68e1b39ae11c0000df94ee376452c79f969c718a2f492823",
+    "source/ml_supervised.py": "ff3e713af3a1ef4b739c088bf83c29399f69cd7835100979df8b22b204170a11",
+    "source/ml_supervised_weighted.py": "ab5a7d2a3c2179c2e8bccab724ad42d5a2f6c0da3dfce3914d16f7f22817ef49",
+    "source/ml_v2.py": "5d1afcf5c53c058776d9d7df46261207e50b0bac9ba45b5e0225e037e1da2de1",
+    "source/release.py": "a8126823d599e7245ec1dd850588dda79c62c1229f84dee368049995d1e39759"
+  }
+}

@@ -1,0 +1,136 @@
+{
+  "study": "branch-selective-confirmation-v9",
+  "schema_version": 1,
+  "source_snapshot": "b2c0d46c2971dcbfe71e26087b6d231998bb91c2",
+  "protocol_path": "docs/ML_V9_BRANCH_POLICY_PLAN.md",
+  "protocol_sha256": "b918538ba252b995ba5942a48b632d783eb32476d4baba23e31516ee6f1bafc5",
+  "dependencies": {
+    "docs/ML_V9_BRANCH_POLICY_PLAN.md": "b918538ba252b995ba5942a48b632d783eb32476d4baba23e31516ee6f1bafc5",
+    "signalwatch/ml_branch_policy.py": "555dd4aff95739c7db1df1e36d47d91e3d349f24a6910a7d7dcb9c527571807a",
+    "tests/test_ml_branch_policy.py": "642ca4550c56b22256f5f8921ece663422dba75480097e50cf98e0c59df68359",
+    "scripts/study_branch_policy.py": "83884b8cd5d4543ecbbbbfa4a81aa8e340210cef2b7adde2f328b2b01cb50417",
+    "signalwatch/alarm_policy.py": "968563e6abaf71102473b2dc74831a7cc13de080e502b564c6ae1454afb57efa",
+    "signalwatch/dataset.py": "0f854d5772a555dd80b0874987e68f6d2d6494741046ad871382cd031738106a",
+    "signalwatch/evaluation.py": "dbf17c12a6b8a4e3201fa6753f4a3ff0568677322f2e7ea4bf00752c9f1e31e0",
+    "artifacts/v5/preservation_manifest.json": "51bc088c60a47c2c7bf3f58d2abd75d9e482009060c4ddb2bf2ee5bb437b6dd5",
+    "outputs/v9-diagnosis/diagnostics.json": "1e1f23764e85d10ac5e0bdc654e4ca5473de6d2cff3239778b5bd5cecfd652f7",
+    "work/v9-diagnosis/diagnose.py": "8ccad6e48f6f48eae06548128bda517f3814b6539f4f5e949f7dfb3f58ac4e64",
+    "artifacts/v5/development/plan.json": "0fc5da6ef7a9e2badb6f0d8fdc40f5c47861dca215ff4a12645b9d26a8c5dfdc",
+    "artifacts/v5/development/report.json": "8e2c39fc825c105111edd77592f5decf2dd4919d52647f8b719d087c71ce5749",
+    "artifacts/v5/development/classifier_oof_scores.npz": "cd7c2f2bd23f241141871c9a8644b54418f0bf906c80caa5221ed529b1af80ad",
+    "artifacts/v5/development/residual_oof_channels.npz": "500d3253892e04aaa63385566ce0a6410c0ae55889052d3bda72eb99cb627679",
+    "artifacts/v5/development/selected_oof_scores.npz": "4904899a8a7ca8ac43ea33dd3a556f393f6bab717add48686622b3efcfc081c5"
+  },
+  "development_ids": [
+    "other-3",
+    "other-6",
+    "other-9",
+    "other-12",
+    "valve1-0",
+    "valve1-3",
+    "valve1-6",
+    "valve1-9",
+    "valve1-12",
+    "valve1-15",
+    "valve2-0",
+    "valve2-3"
+  ],
+  "source_hashes": {
+    "anomaly-free": "7641a8742957100ef424dd97adfb3eeab27d4d180645fe2b3c49b7f7146ae9a6",
+    "other-3": "f3c19a89f74f62a475c246b9263f161f7a734dd88304de803939cebaa55c7ebd",
+    "other-6": "eb8f05622a62c855040ea358b87be35fb1a4a3720ba0610569bab384db4b6e04",
+    "other-9": "11c4514b0bc706acff637fea6707ad9258ac878fe9dff3d0b11d2b618d94d8ea",
+    "other-12": "b0882efbcf2669223ae78bee61c9f10074a9b2375f0e86b8957ae5ce4aad1e72",
+    "valve1-0": "16af3f71313a23dd33d9b7b8065d836d05c3f9257588881cc7fbe07c076d9dc8",
+    "valve1-3": "cb6afea108eddfd8447307e405f86bbb764b8d8e9130d7849a46e1303e19b8b2",
+    "valve1-6": "97469c0e0c9c0e0ee5d30794f1f36c6785df5816a112a8b16c59637e8c894685",
+    "valve1-9": "2aa1ae1b2ff505caecda24802b877dc686924bbbeeb7e7db4faa261efb5ed5bd",
+    "valve1-12": "90adfa9bc86d4556e6a4ce734436fd5685af79c189cd9828f8df75a7f468ce07",
+    "valve1-15": "75cc86ab25d7091eee024739fa06d048753480d5d7d1507077231cab4f1b7a7e",
+    "valve2-0": "a6670e7a68c7c6ba62c649bd9d350633e80db624578e9529f2b736ced5e32bde",
+    "valve2-3": "86927555d5c523e587d41500bd5dee4e2468289ec1b988ac17755aeae697d7f8"
+  },
+  "folds": [
+    {
+      "fold": 0,
+      "heldout_ids": [
+        "other-3",
+        "other-12",
+        "valve1-6",
+        "valve1-15"
+      ],
+      "train_ids": [
+        "other-6",
+        "other-9",
+        "valve1-0",
+        "valve1-3",
+        "valve1-9",
+        "valve1-12",
+        "valve2-0",
+        "valve2-3"
+      ]
+    },
+    {
+      "fold": 1,
+      "heldout_ids": [
+        "other-6",
+        "valve1-0",
+        "valve1-9",
+        "valve2-0"
+      ],
+      "train_ids": [
+        "other-3",
+        "other-9",
+        "other-12",
+        "valve1-3",
+        "valve1-6",
+        "valve1-12",
+        "valve1-15",
+        "valve2-3"
+      ]
+    },
+    {
+      "fold": 2,
+      "heldout_ids": [
+        "other-9",
+        "valve1-3",
+        "valve1-12",
+        "valve2-3"
+      ],
+      "train_ids": [
+        "other-3",
+        "other-6",
+        "other-12",
+        "valve1-0",
+        "valve1-6",
+        "valve1-9",
+        "valve1-15",
+        "valve2-0"
+      ]
+    }
+  ],
+  "classifier_threshold": 0.9954052245087474,
+  "residual_threshold": 16.174573325357347,
+  "aggregation": "max",
+  "candidates": [
+    {
+      "confirmation_seconds": 1.0,
+      "classifier": "immediate"
+    }
+  ],
+  "finite_mask": "Both raw branches finite; either non-finite resets residual confirmation.",
+  "constraints": {
+    "min_detected_events": 26,
+    "strictly_fewer_false_than_reference": true,
+    "max_false_onsets_per_normal_hour": 2.0,
+    "max_normal_alert_seconds": 37.0,
+    "observed_normal_seconds": 9179.0
+  },
+  "known_sensitivity_cost": "Diagnosis predicts loss of other-12-event-16; retain and report it.",
+  "selection_scope": "One fixed policy over preserved development OOF, no fitting or parameter grid.",
+  "v6_difference": "V6 confirmed entire fusion and required retaining all28 hits; this new protocol uses the established26/29 project proxy.",
+  "old_test_access": false,
+  "model_fit": false,
+  "deployment_fit": false,
+  "activation": false
+}

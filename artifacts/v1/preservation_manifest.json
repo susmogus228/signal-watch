@@ -1,0 +1,20 @@
+{
+  "study": "v1",
+  "preserved_before_v2": true,
+  "model_sha256": "1c8554a484148129b281e7aa6657d078658d778b3cff6edbf3f4f16594a36cc2",
+  "report_sha256": "0d6715e66214ea04a3027123647eddd530b05ac9532629a50b4b5569d0f30791",
+  "files": {
+    "frozen_evaluation.json": "0d6715e66214ea04a3027123647eddd530b05ac9532629a50b4b5569d0f30791",
+    "frozen_evaluation_legacy_overlap.json": "4f8ba3e8a9fc8031e9d9d78cede65b03e9730efa084f863b5febfbc8ee420699",
+    "metadata.json": "e618804cfea9d6202735a5dc4c270b5c21950133db9101c3c25c1cd785d9b745",
+    "model.joblib": "1c8554a484148129b281e7aa6657d078658d778b3cff6edbf3f4f16594a36cc2",
+    "selection_manifest.json": "7e5f66ae2cc62b469d9c07a5849919004f7861c4af5f6234fd779b1e017c8399",
+    "source/DATA_CARD.md": "a5285d3cf00ed54eac61e7a315d431764c5a5754401376f28cb74a8b9d4f33f4",
+    "source/evaluation.py": "0eb035ac817f7e1ab07cd6ab14aecb039300645bbf45e6507f58c22d201a4b36",
+    "source/ml.py": "90f92e9d6767ef698f9e4fe514a57d5eccd7f5732ef17584ebf7792b1d86b361",
+    "source/ML_EVALUATION.md": "c2fd35fa375392afdb3cd8babb7fd5527b1738104f06c9e3dd800a4599d35451",
+    "source/MODEL_CARD.md": "d6ae8651dfbc07b2ca330dfdb877ba52a878283a005ea72da4e65bc76d919775",
+    "split_manifest.json": "870af2b6bb046fa6acba529d62163a5f44d893e09d6607f6eb1b6fb1ba77b941"
+  },
+  "note": "Actual v1 bytes after the verified UI reproduction job; earlier hashes remain in v1 source cards and historical evidence."
+}

@@ -1,0 +1,33 @@
+# V7 nested grouped calibration
+
+V7 replaces the single known-state HGB classifier with three classifier/sigmoid-calibrator pairs. The normal-only innovation predictor retains its approved configuration. The feature set remains 120 classifier inputs and 32 predictor inputs, counted as 152 distinct named features. Three classifiers do not triple the feature count.
+
+The [scikit-learn calibration documentation](https://scikit-learn.org/stable/modules/calibration.html) requires classifier fitting and calibration to use disjoint data. The implementation uses the public `CalibratedClassifierCV(FrozenEstimator(fitted_hgb), method='sigmoid')` API. Each pair applies its own fit-only median/IQR preprocessing to its calibration recordings. Its normal training anchor enters classifier fitting only. An explicit before/after prediction assertion verifies that calibration leaves the fitted HGB unchanged.
+
+Whole-recording outer folds estimate development predictions. Inside each outer training partition, recording IDs are sorted lexicographically. Member j calibrates on positions i where i modulo 3 equals j and fits on the other recordings plus the normal anchor. No outer-held-out recording enters feature scaling, HGB fitting or sigmoid fitting. Both classes must occur in each pooled calibration partition. Deployment uses three corresponding pairs on all twelve development recordings without a subsequent full-data classifier refit.
+
+HGB training retains the approved equal-record/class-balanced sample weights. Calibration uses a different explicit objective: for R calibration recordings with n_r eligible rows and N total rows, each row receives N/(R*n_r). Records contribute equal total mass, while each record retains its observed label prevalence. Calibration does not balance classes. The report records weighted prevalence, unique row counts and each pair's fitting/calibration provenance. The installed scikit-learn emits a warning that FrozenEstimator calibration sample weights affect calibration only; classifier fitting has already received its separate training weights.
+
+The ensemble averages three positive-class probabilities. These sigmoid-calibrated known-state scores are not guaranteed real-world fault probabilities. Equal-record calibration changes the target recording distribution, and development sampling does not establish deployment prevalence. Threshold transfer and false-alert performance require their own evaluation.
+
+The predictor branch reuses preserved, SHA-verified residual-channel OOF traces from the same outer folds. Recording IDs, shapes and finite causal eligibility must match. Inference combines independently threshold-normalized classifier and residual scores by their maximum. There is no confirmation wait, smoothing, periodic rearming or label input.
+
+The bounded selection uses maximum, top-two mean and all-eight mean residual aggregation. Each branch threshold grid contains fixed normal-OOF quantiles .95,.975,.99,.995,.999,1 and nextafter(max,+infinity), with unique finite positive values retained. There are at most 147 new threshold pairs. The V5 reference is a fallback only, not a competitor that overrides the approved 26/29 recall floor. A new point must also satisfy the false-onset and alert-time limits and strictly improve the reference false-start count. Every lost/gained annotation ID remains visible.
+
+The [threshold-tuning guide](https://scikit-learn.org/stable/modules/classification_threshold.html) distinguishes scoring from action selection. This study reports reused nested OOF as development selection evidence; it does not claim independent validation. The frozen winner alone can proceed to a separate retrospective release gate. Budget exploration reads SHA-verified saved candidate audits and never fits or scores data.
+
+No upstream code or research performance claim is copied. No new dependencies or external inference are introduced. Observed sensor deviations remain reference evidence rather than model attribution or a physical diagnosis.
+
+## Observed outcome: reject V7, retain V5
+
+The one frozen development run took 156.608 seconds. All 147 threshold pairs were evaluated once; six qualified. The declared ranking selected maximum residual aggregation, classifier threshold 0.8580258155093349 and residual threshold 61.83420703195029 (index 1, threshold order 33). Development metrics: 27/29 events, 2 false starts, 10 normal-alert seconds over 9,179 normal seconds; median delay 3 seconds. Relative to V5, other-12-event-16 was lost and no annotation was gained.
+
+Actual training created nine nested outer-evaluation pairs and three deployment pairs, plus the final normal predictor. Unique classifier rows total 18,595, including 13,425 calibration observations; these overlap and must not be added. Final pair fitting/calibration row counts are 14,147/4,448,14,046/4,549 and14,167/4,428. The normal predictor uses 13,891 overlapping normal rows. Saved per-member recording IDs and weighted prevalences document the boundaries.
+
+The single preselected retrospective audit returned 23/28 events,81 false starts,386 normal-alert seconds over 18,208 normal seconds (16.014938/h,2.119947%). V5 has 26/28,56 false starts and272 seconds over identical exposure. Unchanged baselines reproduce exactly. V7 fails all three quality gates: minimum recall, fewer false starts and no greater normal-alert time. The accepted scientific outcome is a rejected candidate, not an improved active model.
+
+V5 active files remain unchanged. We did not select another candidate on the retrospective recordings, run candidate API retraining, or activate V7. Saved code and evidence allow reproduction of this negative result. The unused staging helper refuses candidates that fail acceptance. The disagreement between reused development and retrospective performance demonstrates unresolved threshold/generalization transfer; it does not establish a single physical cause for the errors.
+
+Frozen plan SHA-256: b370919764343e62e9e9cc176792bf796e5aea908e5ce5ba4b733521fcd2bc6d. Original selected child SHA-256:84358e909939d517690a2c11ed5f3b0cfdcd88f6ed7d2d1f8b69f8b5ce8b6dd6. [Development report](../artifacts/calibrated-development/report.json), [candidate audits](../artifacts/calibrated-development/candidate_audits.json), [retrospective audit](../artifacts/calibrated/retrospective_audit.json).
+
+A subsequent [fixed-model degradation review](ML_V7_DEGRADATION_REVIEW.md) reconstructs the three lost intervals, all 137 false episodes across V5/V7 and primary literature without another training run, threshold selection or label change. It separates measured branch mechanisms from uncertain physical interpretation.

@@ -1,0 +1,183 @@
+{
+  "trigger": "Train locally button; completed status observed in browser",
+  "sha256": {
+    "model.joblib": "1c8554a484148129b281e7aa6657d078658d778b3cff6edbf3f4f16594a36cc2",
+    "metadata.json": "e618804cfea9d6202735a5dc4c270b5c21950133db9101c3c25c1cd785d9b745",
+    "frozen_evaluation.json": "0d6715e66214ea04a3027123647eddd530b05ac9532629a50b4b5569d0f30791",
+    "split_manifest.json": "870af2b6bb046fa6acba529d62163a5f44d893e09d6607f6eb1b6fb1ba77b941",
+    "selection_manifest.json": "7e5f66ae2cc62b469d9c07a5849919004f7861c4af5f6234fd779b1e017c8399",
+    "frozen_evaluation_legacy_overlap.json": "4f8ba3e8a9fc8031e9d9d78cede65b03e9730efa084f863b5febfbc8ee420699"
+  },
+  "identical_files": {
+    "model.joblib": false,
+    "metadata.json": false,
+    "frozen_evaluation.json": false,
+    "split_manifest.json": true,
+    "selection_manifest.json": false,
+    "frozen_evaluation_legacy_overlap.json": true
+  },
+  "same_report": false,
+  "same_parameters": true,
+  "same_thresholds": true,
+  "same_final_methods": true,
+  "same_per_recording": true,
+  "same_group_slices": true,
+  "same_selected_candidate": true,
+  "report_differences": [
+    [
+      "/selection/trials/0/methods/robust/false_alert_seconds",
+      null,
+      1.0
+    ],
+    [
+      "/selection/trials/0/methods/robust/point_precision",
+      null,
+      0.9090909090909091
+    ],
+    [
+      "/selection/trials/0/methods/robust/normal_alert_fraction",
+      null,
+      0.00011354604292040422
+    ],
+    [
+      "/selection/trials/0/methods/robust/true_positive_samples",
+      null,
+      10
+    ],
+    [
+      "/selection/trials/0/methods/robust/false_positive_samples",
+      null,
+      1
+    ],
+    [
+      "/selection/trials/0/methods/learned/false_alert_seconds",
+      null,
+      8807.0
+    ],
+    [
+      "/selection/trials/0/methods/learned/point_precision",
+      null,
+      0.3494069307698271
+    ],
+    [
+      "/selection/trials/0/methods/learned/normal_alert_fraction",
+      null,
+      1.0
+    ],
+    [
+      "/selection/trials/0/methods/learned/true_positive_samples",
+      null,
+      4507
+    ],
+    [
+      "/selection/trials/0/methods/learned/false_positive_samples",
+      null,
+      8392
+    ],
+    [
+      "/selection/trials/0/methods/persistence/false_alert_seconds",
+      null,
+      33.0
+    ],
+    [
+      "/selection/trials/0/methods/persistence/point_precision",
+      null,
+      0.8896551724137931
+    ],
+    [
+      "/selection/trials/0/methods/persistence/normal_alert_fraction",
+      null,
+      0.0037470194163733393
+    ],
+    [
+      "/selection/trials/0/methods/persistence/true_positive_samples",
+      null,
+      258
+    ],
+    [
+      "/selection/trials/0/methods/persistence/false_positive_samples",
+      null,
+      32
+    ],
+    [
+      "/selection/trials/1/methods/robust/false_alert_seconds",
+      null,
+      1.0
+    ],
+    [
+      "/selection/trials/1/methods/robust/point_precision",
+      null,
+      0.9090909090909091
+    ],
+    [
+      "/selection/trials/1/methods/robust/normal_alert_fraction",
+      null,
+      0.00011354604292040422
+    ],
+    [
+      "/selection/trials/1/methods/robust/true_positive_samples",
+      null,
+      10
+    ],
+    [
+      "/selection/trials/1/methods/robust/false_positive_samples",
+      null,
+      1
+    ],
+    [
+      "/selection/trials/1/methods/learned/false_alert_seconds",
+      null,
+      8804.0
+    ],
+    [
+      "/selection/trials/1/methods/learned/point_precision",
+      null,
+      0.3494882133995037
+    ],
+    [
+      "/selection/trials/1/methods/learned/normal_alert_fraction",
+      null,
+      0.9996593618712388
+    ],
+    [
+      "/selection/trials/1/methods/learned/true_positive_samples",
+      null,
+      4507
+    ],
+    [
+      "/selection/trials/1/methods/learned/false_positive_samples",
+      null,
+      8389
+    ],
+    [
+      "/selection/trials/1/methods/persistence/false_alert_seconds",
+      null,
+      33.0
+    ],
+    [
+      "/selection/trials/1/methods/persistence/point_precision",
+      null,
+      0.8896551724137931
+    ],
+    [
+      "/selection/trials/1/methods/persistence/normal_alert_fraction",
+      null,
+      0.0037470194163733393
+    ],
+    [
+      "/selection/trials/1/methods/persistence/true_positive_samples",
+      null,
+      258
+    ],
+    [
+      "/selection/trials/1/methods/persistence/false_positive_samples",
+      null,
+      32
+    ],
+    [
+      "/model_sha256",
+      "56e92904e4746958598d0dd2a5ac80e227d1dd90ac5a708e471a633bb5ce0d23",
+      "1c8554a484148129b281e7aa6657d078658d778b3cff6edbf3f4f16594a36cc2"
+    ]
+  ]
+}

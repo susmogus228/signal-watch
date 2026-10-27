@@ -1,0 +1,18 @@
+export type Method = 'learned' | 'robust' | 'persistence';
+export type Sensor = {key:string;label:string;unit:string};
+export type Recording = {id:string;name:string;group:string;split:string;rows:number;duration_seconds:number;labelled:boolean;cadence_seconds:number;cadence_basis?:string;sha256:string};
+export type Episode = {start_index?:number;end_index?:number;start_seconds:number;end_seconds:number;ongoing?:boolean;[key:string]:unknown};
+export type Event = Episode & {id:string;title:string;status:'detected'|'missed'|'false_alert'|'unlabelled';method:Method;first_alert_seconds:number|null;delay_seconds:number|null;contributing_sensors:string[];evidence?:string;contributions_note?:string;contributions_kind?:string;alarm_confirmation?:{raw_start_index:number;raw_start_seconds:number;confirmed_start_index:number;confirmed_start_seconds:number;wait_seconds:number};detector_branches?:Record<string,{crossed_threshold:boolean;max_relative_level:number|null}>};
+export type View = {id?:string;recording:Recording;mode:'audit'|'replay';cursor:number;total:number;complete:boolean;elapsed:number[];timestamps:string[];signals:(Sensor&{values:(number|null)[]})[];scores:Record<Method,(number|null)[]>;thresholds:Record<Method,number>;gaps:{index:number;seconds:number}[];annotations:Episode[];episodes:Record<Method,Episode[]>;events:Event[];metrics:unknown;warmup_samples:number;warmup_by_method?:Record<Method,number>;score_normalization?:Record<Method,string>;raw_scores?:Partial<Record<Method,(number|null)[]>>;raw_episodes?:Episode[];raw_metrics?:unknown;alarm_policy?:{kind:string;confirmation_seconds:number}|null;alarm_states?:{pending:boolean[];confirmed:boolean[];raw_episode_start:number[]}|null;scope_note:string;replay_context?:{preloaded_metadata:boolean;cadence_seconds:number;note:string}};
+export type Catalog={datasets:Recording[];sensors:Sensor[];default_dataset:string};
+export type Job={id:string;status:string;message?:string;error?:string;created_at?:string;finished_at?:string};
+export class ApiError extends Error {status:number;constructor(message:string,status:number){super(message);this.name='ApiError';this.status=status;}}
+export async function request<T>(path:string,init?:RequestInit):Promise<T>{
+ const response=await fetch(path,{...init,headers:{...(init?.body?{'Content-Type':'application/json'}:{}),...init?.headers}});
+ if(!response.ok){let message=`Request failed (${response.status})`;try{const error=await response.json();message=typeof error.detail==='string'?error.detail:JSON.stringify(error.detail??error);}catch{}throw new ApiError(message,response.status);}
+ return response.json() as Promise<T>;
+}
+export const post=<T,>(path:string,body?:unknown)=>request<T>(path,{method:'POST',...(body===undefined?{}:{body:JSON.stringify(body)})});
+export function time(seconds:number):string{if(!Number.isFinite(seconds))return '—';const s=Math.max(0,Math.floor(seconds));return `${String(Math.floor(s/60)).padStart(2,'0')}:${String(s%60).padStart(2,'0')}`;}
+export function display(value:unknown):string{if(value===null||value===undefined)return 'Unavailable';if(typeof value==='number')return Number.isInteger(value)?String(value):value.toLocaleString('en-US',{maximumFractionDigits:4});return String(value);}
+export function flattenMetrics(value:unknown,prefix=''): [string,string][]{if(value===null||value===undefined)return [[prefix||'Result','Unavailable']];if(typeof value!=='object')return [[prefix,display(value)]];if(Array.isArray(value))return value.length<8&&value.every(x=>typeof x!=='object')?[[prefix,value.join(', ')]]:[];return Object.entries(value).flatMap(([key,v])=>flattenMetrics(v,prefix?`${prefix} / ${key}`:key));}

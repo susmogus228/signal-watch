@@ -1,0 +1,153 @@
+{
+  "review_date": "2026-10-27",
+  "review_type": "Targeted primary-source related-work review; not exhaustive systematic review or reproduced benchmark",
+  "research_paper_count": 8,
+  "technical_primary_source_count": 5,
+  "retrieval": "Agent Reach Exa search/fetch, with version-specific Context7 documentation cross-check",
+  "new_training_or_classifier_inference": false,
+  "external_algorithm_benchmark_runs": 0,
+  "sources": [
+    {
+      "id": "R01",
+      "type": "author_repository",
+      "title": "SKAB author repository, pinned snapshot",
+      "url": "https://github.com/waico/SKAB/tree/b2c0d46c2971dcbfe71e26087b6d231998bb91c2",
+      "retrieved_url": "https://raw.githubusercontent.com/waico/SKAB/b2c0d46c2971dcbfe71e26087b6d231998bb91c2/README.md",
+      "reviewed": "Dataset description and Proposed Leaderboard protocol",
+      "supported_claim": "Outlier/changepoint metrics and the right-sided 60-second NAB window differ from SignalWatch onset_v2.",
+      "limit": "Pinned historical documentation; not a claim about current testbed availability. External scores were not reproduced."
+    },
+    {
+      "id": "R02",
+      "type": "research_paper",
+      "year": 2022,
+      "title": "Towards a Rigorous Evaluation of Time-Series Anomaly Detection",
+      "authors": "Siwon Kim et al.",
+      "url": "https://arxiv.org/html/2109.05257v2",
+      "publisher_url": "https://ojs.aaai.org/index.php/AAAI/article/view/20680",
+      "reviewed": "Abstract and introduction explaining point adjustment",
+      "supported_claim": "Point adjustment can inflate apparent performance and obscure score differences.",
+      "limit": "Our historical overlap-credit bug is related in reporting risk, not identical to the paper's PA implementation."
+    },
+    {
+      "id": "R03",
+      "type": "research_paper",
+      "year": 2022,
+      "title": "Volume Under the Surface: A New Accuracy Evaluation Measure for Time-Series Anomaly Detection",
+      "authors": "John Paparrizos et al.",
+      "url": "https://www.vldb.org/pvldb/vol15/p2774-paparrizos.pdf",
+      "reviewed": "Abstract and selected evaluation/robustness discussion",
+      "supported_claim": "Range-aware threshold-independent metrics address evaluation sensitivity to noise and temporal misalignment.",
+      "limit": "VUS was not calculated here and does not measure an operational false-episode budget. No figures or code copied."
+    },
+    {
+      "id": "R04",
+      "type": "research_paper",
+      "year": 2024,
+      "title": "The Elephant in the Room: Towards A Reliable Time-Series Anomaly Detection Benchmark",
+      "authors": "Qinghua Liu and John Paparrizos",
+      "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/c3f3c690b7a99fba16d0efd35cb83b2c-Paper-Datasets_and_Benchmarks_Track.pdf",
+      "author_project": "https://thedatumorg.github.io/TSB-AD/",
+      "reviewed": "Abstract, sections 4.1, 4.3 and selected 5.2.2 discussion",
+      "supported_claim": "Separate tuning/evaluation collections, dataset checks and multiple metrics support fair comparisons; threshold setting is separate from its ranking focus.",
+      "limit": "Different data, supervision and metric conventions; no TSB-AD implementation was run or numerical superiority claimed."
+    },
+    {
+      "id": "R05",
+      "type": "research_paper",
+      "year": 2020,
+      "title": "An on-line framework for monitoring nonlinear processes with multiple operating modes",
+      "authors": "Ruomu Tan, Tian Cong, James R. Ottewill, Jerzy Baranowski and Nina F. Thornhill",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0959152419304482",
+      "doi": "10.1016/j.jprocont.2020.03.006",
+      "reviewed": "Introduction, selected monitoring-method discussion and section 5 expert-confirmed mode update",
+      "supported_claim": "Unrepresented healthy modes can resemble anomalies; confirmed healthy-mode updates differ from automatic learning on every alarm.",
+      "limit": "DP-GMM/NSDC-KPCA is not our diagonal GMM-HGB pipeline; no published gains reproduced or physical causes inferred."
+    },
+    {
+      "id": "R06",
+      "type": "research_paper",
+      "year": 2026,
+      "publication_date": "2026-03-14",
+      "title": "CANDI: Curated Test-Time Adaptation for Multivariate Time-Series Anomaly Detection Under Distribution Shift",
+      "authors": "HyunGi Kim et al.",
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/view/38524",
+      "reviewed": "Publisher abstract and metadata only",
+      "supported_claim": "The proposed test-time adaptation curates potential false-positive samples using scores and latent similarity.",
+      "limit": "Abstract-level comparison only; no full-method validation. V10 offline labelled-normal weighting is a different mechanism."
+    },
+    {
+      "id": "R07",
+      "type": "research_paper",
+      "year": 2019,
+      "title": "Can You Trust Your Model's Uncertainty? Evaluating Predictive Uncertainty Under Dataset Shift",
+      "authors": "Yaniv Ovadia et al.",
+      "url": "https://proceedings.neurips.cc/paper/9547-can-you-trust-your-models-uncertainty-evaluating-predictive-uncertainty-under-dataset-shift.pdf",
+      "reviewed": "Abstract, introduction and selected uncertainty-under-shift discussion",
+      "supported_claim": "Post-hoc confidence calibration has limits under dataset shift.",
+      "limit": "Classification study rather than pump telemetry; it does not prove the cause of SignalWatch's V7 regression."
+    },
+    {
+      "id": "R08",
+      "type": "research_paper",
+      "year": 2022,
+      "title": "Sequential Multivariate Change Detection with Calibrated and Memoryless False Detection Rates",
+      "authors": "Oliver Cobb, Arnaud Van Looveren and Janis Klaise",
+      "url": "https://proceedings.mlr.press/v151/cobb22a/cobb22a.pdf",
+      "publisher_url": "https://proceedings.mlr.press/v151/cobb22a.html",
+      "reviewed": "Abstract and sections 2.1-2.2/3.1 on assumptions, expected runtime and correlated test outcomes",
+      "supported_claim": "Expected no-change runtime and time-conditional false-detection probabilities need explicit calibration.",
+      "limit": "Independent stream and i.i.d. reference assumptions do not directly cover dependent sensor observations, gaps or our episode resets."
+    },
+    {
+      "id": "R09",
+      "type": "research_paper",
+      "year": 2010,
+      "title": "On Over-fitting in Model Selection and Subsequent Selection Bias in Performance Evaluation",
+      "authors": "Gavin C. Cawley and Nicola L. C. Talbot",
+      "url": "https://www.jmlr.org/papers/v11/cawley10a.html",
+      "reviewed": "Publisher abstract and metadata only",
+      "supported_claim": "Optimization of finite-sample validation criteria can overfit model selection.",
+      "limit": "No estimated magnitude or causal attribution of selection bias in SignalWatch."
+    },
+    {
+      "id": "R10",
+      "type": "official_technical_guidance",
+      "title": "NIST/SEMATECH handbook: EWMA Control Charts",
+      "url": "https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc324.htm",
+      "reviewed": "Statistic, gradual-shift sensitivity, reference-data and independence/normality assumptions",
+      "supported_claim": "Historical evidence accumulation can detect small or gradual shifts.",
+      "limit": "Statistical comparator, not a trained ML replacement; standard limits need justified assumptions for dependent telemetry."
+    },
+    {
+      "id": "R11",
+      "type": "official_technical_guidance",
+      "title": "NIST/SEMATECH handbook: CUSUM Control Charts",
+      "url": "https://www.itl.nist.gov/div898/handbook/pmc/section3/pmc323.htm",
+      "reviewed": "Small-mean-shift sensitivity, cumulative statistic and design-parameter discussion",
+      "supported_claim": "Accumulating deviations differs from requiring persistence after a threshold crossing.",
+      "limit": "No CUSUM implementation, threshold calibration or detection gain was measured here."
+    },
+    {
+      "id": "R12",
+      "type": "official_versioned_documentation",
+      "title": "scikit-learn 1.9.1 preprocessing and leakage guidance",
+      "url": "https://scikit-learn.org/1.9/modules/preprocessing.html",
+      "additional_url": "https://github.com/scikit-learn/scikit-learn/blob/1.9.1/doc/common_pitfalls.rst",
+      "reviewed": "Scaling, robust alternatives, train-only transforms; Context7 1.9.1 cross-check",
+      "installed_version_checked": "1.9.1",
+      "supported_claim": "Training-only preprocessing and scale inspection are necessary; scaler choice depends on distribution.",
+      "limit": "Does not prescribe our 1e-6 zero-IQR floor or prove that one alternative will improve alarm quality."
+    },
+    {
+      "id": "R13",
+      "type": "official_versioned_source",
+      "title": "scikit-learn 1.9.1 diagonal Gaussian-mixture implementation",
+      "url": "https://github.com/scikit-learn/scikit-learn/blob/1.9.1/sklearn/mixture/_gaussian_mixture.py",
+      "retrieved_url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/1.9.1/sklearn/mixture/_gaussian_mixture.py",
+      "reviewed": "Diagonal covariance and expanded log-Gaussian arithmetic, matching prior installed-source audit",
+      "supported_claim": "Second-moment subtraction and expanded quadratics can lose precision under our extreme V12 input scaling.",
+      "limit": "Fixed-parameter numerical evidence does not quantify complete EM error or prove the cause of all K4 alarms; no library code modified."
+    }
+  ]
+}

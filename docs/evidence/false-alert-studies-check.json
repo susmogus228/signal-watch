@@ -1,0 +1,175 @@
+{
+  "date": "2026-10-23",
+  "active_version": 5,
+  "active_artifacts": {
+    "model.joblib": {
+      "sha256": "16a932107f2c73f80b03637bdaf1956723734b2de4d58b4b9d96f30b3998d57d",
+      "unchanged": true
+    },
+    "metadata.json": {
+      "sha256": "0625694566cf641dc9716ae3ce3436a8508b1d9345479be2f3ff7034a5c07f03",
+      "unchanged": true
+    },
+    "frozen_evaluation.json": {
+      "sha256": "83bf1fd04a016d69d5df353a27d1ca24f94118cb833bc2b935d2ebe9533f6347",
+      "unchanged": true
+    },
+    "selection_manifest.json": {
+      "sha256": "487554a016d300b97ae1f1a4db0df108c27f23200ff6416a566e918b43a8ef47",
+      "unchanged": true
+    },
+    "release_manifest.json": {
+      "sha256": "caf48cdcb37f6440dab175e351f2654bbcd74882a2dd5c5e771da79ceafbf6fb",
+      "unchanged": true
+    },
+    "split_manifest.json": {
+      "sha256": "870af2b6bb046fa6acba529d62163a5f44d893e09d6607f6eb1b6fb1ba77b941",
+      "unchanged": true
+    }
+  },
+  "v6": {
+    "promote": false,
+    "status": "retain_v5",
+    "new_audit_performed": false
+  },
+  "v7": {
+    "plan_sha256": "b370919764343e62e9e9cc176792bf796e5aea908e5ce5ba4b733521fcd2bc6d",
+    "report_sha256": "499241827eab82ba5794ce4f1abe6192671e8717d9df17ca73eb8aa4ddf44de6",
+    "selected_model_sha256": "84358e909939d517690a2c11ed5f3b0cfdcd88f6ed7d2d1f8b69f8b5ce8b6dd6",
+    "audit_sha256": "cb73ed96d7e33aac38bac03ca63326b20919764267d56e786341dfd1c9274336",
+    "development": {
+      "total_events": 29,
+      "detected_events": 27,
+      "missed_events": 2,
+      "false_episodes": 2,
+      "observed_normal_seconds": 9179.0,
+      "total_normal_seconds": 9203.0,
+      "observed_seconds": 14126.0,
+      "alert_seconds": 2708.0,
+      "false_alert_seconds": 10.0,
+      "true_positive_samples": 2543,
+      "false_positive_samples": 9,
+      "scored_samples": 13425,
+      "false_episodes_per_hour": 0.7843991720230962,
+      "mean_delay_seconds": 16.333333333333332,
+      "median_delay_seconds": 3.0,
+      "alert_fraction": 0.1917032422483364,
+      "normal_alert_fraction": 0.0010894432944765224,
+      "point_precision": 0.9964733542319749,
+      "average_precision": 0.9364226613007491,
+      "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+      "event_recall": 0.9310344827586207
+    },
+    "retrospective": {
+      "total_events": 28,
+      "detected_events": 23,
+      "missed_events": 5,
+      "false_episodes": 81,
+      "observed_normal_seconds": 18208.0,
+      "total_normal_seconds": 18285.0,
+      "observed_seconds": 26968.0,
+      "alert_seconds": 4480.0,
+      "false_alert_seconds": 386.0,
+      "true_positive_samples": 3897,
+      "false_positive_samples": 346,
+      "scored_samples": 25677,
+      "false_episodes_per_hour": 16.01493848857645,
+      "mean_delay_seconds": 19.869565217391305,
+      "median_delay_seconds": 3.0,
+      "alert_fraction": 0.16612281222189262,
+      "normal_alert_fraction": 0.021199472759226713,
+      "point_precision": 0.9184539241102994,
+      "average_precision": 0.8240560039265624,
+      "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+      "event_recall": 0.8214285714285714
+    },
+    "accepted": false,
+    "release_guard_rejection": "Calibrated model acceptance failed; retain the previous active release.",
+    "api_training_skipped": true
+  },
+  "checks": {
+    "backend_passed": 110,
+    "frontend_logic_passed": 4,
+    "frontend_packaging_passed": 4,
+    "frontend_typecheck": "passed",
+    "frontend_build": "passed",
+    "english_owned_files_scanned": 67,
+    "cyrillic_matches": [],
+    "missing_markdown_links": []
+  },
+  "review": {
+    "profile": "Model QA Specialist",
+    "experiment_correctness": "PASS",
+    "activation": "FAIL"
+  },
+  "open_requirement": "R17 false-alert control remains unmet.",
+  "live_http": {
+    "status": {
+      "/": 200,
+      "/api/health": 200,
+      "/api/model": 200,
+      "/api/evaluation": 200,
+      "/docs": 200,
+      "/openapi.json": 200
+    },
+    "active_model_version": "5.0.0",
+    "model_sha256": "16a932107f2c73f80b03637bdaf1956723734b2de4d58b4b9d96f30b3998d57d",
+    "prefix_scores_match": true,
+    "replay_future_labels_hidden": true,
+    "inactive_policy_fields_empty": true,
+    "comparison_scope": "hybrid_grouped_oof_development_selection",
+    "comparison_hits": 28,
+    "frozen_report_unchanged": true
+  },
+  "browser": {
+    "viewports": [
+      {
+        "width": 1487,
+        "height": 1058,
+        "document_width": 1472
+      },
+      {
+        "width": 390,
+        "height": 844,
+        "document_width": 375
+      }
+    ],
+    "screens": [
+      "Compare",
+      "Data & Model"
+    ],
+    "console_errors": [],
+    "inactive_v6_v7_visuals_tested": false,
+    "screenshots": [
+      {
+        "path": "docs/screenshots/compare-v5-retained-desktop.jpg",
+        "width": 1472,
+        "height": 1047,
+        "format": "JPEG",
+        "sha256": "a5cd6f6a0ac1fbf06f07050a6d682a79f421c395def4f87c81d22736c3230cad"
+      },
+      {
+        "path": "docs/screenshots/compare-v5-retained-mobile.jpg",
+        "width": 375,
+        "height": 812,
+        "format": "JPEG",
+        "sha256": "9b5c1cb4084a9e51109c502bb1672a578a306384d160ab94d34a4149dcbc660f"
+      },
+      {
+        "path": "docs/screenshots/model-v5-retained-desktop.jpg",
+        "width": 1472,
+        "height": 1047,
+        "format": "JPEG",
+        "sha256": "f333022315f3a47e95669b58e106d1d48f159d875c5f210ad2749e0d4571ad27"
+      },
+      {
+        "path": "docs/screenshots/model-v5-retained-mobile.jpg",
+        "width": 375,
+        "height": 812,
+        "format": "JPEG",
+        "sha256": "4124bdcf4a58bb55173f0c3f95956c6989ce7f3383e3875b2bec967c7034e1ba"
+      }
+    ],
+    "image_note": "Original browser JPEG capture dimensions differ from CSS viewport dimensions; no image resizing or editing."
+  }
+}

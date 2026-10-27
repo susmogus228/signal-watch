@@ -1,0 +1,38 @@
+{
+  "study_version": 5,
+  "scope": "hybrid_grouped_oof_development_selection",
+  "selected": {
+    "index": 1,
+    "aggregation": "max",
+    "threshold_index": 99,
+    "threshold": 1.0,
+    "residual_threshold": 16.174573325357347,
+    "classifier_threshold": 0.9954052245087474,
+    "metrics": {
+      "total_events": 29,
+      "detected_events": 28,
+      "missed_events": 1,
+      "false_episodes": 3,
+      "observed_normal_seconds": 9179.0,
+      "total_normal_seconds": 9203.0,
+      "observed_seconds": 14126.0,
+      "alert_seconds": 2797.0,
+      "false_alert_seconds": 37.0,
+      "true_positive_samples": 2606,
+      "false_positive_samples": 36,
+      "scored_samples": 13425,
+      "false_episodes_per_hour": 1.1765987580346442,
+      "mean_delay_seconds": 12.857142857142858,
+      "median_delay_seconds": 2.0,
+      "alert_fraction": 0.19800368115531644,
+      "normal_alert_fraction": 0.004030940189563134,
+      "point_precision": 0.9863739591218774,
+      "average_precision": 0.8800799518653227,
+      "average_precision_aggregation": "Unweighted mean of per-recording ordinary average precision; single-class recordings excluded.",
+      "event_recall": 0.9655172413793104
+    },
+    "feasible": true
+  },
+  "release_choice_rule": "Frozen V5 grouped OOF selection: maximize onset event hits subject to <=5% normal alert time and <=2 false onsets/hour; then lower normal burden, lower false rate, candidate order and threshold order. Classifier-only wins exact ties. Retrospective results never select variants.",
+  "plan_sha256": "0fc5da6ef7a9e2badb6f0d8fdc40f5c47861dca215ff4a12645b9d26a8c5dfdc"
+}
