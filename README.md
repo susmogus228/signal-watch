@@ -139,6 +139,7 @@ On macOS/Linux use .venv/bin/python and mkdir -p work. The final report, model m
 | [Related work](docs/RELATED_WORK_COMPARISON.md) | Eight papers/five technical sources; implementation and access limits |
 | [Figures and data](docs/research/README.md) | Three PNG/SVG pairs, CSV/JSON, source hashes and a no-training verification command |
 | [Requirements](docs/REQUIREMENTS.md) / [Verification](docs/VERIFICATION.md) | Completed software checks, paused research and remaining quality gaps |
+| [Publication record](docs/PUBLICATION.md) | Public repository, banner provenance and source/asset integrity checks |
 | [Resources](docs/RESOURCES.md) | Dataset, dependency and documentation provenance |
 
 Check the supplied figure/data package without training or plotting dependencies:

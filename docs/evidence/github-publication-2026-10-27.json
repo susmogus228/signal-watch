@@ -1,0 +1,87 @@
+{
+  "recorded_at_utc": "2026-10-27T06:35:41.554711+00:00",
+  "repository": "https://github.com/susmogus228/signal-watch",
+  "visibility": "public",
+  "default_branch": "main",
+  "has_pages": false,
+  "topics": [
+    "anomaly-detection",
+    "fastapi",
+    "machine-learning",
+    "research",
+    "scikit-learn",
+    "time-series"
+  ],
+  "initial_commit": "32fd73d7a226ce19bc1f63303ed0609af2d9da26",
+  "remote_tree_matches_local": true,
+  "blob_count": 388,
+  "unauthenticated_repository_http_status": 200,
+  "raw_file_checks": {
+    "README.md": {
+      "unauthenticated_http_status": 200,
+      "bytes": 11638,
+      "sha256": "aa5b031bd2f8bd0959e6010dbd89b1b5b7d6fb60891f51d1a250e771fe2611ef"
+    },
+    "docs/assets/signalwatch-banner.png": {
+      "unauthenticated_http_status": 200,
+      "bytes": 1522695,
+      "sha256": "7a784c68611541f2d1d1a8ac51660333e612414a80fd953ea5b71dae69c54170"
+    },
+    "docs/research/figures/pressure-tradeoff.png": {
+      "unauthenticated_http_status": 200,
+      "bytes": 166577,
+      "sha256": "9b205da6dd977626e9bc9c12daf82c6601d2721721560ad1c4b7b9a84217b367"
+    }
+  },
+  "clean_checkout_75_frozen_dependencies_match": true,
+  "scope": "Initial public SignalWatch source snapshot plus publication-verification documentation",
+  "new_ml_fits": 0,
+  "new_model_inference_or_quality_evaluation": false,
+  "training_status": "paused",
+  "active_model": "V5",
+  "model_quality_goal_achieved": false,
+  "protected_model_result_data_files": 172,
+  "protected_hashes_match": true,
+  "frontend_checks": {
+    "typecheck": "PASS",
+    "logic_tests": 4,
+    "build": "PASS",
+    "packaging_tests": 4,
+    "bundle_advisory_kB": 859.23,
+    "bundle_gzip_kB": 279.16
+  },
+  "independent_publication_review": {
+    "runtime": "generic available agent",
+    "verdict": "PASS",
+    "initial_staged_files_checked": 386,
+    "final_banner_delta_staged_files_checked": 388,
+    "unavailable_named_profile": "security-privacy-reviewer failed to start; not counted as a successful specialist audit",
+    "scope_limit": "Publication-content/path/explicit-secret review, not full AppSec or legal certification"
+  },
+  "banner": {
+    "path": "docs/assets/signalwatch-banner.png",
+    "width": 2172,
+    "height": 724,
+    "bytes": 1522695,
+    "sha256": "7a784c68611541f2d1d1a8ac51660333e612414a80fd953ea5b71dae69c54170",
+    "built_in_image_gen": true,
+    "illustrative_not_measured": true,
+    "original_bytes_preserved": true,
+    "actual_GitHub_README_loaded": true
+  },
+  "backend_suite_rerun": false,
+  "clean_external_dependency_install_tested": false,
+  "other_project_or_profile_banner_changed": false,
+  "later_documentation_commits": "This evidence pins the initial source snapshot; later publication-record commits do not change models or measurements.",
+  "actual_GitHub_results_render": {
+    "observed": true,
+    "three_figure_images_loaded": true,
+    "widths": [
+      1870,
+      1870,
+      1870
+    ],
+    "quality_limit_statement_present": true
+  },
+  "new_model_inference_or_quality_evaluation_scope": "SignalWatch models; built-in image_gen was used for the explicitly requested banner."
+}

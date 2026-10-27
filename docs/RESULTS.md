@@ -27,7 +27,7 @@ Sources: [V5 development metrics](../artifacts/hybrid-development/report.json), 
 
 ## Detection improvements have a false-alert cost
 
-![V4 detects 22/28 at 8.502 false starts/hour; V5 detects 26/28 at11.072/hour; rejected V7 detects 23/28 at16.015/hour. The three versions share 18,208 observed normal seconds.](research/figures/audit-tradeoff.png)
+![V4 detects 22/28 at 8.502 false starts/hour; V5 detects 26/28 at 11.072/hour; rejected V7 detects 23/28 at16.015/hour. The three versions share 18,208 observed normal seconds.](research/figures/audit-tradeoff.png)
 
 This chart uses V4/V5/V7 on the same 28-segment corpus and eligible normal exposure. V5 gains four detections over V4 while adding thirteen false starts. V7 reduces development false burden while losing one event, then regresses on the retrospective corpus; we rejected activation.
 
@@ -83,7 +83,7 @@ The quality screen requires >=26/29, fewer than three false starts, <=2/h, <=37 
 
 ## Numerical success is separate from alarm quality
 
-![Training-bank Pressure magnitude on a log scale: unchanged fold 0 near5; fold1 falls from 1,311,711 to 5.10, fold2 from 1,639,639 to 6.28. The training-bank guard is 128.](research/figures/pressure-conditioning.png)
+![Training-bank Pressure magnitude on a log scale: unchanged fold 0 near 5; fold 1 falls from 1,311,711 to 5.10, fold 2 from 1,639,639 to 6.28. The training-bank guard is 128.](research/figures/pressure-conditioning.png)
 
 Maximum absolute normalized Pressure falls from about 1.64 million to 6.28 on the training banks. All 279 saved numerical audits pass. Centered and expanded fixed-parameter NLL formulas differ by at most 3.64e-12, under the declared 1e-7 tolerance. The unchanged fold 0 reproduces V12 scores exactly.
 

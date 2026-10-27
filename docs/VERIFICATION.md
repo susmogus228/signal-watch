@@ -1,4 +1,16 @@
-# Research packaging and training pause
+# GitHub publication verification
+
+Date: 2026-10-27. Following explicit user authorization, SignalWatch is published at [susmogus228/signal-watch](https://github.com/susmogus228/signal-watch), with the generated README banner. [Publication record](PUBLICATION.md) and [machine-readable evidence](evidence/github-publication-2026-10-27.json) pin the initial source snapshot and completed checks.
+
+- Public repository/default branch and 388 initial Git blobs match the local commit. Unauthenticated repository/README/banner/Pressure-chart access returns HTTP 200, with downloaded file hashes equal to local bytes. Actual GitHub README rendering and banner load are observed.
+- A clean Git checkout passes the no-training exporter check and preserves all 172 protected model/result/data files plus all 75 frozen V13 dependencies. Git attributes prevent line-ending conversion from invalidating scientific hashes.
+- Frontend typecheck, four logic tests, production build and four existing packaging tests pass. The build retains its existing large-bundle advisory; no Sites or Pages deployment follows.
+- A generic available reviewer passes the staged publication-content check and banner delta. The named security profile could not start; this was not a successful specialist audit. Explicit secret/path checks do not establish full AppSec certification.
+- No new ML fit, threshold sweep, model-quality evaluation or training API call occurs. The earlier backend suite is not rerun. V5 stays active, training stays paused and R17/R20 remain open.
+
+The historical sections below preserve their phase-specific no-publication statements and pre-banner document hashes. They do not describe the current repository's publication state. No other project/profile banner is modified.
+
+# Historical research packaging and training pause
 
 Date: 2026-10-27. The user paused further ML training and requested a GitHub-readable account of completed work. [README](../README.md), [results report](RESULTS.md), [V1-V13 history](RESEARCH_LOG.md) and [figure/data index](research/README.md) now separate active V5, rejected studies, partial gains and unresolved quality goals.
 
